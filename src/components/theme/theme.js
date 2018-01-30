@@ -1,6 +1,11 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 
+export const theme = {
+    primary: '#019095',
+    secondary: '#989898',
+  };
+
 export const Row = styled.div.attrs({
 width: props => props.width,
 margin: props => props.margin,
