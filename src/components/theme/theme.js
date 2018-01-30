@@ -10,6 +10,15 @@ export const theme = {
 
 // ROWS + COLUMNS
 
+//Containers
+
+export const Wrapper = styled.div.attrs({
+  backgroundcolor: props => props.backgroundcolor
+})`
+  background-color: ${props => props.backgroundcolor};
+  height: 40vh;
+`;
+
 export const Row = styled.div.attrs({
   width: props => props.width,
   margin: props => props.margin,
@@ -19,6 +28,7 @@ export const Row = styled.div.attrs({
   backgroundcolor: props => props.backgroundcolor
 })`
   display: flex;
+  flex-direction: row;
   width: ${props => props.width};
   margin: ${props => props.margin};
   justify-content: ${props => props.justifycontent};
