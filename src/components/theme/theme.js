@@ -5,14 +5,14 @@ import styled, { css } from "styled-components";
 
 export const theme = {
   primary: "#019095",
-  secondary: "#989898",
+  secondary: "#989898"
 };
 
 // ROWS + COLUMNS
 
 export const Wrapper = styled.div.attrs({
-  backgroundcolor: props => props.backgroundcolor,
-}) `
+  backgroundcolor: props => props.backgroundcolor
+})`
   background-color: ${props => props.backgroundcolor};
   height: 70vh;
 `;
@@ -23,8 +23,8 @@ export const Row = styled.div.attrs({
   justifycontent: props => props.justifycontent,
   alignitems: props => props.alignitems,
   height: props => props.height,
-  backgroundcolor: props => props.backgroundcolor,
-}) `
+  backgroundcolor: props => props.backgroundcolor
+})`
   display: flex;
   flex-direction: row;
   width: ${props => props.width};
@@ -41,8 +41,8 @@ export const Column = styled.div.attrs({
   height: props => props.height,
   alignitems: props => props.alignitems,
   backgroundcolor: props => props.backgroundcolor,
-  textalign: props => props.textalign,
-}) `
+  textalign: props => props.textalign
+})`
   text-align: ${props => props.textalign};
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ export const SignupButton = styled.button`
   border-radius: 15px;
   border: ${props => (props.primary ? "none" : "1px solid #EFCC29")};
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
   color: ${props => (props.primary ? "#4d4d4d" : "#EFCC29")};
@@ -81,11 +81,11 @@ export const SignupButton = styled.button`
 
 export const Title1 = styled.h1.attrs({
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "2.2em",
-}) `
+  fontSize: props => props.fontSize || "2.2em"
+})`
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.4em;
   font-weight: 700;
 `;
@@ -93,22 +93,23 @@ export const Title1 = styled.h1.attrs({
 export const Title2 = styled.h2.attrs({
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.4em",
-}) `
+  lineheight: props => props.lineheight || "1.4em"
+})`
   font-weight: 300;
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  line-height: ${props => props.lineheight};
 `;
 
 export const Title3 = styled.h3.attrs({
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "1.2em",
-}) `
+  fontSize: props => props.fontSize || "1.2em"
+})`
   font-weight: 400;
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const Text = styled.p.attrs({
@@ -118,8 +119,8 @@ export const Text = styled.p.attrs({
   lineheight: props => props.lineheight,
   color: props => props.color || "#4d4d4d",
   textalign: props => props.textalign,
-  fontsize: props => props.fontsize || "1.2em",
-}) `
+  fontsize: props => props.fontsize || "1.2em"
+})`
   font-size: ${props => props.fontsize};
   text-align: ${props => props.textalign};
   color: ${props => props.color};
@@ -127,6 +128,6 @@ export const Text = styled.p.attrs({
   padding: ${props => props.padding};
   width: ${props => props.width};
   line-height: ${props => props.lineheight};
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
 `;

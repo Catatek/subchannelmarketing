@@ -22,7 +22,7 @@ const circle = {
   marginBottom: "1em"
 };
 
-const About = ({ children }) => (
+const About = () => (
   <Wrapper>
     <Title2>Broadcast your content on all platforms and devices</Title2>
     <Row justifycontent="space-evenly" width="100%" margin="3em 0">

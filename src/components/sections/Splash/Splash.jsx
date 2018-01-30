@@ -28,7 +28,7 @@ const Splash = ({ children }) => (
       margin="2em 0 0 0"
     >
       <Title1>Distribute subscription-based content to any platform.</Title1>
-      <Title2>
+      <Title2 lineheight="1.6em">
         We give you the tools to share your content, so you can earn revenue and
         keep creating
       </Title2>
