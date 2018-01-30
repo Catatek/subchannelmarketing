@@ -9,8 +9,8 @@ const user = {
 };
 
 const imgStyle = {
-  width: "250px",
-  height: "51px",
+  width: "200px",
+  height: "41px",
   marginLeft: "1.5em"
 };
 
