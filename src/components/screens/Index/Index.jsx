@@ -1,9 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import Header from "../../shared/Header/Header";
+import Splash from "../../sections/Splash/Splash";
 
-class Index extends React Component {
-    render() {
-        return(
-            <div></div>
-        );
-    }
+class Index extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Splash />
+      </div>
+    );
+  }
 }
+
+export default Index;

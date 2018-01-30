@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import './App.css';
-import Index from '../Index/Index';
+import Index from '../screens/Index/Index';
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
           <Switch>
             <Route exact path="/" component={Index} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
   }
 }
