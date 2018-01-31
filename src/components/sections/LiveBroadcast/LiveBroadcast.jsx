@@ -25,8 +25,11 @@ const LiveBroadcast = () => (
       <Text lineheight="1.8em">
         Broadcast your content in real-time. We provide all the features you
         need for 24/7 playback automation of your content. Utilizing our
-        Timeline will allow the ability to drag and drop shows and ads into your
-        program schedule.
+        <i>
+          <b> Timeline </b>
+        </i>
+        will allow the ability to drag and drop shows and ads into your program
+        schedule.
       </Text>
     </Column>
     <div style={circle} />

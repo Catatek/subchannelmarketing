@@ -103,17 +103,19 @@ export const Title2 = styled.h2.attrs({
 `;
 
 export const Title3 = styled.h3.attrs({
+  margin: props => props.margin || "0",
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.2em"
 })`
-  font-weight: 400;
+  margin: ${props => props.margin};
+  font-weight: 700;
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
   font-family: "Raleway", sans-serif;
 `;
 
 export const Text = styled.p.attrs({
-  margin: props => props.margin,
+  margin: props => props.margin || "0em",
   padding: props => props.padding,
   width: props => props.width,
   lineheight: props => props.lineheight,
