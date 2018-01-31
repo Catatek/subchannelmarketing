@@ -4,6 +4,7 @@ import Splash from "../../sections/Splash/Splash";
 import About from "../../sections/About/About";
 import LiveBroadcast from "../../sections/LiveBroadcast/LiveBroadcast";
 import AdvancedAnalytics from "../../sections/AdvancedAnalytics/AdvancedAnalytics";
+import Features from "../../sections/Features/Features";
 
 class Index extends Component {
   render() {
@@ -14,6 +15,7 @@ class Index extends Component {
         <About />
         <LiveBroadcast />
         <AdvancedAnalytics />
+        <Features />
       </div>
     );
   }
