@@ -1,25 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Link,
   Route,
-  BrowserHistory,
-} from 'react-router-dom';
-import logo from '../../logo.svg';
-import './App.css';
-import Index from '../Index/Index';
-import LiveBroadcast from '../LiveBroadcast/LiveBroadcast'
+  BrowserHistory
+} from "react-router-dom";
+import Index from "../screens/Index/Index";
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Index} />
-            <Route exact path="/" component={LiveBroadcast} />
-          </Switch>
-        </BrowserRouter>
+      <HashRouter>
+        <Switch>
+          <Route exact path="/" component={Index} />
+        </Switch>
+      </HashRouter>
     );
   }
 }
