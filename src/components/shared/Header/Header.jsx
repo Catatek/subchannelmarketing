@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../../../assets/subchannelLogo.png";
-import { Title2, Title3 } from "../../theme/theme.js";
+import Logo from "../../../assets/subchannelLogoDark.svg";
+import { Title2, Title3, Text, Row } from "../../theme/theme.js";
+import { Link, NavLink } from "react-router-dom";
 
 const user = {
   name: "Will",
@@ -11,7 +12,7 @@ const user = {
 const imgStyle = {
   width: "200px",
   height: "41px",
-  marginLeft: "1.5em"
+  margin: "0 1.5em"
 };
 
 const Wrapper = styled.section`
@@ -28,9 +29,20 @@ const Wrapper = styled.section`
 
 const Header = ({ children, props }) => (
   <Wrapper>
-    <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
+    <nav>
+      <Row alignitems="center">
+        <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
+        <NavLink to="/">
+          <Title3 fontSize=".9em" fontWeight="300">
+            Industries
+          </Title3>
+        </NavLink>
+      </Row>
+    </nav>
     <div style={{ marginRight: "1.5em" }}>
-      <Title3 fontSize="1em">Log In</Title3>
+      <Title3 fontSize="1em" fontWeight="700">
+        Log In
+      </Title3>
     </div>
   </Wrapper>
 );

@@ -23,7 +23,6 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em;
 `;
 
 const Features = () => (
@@ -54,7 +53,7 @@ const Features = () => (
         <Row width="100%" margin="3em 0">
           <div style={circle} />
           <Column width="55%">
-            <Title3>Second Screen Advertising</Title3>
+            <Title3>Second Screen Engagement</Title3>
             <Text margin=".8em 0 0 0">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor.

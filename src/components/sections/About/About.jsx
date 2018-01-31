@@ -24,24 +24,26 @@ const circle = {
 
 const About = () => (
   <Wrapper>
-    <Title2>Broadcast your content on all platforms and devices</Title2>
+    <Title2 fontWeight="600">
+      The Ubiquitous Broadcasting<br /> Solution of the Future...
+    </Title2>
     <Row justifycontent="space-evenly" width="100%" margin="3em 0">
       <Column alignitems="center">
         <div style={circle} />
         <Text width="60%" lineheight="1.6em">
-          Broadcast your content on all platforms and devices
+          Upload and organize content in minutes for 24/7 playback automation.
         </Text>
       </Column>
       <Column alignitems="center">
         <div style={circle} />
         <Text width="60%" lineheight="1.6em">
-          Broadcast your content on all platforms and devices
+          Manage your distribution with easy-to-use web-based applications.
         </Text>
       </Column>
       <Column alignitems="center">
         <div style={circle} />
         <Text width="60%" lineheight="1.6em">
-          Broadcast your content on all platforms and devices
+          Earn and track revenue from Subscribers and Advertisers.
         </Text>
       </Column>
     </Row>

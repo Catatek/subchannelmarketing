@@ -81,18 +81,18 @@ export const Button = styled.button`
   height: 36px;
   width: 120px;
   border-radius: 3px;
-  border: ${props => (props.primary ? 'none' : '1px solid #019095')};
+  border: ${props => (props.primary ? "none" : "1px solid #019095")};
   font-size: 1em;
   font-family: 'Open Sans';
   cursor: pointer;
   outline: none;
-  color: ${props => (props.primary ? '#fff' : '#019095')};
-  background-color: ${props => (props.primary ? '#019095' : 'inherit')};
+  color: ${props => (props.primary ? "#fff" : "#019095")};
+  background-color: ${props => (props.primary ? "#019095" : "inherit")};
   margin: 0.5em 0;
   &:hover {
-    background-color: ${props => (props.primary ? '#01a0a6' : 'inherit')};
-    color: ${props => (props.primary ? '#fff' : '#01b1b7')};
-    border: ${props => (props.primary ? 'none' : '1px solid #01b1b7')};
+    background-color: ${props => (props.primary ? "#01a0a6" : "inherit")};
+    color: ${props => (props.primary ? "#fff" : "#01b1b7")};
+    border: ${props => (props.primary ? "none" : "1px solid #01b1b7")};
     box-shadow: 1px 1px 15px #eee;
   }
 })
@@ -114,9 +114,10 @@ export const Title1 = styled.h1.attrs({
 export const Title2 = styled.h2.attrs({
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.4em",
-  lineheight: props => props.lineheight || "1.4em"
+  lineheight: props => props.lineheight || "1.4em",
+  fontWeight: props => props.fontWeight || "300"
 })`
-  font-weight: 300;
+  font-weight: ${props => props.fontWeight};
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
   font-family: "Montserrat", sans-serif;
@@ -126,13 +127,14 @@ export const Title2 = styled.h2.attrs({
 export const Title3 = styled.h3.attrs({
   margin: props => props.margin || "0",
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "1.2em"
+  fontSize: props => props.fontSize || "1.2em",
+  fontWeight: props => props.fontWeight || "300"
 })`
+  font-weight: ${props => props.fontWeight};
   margin: ${props => props.margin};
-  font-weight: 700;
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const Text = styled.p.attrs({
@@ -157,12 +159,12 @@ export const Text = styled.p.attrs({
 
 export const SmallText = Text.extend.attrs({
   width: props => props.width,
-  lineheight: props => props.lineheight,
+  lineheight: props => props.lineheight
 })`
   width: ${props => props.width};
   line-height: ${props => props.lineheight};
-	font-size: ${props => (props.primary ? '.8em' : '.6em')};
-	color: ${props => (props.primary ? '#019095' : '##989898')};
+	font-size: ${props => (props.primary ? ".8em" : ".6em")};
+	color: ${props => (props.primary ? "#019095" : "##989898")};
 `;
 
 //Special Containers
@@ -171,7 +173,7 @@ export const PlanContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   border: 1px solid #eee;
   width: 275px;
   height: 50%;

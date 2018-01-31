@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../shared/Header/Header";
+import Footer from "../../shared/Footer/Footer";
 import Splash from "../../sections/Splash/Splash";
 import About from "../../sections/About/About";
 import LiveBroadcast from "../../sections/LiveBroadcast/LiveBroadcast";
@@ -22,6 +23,7 @@ class Index extends Component {
         <DragDropAdvertising />
         <Features />
         <Plans />
+        <Footer />
       </div>
     );
   }
