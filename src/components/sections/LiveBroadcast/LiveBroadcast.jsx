@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Row, Column, Title1, Title3, Title2, Text } from "../../theme/theme";
 import React from "react";
+import livebroadcasting from "../../../assets/livebroadcasting-img.png"
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -12,9 +13,9 @@ const Wrapper = styled.section`
 `;
 
 const circle = {
-  width: "275px",
-  height: "275px",
-  borderRadius: "100%",
+  margin: "50px 0 0 0",
+  width: "400px",
+  height: "350px",
   backgroundColor: "#ccc"
 };
 
@@ -29,7 +30,7 @@ const LiveBroadcast = () => (
         program schedule.
       </Text>
     </Column>
-    <div style={circle} />
+    <img src={livebroadcasting} style={circle} />
   </Wrapper>
 );
 
