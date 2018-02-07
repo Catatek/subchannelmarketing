@@ -83,9 +83,10 @@ export const Button = styled.button`
   border-radius: 3px;
   border: ${props => (props.primary ? "none" : "1px solid #019095")};
   font-size: 1em;
-  font-family: 'Open Sans';
+  font-family: 'Raleway';
   cursor: pointer;
   outline: none;
+  z-index: 100000;
   color: ${props => (props.primary ? "#fff" : "#019095")};
   background-color: ${props => (props.primary ? "#019095" : "inherit")};
   margin: 0.5em 0;
