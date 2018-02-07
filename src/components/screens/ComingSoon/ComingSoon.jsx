@@ -13,6 +13,7 @@ const imgStyle = {
 
 const Wrapper = styled.div`
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,10 +33,32 @@ const Tint = styled.div`
 `;
 
 const Information = styled.div`
-  width: 550px;
+  width: 38%;
   text-align: center;
   z-index: 100;
   margin-bottom: 8em;
+  @media (min-width: 1400px) {
+    width: 30%;
+  }
+  @media (max-width: 880px) {
+    width: 90%;
+    margin-bottom: 4em;
+    margin-top: 2.6em;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
+    margin-bottom: 3.5em;
+  }
+  animation: 4s spin 1;
+
+  @keyframes spin {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const Header = styled.div`
@@ -67,6 +90,12 @@ const Input = styled.input`
   z-index: 10000;
 `;
 
+const LogoI = styled.img`
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
 export default function ComingSoon() {
   return (
     <Wrapper>
@@ -75,7 +104,7 @@ export default function ComingSoon() {
         <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
       </Header>
       <Information>
-        <img src={LogoIcon} alt="Subchannel Icon" />
+        <LogoI src={LogoIcon} alt="Subchannel Icon" />
         <Title1>Distribute subscription-based content to any platform.</Title1>
         <Title2 lineheight="1.6em">
           We're coming soon, signup below and we will let you know when we

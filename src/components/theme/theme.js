@@ -96,7 +96,11 @@ export const Button = styled.button`
     border: ${props => (props.primary ? "none" : "1px solid #01b1b7")};
     box-shadow: 1px 1px 15px #eee;
   }
-})
+}
+@media (max-width: 500px) {
+  width: 280px;
+}
+
 `;
 
 // TEXT
@@ -110,6 +114,9 @@ export const Title1 = styled.h1.attrs({
   font-family: "Raleway", sans-serif;
   line-height: 1.4em;
   font-weight: 700;
+  @media (max-width: 500px) {
+    font-size: 1.6em;
+  }
 `;
 
 export const Title2 = styled.h2.attrs({
@@ -123,6 +130,9 @@ export const Title2 = styled.h2.attrs({
   font-size: ${props => props.fontSize};
   font-family: "Montserrat", sans-serif;
   line-height: ${props => props.lineheight};
+  @media (max-width: 500px) {
+    font-size: 1.1em;
+  }
 `;
 
 export const Title3 = styled.h3.attrs({
