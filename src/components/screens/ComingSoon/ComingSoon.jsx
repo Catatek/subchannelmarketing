@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Background from "../../../assets/background.svg";
 import Logo from "../../../assets/subchannelLogoDark.svg";
-import { Title1, Title2, Title3, Button } from "../../theme/theme.js";
+import LogoIcon from "../../../assets/subchannelIcon.svg";
+import { Title1, Title2, Title3, Button, Text } from "../../theme/theme.js";
 
 const imgStyle = {
   width: "265px",
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Tint = styled.div`
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,7 +35,7 @@ const Information = styled.div`
   width: 550px;
   text-align: center;
   z-index: 100;
-  margin-bottom: 7em;
+  margin-bottom: 8em;
 `;
 
 const Header = styled.div`
@@ -74,10 +75,11 @@ export default function ComingSoon() {
         <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
       </Header>
       <Information>
+        <img src={LogoIcon} alt="Subchannel Icon" />
         <Title1>Distribute subscription-based content to any platform.</Title1>
         <Title2 lineheight="1.6em">
-          We give you the tools to share your content, so you can earn revenue
-          and keep creating
+          We're coming soon, signup below and we will let you know when we
+          launch!
         </Title2>
         <Input placeholder="Signup with your email address" />
         <Button primary>Join</Button>

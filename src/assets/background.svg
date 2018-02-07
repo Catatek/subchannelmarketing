@@ -9,7 +9,7 @@
         }
 
         .balloon2 {
-            animation: 10s downUp infinite;
+            animation: 9s downUp infinite;
         }
 
         .balloon1 {
