@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Background from "../../../assets/background.svg";
 import Logo from "../../../assets/subchannelLogoDark.svg";
 import LogoIcon from "../../../assets/subchannelIcon.svg";
+import SubscriberForm from "../../shared/SubscriberForm";
 import { Title1, Title2, Title3, Button, Text } from "../../theme/theme.js";
 
 const imgStyle = {
@@ -70,26 +71,6 @@ const Header = styled.div`
   top: 0;
 `;
 
-const Input = styled.input`
-  margin: 0.5em;
-  padding: 0.2em;
-  height: 36px;
-  width: 250px;
-  background-color: #f6f6f6;
-  color: #656565;
-  cursor: text;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9em;
-  padding: 0em 1em;
-  outline: none;
-  &:focus {
-    border: 1px solid ${props => props.theme.primary};
-  }
-  z-index: 10000;
-`;
-
 const LogoI = styled.img`
   @media (max-width: 700px) {
     display: none;
@@ -110,8 +91,9 @@ export default function ComingSoon() {
           We're coming soon, signup below and we will let you know when we
           launch!
         </Title2>
-        <Input placeholder="Signup with your email address" />
-        <Button primary>Join</Button>
+        <SubscriberForm />
+        {/* <Input placeholder="Signup with your email address" />
+        <Button primary>Join</Button> */}
       </Information>
     </Wrapper>
   );
