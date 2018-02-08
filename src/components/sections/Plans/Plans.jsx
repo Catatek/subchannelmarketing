@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import StarterPlan from "../../shared/StarterPlan/StarterPlan";
 import ProPlan from "../../shared/ProPlan/ProPlan";
 import ElitePlan from "../../shared/ElitePlan/ElitePlan";
@@ -15,11 +15,11 @@ const Wrapper = styled.section`
 `;
 
 const Plans = () => (
-<Wrapper>
-<StarterPlan />
-<ProPlan />
-<ElitePlan />
-</Wrapper>
+  <Wrapper>
+    <StarterPlan />
+    <ProPlan />
+    <ElitePlan />
+  </Wrapper>
 );
 
 export default Plans;

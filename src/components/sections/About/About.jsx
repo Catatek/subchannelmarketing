@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Title2, Title3, Row, Column, Text } from "../../theme/theme.js";
+import { Title2, Row, Column, Text } from "../../theme/theme.js";
 
 const Wrapper = styled.section`
   height: 85vh;

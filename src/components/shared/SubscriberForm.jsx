@@ -36,18 +36,18 @@ class SubscriberForm extends Component {
   render() {
     return (
       <Form
-        action="https://getsubchannel.us17.list-manage.com/subscribe/post?u=42464a9a2744a5c519c556d4b&amp;id=652381a754"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate
+        action="http://formspree.io/william@getsubchannel.com"
+        method="POST"
       >
+        <Input
+          type="hidden"
+          name="_next"
+          value="http://getsubchannel.com/#/thanks"
+        />
+        <Input type="hidden" name="_cc" value="j@getsubchannel.com" />
         <Input
           type="email"
           name="EMAIL"
-          id="mce-EMAIL"
           placeholder="Signup using your email address"
           value={this.state.emailValue}
           onChange={e => {

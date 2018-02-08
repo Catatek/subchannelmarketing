@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import { Row, Column, Title1, Title3, Title2, Text } from "../../theme/theme";
+import styled from "styled-components";
+import { Column, Title1, Text } from "../../theme/theme";
 import React from "react";
-import livebroadcasting from "../../../assets/livebroadcasting-img.png"
+import livebroadcasting from "../../../assets/livebroadcasting-img.png";
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -25,13 +25,20 @@ const LiveBroadcast = () => (
       <Title1>LIVE BROADCASTING</Title1>
       <Text lineheight="1.8em">
         Broadcast your content in real-time. We provide all the features you
-        need for 24/7 playback automation of your content. Utilizing our 
-          <b> <u>Timeline</u> </b>
-         will allow the ability to drag and drop shows and ads into your program
+        need for 24/7 playback automation of your content. Utilizing our
+        <b>
+          {" "}
+          <u>Timeline</u>{" "}
+        </b>
+        will allow the ability to drag and drop shows and ads into your program
         schedule.
       </Text>
     </Column>
-    <img src={livebroadcasting} style={circle} />
+    <img
+      src={livebroadcasting}
+      style={circle}
+      alt="Subchannel Live Broadcasting Illustration"
+    />
   </Wrapper>
 );
 

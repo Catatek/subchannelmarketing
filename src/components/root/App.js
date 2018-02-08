@@ -1,22 +1,20 @@
 import React, { Component } from "react";
-import {
-  HashRouter,
-  Switch,
-  Link,
-  Route,
-  BrowserHistory
-} from "react-router-dom";
-import Index from "../screens/Index/Index";
+import { HashRouter, Switch, Route } from "react-router-dom";
+// import Index from "../screens/Index/Index";
 import ComingSoon from "../screens/ComingSoon/ComingSoon";
+import ThankYou from "../screens/ThankYou/ThankYou";
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
-        <Switch>
-          <Route exact path="/" component={ComingSoon} />
-        </Switch>
-      </HashRouter>
+      <div className="App">
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" component={ComingSoon} />
+            <Route exact path="/thanks" component={ThankYou} />
+          </Switch>
+        </HashRouter>
+      </div>
     );
   }
 }

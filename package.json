@@ -2,6 +2,7 @@
   "name": "subchannelmarketing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://getsubchannel.com",
   "dependencies": {
     "install": "^0.10.4",
     "react": "^16.2.0",

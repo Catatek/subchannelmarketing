@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import {
-  Row,
   SmallText,
-  Text,
   Title2,
   Title3,
   PlanContainer,

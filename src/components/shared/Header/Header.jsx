@@ -1,21 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../../../assets/subchannelLogoDark.svg";
-import { Title2, Title3, Text, Row } from "../../theme/theme.js";
-import { Link, NavLink } from "react-router-dom";
+import { Title3, Row } from "../../theme/theme.js";
+import { NavLink } from "react-router-dom";
 
-const user = {
-  name: "Will",
-  avatar: ""
-};
+// const user = {
+//   name: "Will",
+//   avatar: ""
+// };
 
 const Img = styled.img`
   width: 200px;
   height: 41px;
   margin: 0 1.5em;
 `;
-
-const imgStyle = {};
 
 const Wrapper = styled.section`
   height: 75px;

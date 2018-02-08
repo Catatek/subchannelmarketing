@@ -1,6 +1,6 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import { Row, Column, Title1, Text } from "../../theme/theme";
+import styled from "styled-components";
+import { Column, Title1, Text } from "../../theme/theme";
 import advancedanalytics from "../../../assets/advancedanalytics-img.png";
 
 const Wrapper = styled.section`
@@ -21,7 +21,11 @@ const circle = {
 
 const AdvancedAnalytics = () => (
   <Wrapper>
-    <img src={advancedanalytics} style={circle} />
+    <img
+      src={advancedanalytics}
+      style={circle}
+      alt="Subchannel Analytics Illustration"
+    />
     <Column width="40%" margin="50px 0 0 0">
       <Title1>ADVANCED ANALYTICS</Title1>
       <Text lineheight="1.8em">

@@ -20,10 +20,18 @@ injectGlobal`
  }
 `;
 
-ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
-  document.getElementById("root")
-);
+const render = () => {
+  ReactDOM.render(
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>,
+    document.getElementById("root")
+  );
+};
+
+render();
+
+if (module.hot) {
+  module.hot.accept("./components/root/App", render);
+}
 registerServiceWorker();

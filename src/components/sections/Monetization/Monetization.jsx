@@ -1,6 +1,6 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import { Row, Column, Title1, Text } from "../../theme/theme";
+import styled from "styled-components";
+import { Column, Title1, Text } from "../../theme/theme";
 import monetization from "../../../assets/monetization-img.png";
 
 const Wrapper = styled.section`
@@ -30,7 +30,11 @@ const Monetization = () => (
         creating content that viewers want to see.
       </Text>
     </Column>
-    <img src={monetization} style={circle} />
+    <img
+      src={monetization}
+      style={circle}
+      alt="Subchannel Monetization Illustration"
+    />
   </Wrapper>
 );
 

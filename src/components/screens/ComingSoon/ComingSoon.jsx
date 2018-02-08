@@ -4,7 +4,7 @@ import Background from "../../../assets/background.svg";
 import Logo from "../../../assets/subchannelLogoDark.svg";
 import LogoIcon from "../../../assets/subchannelIcon.svg";
 import SubscriberForm from "../../shared/SubscriberForm";
-import { Title1, Title2, Title3, Button, Text } from "../../theme/theme.js";
+import { Title1, Title2 } from "../../theme/theme.js";
 
 const imgStyle = {
   width: "265px",
@@ -34,10 +34,10 @@ const Tint = styled.div`
 `;
 
 const Information = styled.div`
-  width: 38%;
+  width: 40%;
   text-align: center;
   z-index: 100;
-  margin-bottom: 8em;
+  margin-bottom: 2em;
   @media (min-width: 1400px) {
     width: 30%;
   }
@@ -92,8 +92,6 @@ export default function ComingSoon() {
           launch!
         </Title2>
         <SubscriberForm />
-        {/* <Input placeholder="Signup with your email address" />
-        <Button primary>Join</Button> */}
       </Information>
     </Wrapper>
   );
