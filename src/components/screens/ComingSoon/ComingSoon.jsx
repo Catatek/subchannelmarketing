@@ -34,10 +34,10 @@ const Tint = styled.div`
 `;
 
 const Information = styled.div`
-  width: 40%;
+  width: 45%;
   text-align: center;
   z-index: 100;
-  margin-bottom: 2em;
+  margin-bottom: 8em;
   @media (min-width: 1400px) {
     width: 30%;
   }
