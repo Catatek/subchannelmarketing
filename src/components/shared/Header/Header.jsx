@@ -19,12 +19,10 @@ const Wrapper = styled.section`
   height: 75px;
   width: 100%;
   background-color: #fff;
-  box-shadow: 1px 1px 15px #ccc;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
+  position: static;
 `;
 
 export default function Header({ children, ...props }) {
@@ -41,8 +39,8 @@ export default function Header({ children, ...props }) {
         </Row>
       </nav>
       <div style={{ marginRight: "1.5em" }}>
-        <Title3 fontSize="1em" fontWeight="700">
-          Log In
+        <Title3 fontSize="1em" fontWeight="300">
+          SIGN IN
         </Title3>
       </div>
     </Wrapper>

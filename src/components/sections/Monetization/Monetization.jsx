@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Title1, Text } from "../../theme/theme";
-import monetization from "../../../assets/monetization-img.png";
+import Monetize from "../../../assets/monetization.svg";
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -9,14 +9,12 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(#ffffff, #f7f7f7);
 `;
 
-const circle = {
-  margin: "50px 0 0 0",
+const ImgStyle = {
   width: "400px",
-  height: "350px",
-  backgroundColor: "#ccc"
+  height: "331px"
 };
 
 const Monetization = () => (
@@ -31,8 +29,8 @@ const Monetization = () => (
       </Text>
     </Column>
     <img
-      src={monetization}
-      style={circle}
+      src={Monetize}
+      style={ImgStyle}
       alt="Subchannel Monetization Illustration"
     />
   </Wrapper>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Title1, Text } from "../../theme/theme";
-import advancedanalytics from "../../../assets/advancedanalytics-img.png";
+import Analytics from "../../../assets/advancedAnalytics.svg";
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -9,21 +9,19 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fcfbf5;
+  background: linear-gradient(#ffffff, #f7f7f7);
 `;
 
-const circle = {
-  margin: "25px 0 0 0",
+const ImgStyle = {
   width: "400px",
-  height: "350px",
-  backgroundColor: "#ccc"
+  height: "434px"
 };
 
 const AdvancedAnalytics = () => (
   <Wrapper>
     <img
-      src={advancedanalytics}
-      style={circle}
+      src={Analytics}
+      style={ImgStyle}
       alt="Subchannel Analytics Illustration"
     />
     <Column width="40%" margin="50px 0 0 0">

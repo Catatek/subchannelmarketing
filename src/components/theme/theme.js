@@ -56,17 +56,17 @@ export const Column = styled.div.attrs({
 // BUTTONS
 
 export const SignupButton = styled.button`
-  height: 50px;
+  height: 55px;
   width: 250px;
   letter-spacing: 0.1em;
-  border-radius: 15px;
+  border-radius: 30px;
   border: ${props => (props.primary ? "none" : "1px solid #EFCC29")};
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
-  color: ${props => (props.primary ? "#4d4d4d" : "#EFCC29")};
-  background-color: ${props => (props.primary ? "#EFCC29" : "inherit")};
+  color: ${props => (props.primary ? "#fff" : "#EFCC29")};
+  background-color: ${props => (props.primary ? "#DD694A" : "inherit")};
   margin: 0.5em 0;
   &:hover {
     background-color: ${props => (props.primary ? "#01a0a6" : "inherit")};
@@ -82,7 +82,7 @@ export const Button = styled.button`
   border-radius: 3px;
   border: ${props => (props.primary ? "none" : "1px solid #019095")};
   font-size: 1em;
-  font-family: 'Raleway';
+  font-family: 'Monstserrat', sans-serif;
   cursor: pointer;
   outline: none;
   z-index: 100000;
@@ -106,13 +106,15 @@ export const Button = styled.button`
 
 export const Title1 = styled.h1.attrs({
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "2.2em"
+  fontSize: props => props.fontSize || "2.2em",
+  margin: props => props.margin || ".5em 0"
 })`
+  margin: ${props => props.margin};
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
   font-family: "Raleway", sans-serif;
   line-height: 1.4em;
-  font-weight: 700;
+  font-weight: 600;
   @media (max-width: 500px) {
     font-size: 1.6em;
   }
@@ -122,8 +124,10 @@ export const Title2 = styled.h2.attrs({
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.4em",
   lineheight: props => props.lineheight || "1.4em",
-  fontWeight: props => props.fontWeight || "300"
+  fontWeight: props => props.fontWeight || "300",
+  margin: props => props.margin || ".5em 0"
 })`
+  margin: ${props => props.margin};
   font-weight: ${props => props.fontWeight};
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
@@ -138,7 +142,7 @@ export const Title3 = styled.h3.attrs({
   margin: props => props.margin || "0",
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.2em",
-  fontWeight: props => props.fontWeight || "300"
+  fontWeight: props => props.fontWeight || "600"
 })`
   font-weight: ${props => props.fontWeight};
   margin: ${props => props.margin};
@@ -152,7 +156,7 @@ export const Text = styled.p.attrs({
   padding: props => props.padding,
   width: props => props.width,
   lineheight: props => props.lineheight,
-  color: props => props.color || "#4d4d4d",
+  color: props => props.color || "#474645",
   textalign: props => props.textalign,
   fontsize: props => props.fontsize || "1.2em"
 })`

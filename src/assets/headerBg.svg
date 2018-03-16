@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1312px" height="369px" viewBox="0 0 1312 369" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>HeaderImage</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HeaderImage">
+            <rect id="Rectangle-path" fill="#168787" fill-rule="nonzero" x="0.8" y="339.04" width="1310.93" height="29.58" rx="14.79"></rect>
+            <rect id="Rectangle-path" fill="#919191" fill-rule="nonzero" x="183.96" y="271.18" width="106.78" height="59.41"></rect>
+            <rect id="Rectangle-path" fill="#A0A0A0" fill-rule="nonzero" x="152.65" y="330.59" width="169.4" height="13.25" rx="6.62"></rect>
+            <path d="M34.5,0.63 L440.2,0.63 C441.173345,0.63 442.106823,1.0166596 442.795082,1.70491811 C443.48334,2.39317662 443.87,3.32665548 443.87,4.3 L443.87,230.22 L30.87,230.22 L30.87,4.29 C30.8753508,2.28253128 32.4926433,0.651872715 34.5,0.63 Z" id="Shape" fill="#666666" fill-rule="nonzero"></path>
+            <path d="M49.9,230.23 L424.7,230.23 C429.770939,230.23 434.634186,232.244423 438.219882,235.830118 C441.805577,239.415814 443.82,244.279061 443.82,249.35 L443.82,277.61 L30.82,277.61 L30.82,249.35 C30.8199769,238.805917 39.3559399,230.252059 49.9,230.23 Z" id="Shape" fill="#A0A0A0" fill-rule="nonzero" transform="translate(237.320000, 253.920000) rotate(180.000000) translate(-237.320000, -253.920000) "></path>
+            <rect id="Rectangle-path" fill="#AED1CF" fill-rule="nonzero" x="42.85" y="11.87" width="388.99" height="206.01"></rect>
+            <circle id="Oval" fill="#232323" fill-rule="nonzero" cx="237.35" cy="253.91" r="10.84"></circle>
+            <circle id="Oval" fill="#168787" fill-rule="nonzero" cx="918.02" cy="74.19" r="59.5"></circle>
+            <circle id="Oval" fill="#AED1CF" fill-rule="nonzero" cx="918.02" cy="74.19" r="50.18"></circle>
+            <circle id="Oval" fill="#168787" fill-rule="nonzero" cx="918.02" cy="74.19" r="5.4"></circle>
+            <path d="M944.1,99.92 L916.3,76.54 C915.24899,75.6404708 915.115354,74.0635678 916,73 C916.898336,71.9330088 918.49076,71.7943426 919.56,72.69 L947.35,96 C948.416991,96.8983356 948.555657,98.4907596 947.66,99.56 C947.235675,100.079856 946.622205,100.409843 945.954564,100.477357 C945.286924,100.544871 944.61981,100.344382 944.1,99.92 Z" id="Shape" fill="#168787" fill-rule="nonzero"></path>
+            <path d="M920.57,45.49 L920.57,73.9 C920.57,75.2972804 919.43728,76.43 918.04,76.43 C916.64272,76.43 915.51,75.2972804 915.51,73.9 L915.51,45.49 C915.531435,44.123788 916.633788,43.0214347 918,43 C918.671022,42.9893071 919.3188,43.245658 919.800787,43.7126415 C920.282774,44.179625 920.559475,44.8189752 920.57,45.49 Z" id="Shape" fill="#168787" fill-rule="nonzero"></path>
+            <path d="M918.01,74.19 L899.5,99.56" id="Shape" stroke="#DD694A"></path>
+            <path d="M1036.17,1.81 L1256.63,1.81 C1261.11455,1.81 1264.75,5.44544783 1264.75,9.93 L1264.75,156.2 C1264.75,158.519596 1262.8696,160.4 1260.55,160.4 L1032.25,160.4 C1031.13609,160.4 1030.0678,159.957501 1029.28015,159.169848 C1028.4925,158.382196 1028.05,157.313909 1028.05,156.2 L1028.05,9.93 C1028.05,7.7764421 1028.9055,5.71108833 1030.42829,4.18829294 C1031.95109,2.66549754 1034.01644,1.81 1036.17,1.81 Z" id="Shape" fill="#FCF5E8" fill-rule="nonzero"></path>
+            <path d="M1034.81,1.81 L1258,1.81 C1259.79286,1.81 1261.5123,2.52221224 1262.78004,3.78995816 C1264.04779,5.05770408 1264.76,6.77713653 1264.76,8.57 L1264.76,35 L1028.05,35 L1028.05,8.57 C1028.05,4.83655509 1031.07656,1.81 1034.81,1.81 Z" id="Shape" fill="#DD694A" fill-rule="nonzero"></path>
+            <text id="M" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1066" y="63.54">M</tspan>
+            </text>
+            <text id="T" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1104.82" y="63.54">T</tspan>
+            </text>
+            <text id="W" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1133.56" y="63.54">W</tspan>
+            </text>
+            <text id="T" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1175.86" y="63.54">T</tspan>
+            </text>
+            <text id="F" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1207.39" y="63.54">F</tspan>
+            </text>
+            <text id="S" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1236.25" y="63.54">S</tspan>
+            </text>
+            <text id="S" fill="#474645" font-family="Montserrat-Bold, Montserrat" font-size="28.6" font-weight="bold">
+                <tspan x="1036.98" y="63.54">S</tspan>
+            </text>
+            <text id="1" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1042.21" y="83.99">1</tspan>
+            </text>
+            <text id="2" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1074.42" y="83.99">2</tspan>
+            </text>
+            <text id="3" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1108.68" y="83.99">3</tspan>
+            </text>
+            <text id="4" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1142.12" y="83.99">4</tspan>
+            </text>
+            <text id="5" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1176.05" y="83.99">5</tspan>
+            </text>
+            <text id="6" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1209.59" y="83.99">6</tspan>
+            </text>
+            <text id="7" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1243.81" y="83.99">7</tspan>
+            </text>
+            <text id="8" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1040.31" y="106.16">8</tspan>
+            </text>
+            <text id="9" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1074.24" y="106.16">9</tspan>
+            </text>
+            <text id="10" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1104.2" y="106.16">10</tspan>
+            </text>
+            <text id="11" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1140.46" y="106.16">11</tspan>
+            </text>
+            <text id="12" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1172.67" y="106.16">12</tspan>
+            </text>
+            <text id="13" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1206.92" y="106.16">13</tspan>
+            </text>
+            <text id="14" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1240.37" y="106.16">14</tspan>
+            </text>
+            <text id="15" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1037.45" y="126.73">15</tspan>
+            </text>
+            <text id="16" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1070.99" y="126.73">16</tspan>
+            </text>
+            <text id="17" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1105.21" y="126.73">17</tspan>
+            </text>
+            <text id="18" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1138.56" y="126.73">18</tspan>
+            </text>
+            <text id="19" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1172.49" y="126.73">19</tspan>
+            </text>
+            <text id="20" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1204.08" y="126.73">20</tspan>
+            </text>
+            <text id="21" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1240.34" y="126.73">21</tspan>
+            </text>
+            <text id="22" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1035.7" y="150.18">22</tspan>
+            </text>
+            <text id="23" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1069.96" y="150.18">23</tspan>
+            </text>
+            <text id="24" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1103.41" y="150.18">24</tspan>
+            </text>
+            <text id="25" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1137.33" y="150.18">25</tspan>
+            </text>
+            <text id="26" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1170.87" y="150.18">26</tspan>
+            </text>
+            <text id="27" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1205.09" y="150.18">27</tspan>
+            </text>
+            <text id="28" fill="#474645" font-family="Montserrat-Regular, Montserrat" font-size="15.48" font-weight="normal">
+                <tspan x="1238.44" y="150.18">28</tspan>
+            </text>
+            <rect id="Rectangle-path" fill="#FAD589" fill-rule="nonzero" x="76.34" y="245.01" width="66.39" height="66.39" rx="2.31"></rect>
+            <path d="M85.82,258.64 L133.21,258.64" id="Shape" stroke="#FCF7E6" stroke-width="1.78"></path>
+            <path d="M85.82,266.93 L133.21,266.93" id="Shape" stroke="#FCF7E6" stroke-width="1.78"></path>
+            <path d="M85.82,275.22 L133.21,275.22" id="Shape" stroke="#FCF7E6" stroke-width="1.78"></path>
+            <path d="M102.19,297.94 L131.63,288.91" id="Shape" stroke="#FCF7E6" stroke-width="1.78"></path>
+            <path d="M103.64,302.67 L133.09,293.64" id="Shape" stroke="#FCF7E6" stroke-width="1.78"></path>
+            <rect id="Rectangle-path" fill="#F4BC4A" fill-rule="nonzero" x="472.34" y="230.49" width="84" height="113.46" rx="8.32"></rect>
+            <circle id="Oval" stroke="#F4BC4A" stroke-width="12" cx="556.34" cy="285.22" r="30.82"></circle>
+            <path d="M489.84,230.49 L503.34,230.49 L503.34,247.21 C503.34,250.937922 500.317922,253.96 496.59,253.96 C492.862078,253.96 489.84,250.937922 489.84,247.21 L489.84,230.49 Z" id="Shape" fill="#FAD589" fill-rule="nonzero"></path>
+            <path d="M515.84,230.49 L529.34,230.49 L529.34,256 C529.34,259.727922 526.317922,262.75 522.59,262.75 C518.862078,262.75 515.84,259.727922 515.84,256 L515.84,230.49 Z" id="Shape" fill="#FAD589" fill-rule="nonzero"></path>
+            <path d="M502.34,230.49 L515.84,230.49 L515.84,273.63 C515.84,277.357922 512.817922,280.38 509.09,280.38 C505.362078,280.38 502.34,277.357922 502.34,273.63 L502.34,230.49 Z" id="Shape" fill="#FAD589" fill-rule="nonzero"></path>
+            <rect id="Rectangle-path" fill="#F4BC4A" fill-rule="nonzero" x="1057.1" y="313.83" width="217" height="30.07" rx="3.97"></rect>
+            <rect id="Rectangle-path" fill="#AED1CF" fill-rule="nonzero" x="1073.19" y="294.19" width="184.83" height="19.64" rx="2.52"></rect>
+            <rect id="Rectangle-path" fill="#DD694A" fill-rule="nonzero" x="1086.85" y="270.77" width="157.5" height="23.43" rx="2.81"></rect>
+            <rect id="Rectangle-path" fill="#AED1CF" fill-rule="nonzero" x="1109.94" y="211" width="111.32" height="59.76" rx="11.4"></rect>
+            <circle id="Oval" fill="#37A09D" fill-rule="nonzero" cx="1165.6" cy="241.8" r="24.52"></circle>
+            <circle id="Oval" fill="#168787" fill-rule="nonzero" cx="1165.6" cy="241.8" r="18.89"></circle>
+            <rect id="Rectangle-path" fill="#CFE5E3" fill-rule="nonzero" x="1190.13" y="217.28" width="17.22" height="10.7" rx="0.94"></rect>
+            <path d="M1128.84,203.31 L1136.59,203.31 C1139.06976,203.31 1141.08,205.320241 1141.08,207.8 L1141.08,211 L1124.35,211 L1124.35,207.8 C1124.35,205.320241 1126.36024,203.31 1128.84,203.31 Z" id="Shape" fill="#AED1CF" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#CFE5E3" fill-rule="nonzero" cx="1212.69" cy="219.61" r="2.33"></circle>
+            <path d="M781.77,233.17 C779.942462,233.176919 778.187044,232.457486 776.89,231.17 L745.46,199.74 C742.859223,197.026027 742.904958,192.730913 745.562935,190.072935 C748.220913,187.414958 752.516027,187.369223 755.23,189.97 L786.66,221.4 C788.631105,223.376027 789.219914,226.343832 788.152495,228.922699 C787.085076,231.501566 784.571042,233.185073 781.78,233.19 L781.77,233.17 Z" id="Shape" fill="#168787" fill-rule="nonzero"></path>
+            <path d="M749.8,202 L652.14,202 C648.323713,202 645.230001,198.906287 645.230001,195.09 C645.230001,191.273713 648.323713,188.18 652.14,188.18 L749.8,188.18 C753.616288,188.18 756.71,191.273712 756.71,195.09 C756.71,198.906288 753.616288,202 749.8,202 Z" id="Shape" fill="#168787" fill-rule="nonzero"></path>
+            <rect id="Rectangle-path" fill="#AED1CF" fill-rule="nonzero" x="627.66" y="220.6" width="206" height="123.56" rx="18.27"></rect>
+            <path d="M870,322.89 L826.79,308.14 L826.79,256.63 L870,241.88 C871.916506,241.224179 874.031782,241.534633 875.679016,242.713497 C877.326249,243.89236 878.302493,245.794391 878.3,247.82 L878.3,317 C878.286414,319.016778 877.303518,320.903899 875.658754,322.071088 C874.013989,323.238276 871.908178,323.543021 870,322.89 Z" id="Shape" fill="#AED1CF" fill-rule="nonzero"></path>
+            <path d="M906.33,295.9 C905.801298,295.897922 905.312735,295.617662 905.044043,295.162321 C904.775352,294.706981 904.766217,294.143815 905.02,293.68 C905.81,292.25 924.59,258.68 949.65,253.79 C959.19,251.94 968.37,254.55 976.94,261.54 C977.552583,262.072163 977.630904,262.994995 977.116767,263.622783 C976.60263,264.250572 975.682464,264.355677 975.04,263.86 C967.19,257.46 958.84,255.06 950.21,256.73 C926.51,261.32 907.82,294.79 907.63,295.13 C907.367011,295.602106 906.870401,295.896253 906.33,295.9 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M907.77,271.41 C913.15,272.68 916.63,277.41 915.55,281.99 C914.47,286.57 909.24,289.25 903.86,287.99 C899.44,286.99 891.42,279.13 888.73,276.4 C888.523634,276.197391 888.437608,275.901972 888.502936,275.620246 C888.568264,275.33852 888.775525,275.11111 889.05,275.02 C892.69,273.77 903.35,270.36 907.77,271.41 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M933.09,246.44 C938.47,247.71 941.95,252.44 940.87,257.02 C939.79,261.6 934.56,264.28 929.18,263.02 C924.76,262.02 916.74,254.16 914.05,251.43 C913.843634,251.227391 913.757608,250.931972 913.822936,250.650246 C913.888264,250.36852 914.095525,250.14111 914.37,250.05 C918,248.8 928.67,245.39 933.09,246.44 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1055.48,229.18 C1050.03,230.1 1044.99,227.08 1044.2,222.45 C1043.41,217.82 1047.2,213.31 1052.65,212.39 C1057.13,211.63 1067.55,215.73 1071.1,217.2 C1071.36471,217.309811 1071.55405,217.548415 1071.60083,217.831157 C1071.64762,218.113899 1071.54523,218.400773 1071.33,218.59 C1068.46,221.14 1060,228.42 1055.48,229.18 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1048.44,255.61 C1044.44,251.81 1043.81,245.96 1047.05,242.55 C1050.29,239.14 1056.16,239.46 1060.17,243.26 C1063.47,246.39 1066.45,257.18 1067.41,260.9 C1067.47694,261.180505 1067.39349,261.475654 1067.18957,261.679571 C1066.98565,261.883489 1066.69051,261.966944 1066.41,261.9 C1062.66,261.16 1051.73,258.74 1048.44,255.61 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1075.82,244.73 C1070.33,245.34 1065.46,242.05 1064.94,237.38 C1064.42,232.71 1068.44,228.38 1073.94,227.81 C1078.46,227.31 1088.63,231.97 1092.09,233.64 C1092.34897,233.762921 1092.52617,234.01077 1092.55872,234.295575 C1092.59127,234.580379 1092.47455,234.861819 1092.25,235.04 C1089.23,237.43 1080.34,244.23 1075.82,244.73 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1060.29,193.42 C1059,198.79 1054.29,202.25 1049.67,201.15 C1045.05,200.05 1042.44,194.8 1043.73,189.43 C1044.79,185.01 1052.64,177.04 1055.39,174.35 C1055.5943,174.148885 1055.88793,174.067437 1056.16664,174.134572 C1056.44535,174.201707 1056.66968,174.407917 1056.76,174.68 C1058,178.32 1061.35,189 1060.29,193.42 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1023.61,248.29 C1018.09,248.55 1013.44,244.96 1013.21,240.29 C1012.98,235.62 1017.27,231.57 1022.79,231.29 C1027.33,231.07 1037.19,236.37 1040.54,238.29 C1040.79174,238.428955 1040.95362,238.688306 1040.96788,238.975495 C1040.98214,239.262685 1040.84674,239.536794 1040.61,239.7 C1037.46,241.86 1028.15,248.08 1023.61,248.29 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M965.88,208.61 C971.39,208.28 976.09,211.82 976.37,216.51 C976.65,221.2 972.37,225.28 966.9,225.61 C962.36,225.88 952.44,220.7 949.07,218.85 C948.817043,218.712897 948.653136,218.454568 948.636838,218.167307 C948.620539,217.880046 948.754175,217.604836 948.99,217.44 C952.11,215.21 961.34,208.88 965.88,208.61 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M969.8,192.27 C971.02,197.66 968.3,202.87 963.71,203.91 C959.12,204.95 954.41,201.43 953.19,196.05 C952.19,191.62 955.68,180.99 956.95,177.36 C957.043455,177.087116 957.271883,176.882319 957.553312,176.819099 C957.834742,176.75588 958.128813,176.843304 958.33,177.05 C961,179.77 968.8,187.84 969.8,192.27 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M989.46,239.06 C993.46,242.84 994.15,248.68 990.93,252.11 C987.71,255.54 981.84,255.26 977.81,251.48 C974.49,248.37 971.44,237.6 970.46,233.89 C970.393056,233.609495 970.476511,233.314346 970.680429,233.110429 C970.884346,232.906511 971.179495,232.823056 971.46,232.89 C975.2,233.59 986.14,235.95 989.46,239.06 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1012.46,236.23 C1014.4,241.4 1012.46,246.93 1008.01,248.59 C1003.56,250.25 998.46,247.4 996.52,242.23 C994.92,237.98 996.94,226.97 997.71,223.23 C997.764891,222.947818 997.961889,222.714132 998.23072,222.612301 C998.499552,222.510471 998.801934,222.554999 999.03,222.73 C1002.09,225 1010.87,232 1012.46,236.23 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M971.14,245.15 C972.55,250.49 970.01,255.79 965.46,256.99 C960.91,258.19 956.08,254.84 954.67,249.5 C953.51,245.11 956.67,234.36 957.78,230.69 C957.863107,230.413035 958.084371,230.199286 958.364041,230.125796 C958.643712,230.052306 958.941472,230.129669 959.15,230.33 C962,233 970,240.76 971.14,245.15 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M996.42,220.14 C994.9,225.45 990.01,228.71 985.49,227.42 C980.97,226.13 978.49,220.78 980.05,215.42 C981.3,211.05 989.48,203.42 992.33,200.84 C992.5429,200.645176 992.841715,200.574924 993.119121,200.654474 C993.396528,200.734024 993.612701,200.951958 993.69,201.23 C994.76,205 997.67,215.77 996.42,220.14 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1038,221.78 C1036.48,227.09 1031.59,230.35 1027.07,229.06 C1022.55,227.77 1020.07,222.42 1021.63,217.06 C1022.88,212.69 1031.06,205.06 1033.91,202.48 C1034.1229,202.285176 1034.42171,202.214924 1034.69912,202.294474 C1034.97653,202.374024 1035.1927,202.591958 1035.27,202.87 C1036.3,206.61 1039.21,217.41 1038,221.78 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M919.91,280 C919.27,274.51 922.55,269.63 927.22,269.09 C931.89,268.55 936.22,272.56 936.83,278.09 C937.35,282.6 932.73,292.8 931.08,296.27 C930.957079,296.528966 930.70923,296.706172 930.424425,296.738721 C930.139621,296.77127 929.858181,296.654554 929.68,296.43 C927.27,293.43 920.43,284.56 919.91,280 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M942.24,260.23 C944.37,255.13 949.61,252.47 953.95,254.29 C958.29,256.11 960.08,261.71 957.95,266.8 C956.2,270.99 947.18,277.62 944.04,279.8 C943.805421,279.966191 943.501548,279.99916 943.236785,279.887145 C942.972022,279.77513 942.784078,279.534084 942.74,279.25 C942.11,275.5 940.49,264.42 942.24,260.23 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M995.47,264.59 C994.704057,264.589264 994.0617,264.011574 993.98,263.25 C990.98,234.54 978.36,218.5 968.34,210.1 C957.47,200.99 947.17,198.62 947.06,198.6 C946.250903,198.420507 945.740508,197.619097 945.92,196.81 C946.099493,196.000903 946.900903,195.490508 947.71,195.67 C948.15,195.77 958.71,198.17 970.14,207.67 C980.64,216.43 993.81,233.12 996.96,262.91 C997.047545,263.732663 996.452494,264.470883 995.63,264.56 L995.47,264.59 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1033.34,263.83 C1032.85556,263.825417 1032.40316,263.587146 1032.12534,263.190261 C1031.84752,262.793375 1031.77849,262.286746 1031.94,261.83 C1036.94,248.58 1044.1,240.83 1053.3,238.83 C1060.3,237.3 1068.53,239.24 1077.09,244.41 C1080.98896,246.766152 1084.62029,249.539102 1087.92,252.68 C1088.50818,253.265422 1088.51042,254.216817 1087.925,254.805 C1087.33958,255.393183 1086.38818,255.395422 1085.8,254.81 C1085.63,254.65 1069.12,238.46 1053.92,241.81 C1045.78,243.59 1039.32,250.69 1034.74,262.92 C1034.5009,263.479045 1033.94797,263.838449 1033.34,263.83 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <path d="M1011.77,264.83 C1011.1322,264.832459 1010.5626,264.431327 1010.35,263.83 C1010.16,263.26 1005.81,249.71 1012.13,238.64 C1015.72,232.36 1022,228.2 1030.79,226.28 C1047.79,222.57 1047.96,210.28 1047.6,206.54 C1046.79,198.36 1040.25,189.43 1031.09,189.27 C1030.26157,189.27 1029.59,188.598427 1029.59,187.77 C1029.59,186.941573 1030.26157,186.27 1031.09,186.27 C1039.7,186.42 1049.32,193.94 1050.54,206.27 C1051.42,215.17 1046.84,225.87 1031.39,229.27 C1023.47,230.99 1017.86,234.66 1014.71,240.17 C1009.04,250.07 1013.12,262.82 1013.17,262.95 C1013.33328,263.411741 1013.26086,263.924117 1012.976,264.322518 C1012.69115,264.720918 1012.22973,264.955164 1011.74,264.95 L1011.77,264.83 Z" id="Shape" fill="#59AAA8" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#666666" fill-rule="nonzero" points="1036.7 343.17 973.44 343.17 966.44 262.33 1043.7 262.33"></polygon>
+            <rect id="Rectangle-path" fill="#666666" fill-rule="nonzero" x="961.7" y="260.85" width="86" height="18.81"></rect>
+            <rect id="Rectangle-path" fill="#168787" fill-rule="nonzero" x="637.77" y="183.73" width="56" height="22.67" rx="11.33"></rect>
+            <rect id="Rectangle-path" fill="#C6E0DE" fill-rule="nonzero" x="652.14" y="258.24" width="101.51" height="64.99" rx="5.12"></rect>
+            <rect id="Rectangle-path" fill="#168787" fill-rule="nonzero" x="658.65" y="263.55" width="88" height="54.38" rx="4.36"></rect>
+            <path d="M658.65,273.62 L658.65,267.72 C658.671024,266.563593 659.150667,265.462924 659.983372,264.660227 C660.816076,263.85753 661.9336,263.418587 663.09,263.44 L742.22,263.44 C743.3764,263.418587 744.493924,263.85753 745.326628,264.660227 C746.159333,265.462924 746.638976,266.563593 746.66,267.72 L746.66,273.62" id="Shape" fill="#37A09D" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#DD694A" fill-rule="nonzero" cx="801.69" cy="243.28" r="7.48"></circle>
+            <rect id="Rectangle-path" fill="#C6E0DE" fill-rule="nonzero" x="652.14" y="244.79" width="101.63" height="7.89" rx="3.94"></rect>
+            <circle id="Oval" fill="#C6E0DE" fill-rule="nonzero" cx="682.74" cy="296.56" r="16.96"></circle>
+            <circle id="Oval" fill="#C6E0DE" fill-rule="nonzero" cx="723.64" cy="296.56" r="16.96"></circle>
+            <circle id="Oval" fill="#168787" fill-rule="nonzero" cx="682.74" cy="296.56" r="5.19"></circle>
+            <circle id="Oval" fill="#168787" fill-rule="nonzero" cx="723.64" cy="296.56" r="5.19"></circle>
+            <path d="M339.94,343.84 C339.94,334.771484 347.291484,327.42 356.36,327.42 L400.19,327.42 C409.258516,327.42 416.61,334.771484 416.61,343.84" id="Shape" fill="#A0A0A0" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

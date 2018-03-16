@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Column, Title1, Text } from "../../theme/theme";
 import React from "react";
-import livebroadcasting from "../../../assets/livebroadcasting-img.png";
+import Live from "../../../assets/broadcastAutomation.svg";
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -9,25 +9,22 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(#ffffff, #f7f7f7);
 `;
 
-const circle = {
-  margin: "50px 0 0 0",
+const ImgStyle = {
   width: "400px",
-  height: "350px",
-  backgroundColor: "#ccc"
+  height: "332px"
 };
 
 const LiveBroadcast = () => (
   <Wrapper>
-    <Column width="40%">
+    <Column width="35%">
       <Title1>LIVE BROADCASTING</Title1>
       <Text lineheight="1.8em">
         Broadcast your content in real-time. We provide all the features you
         need for 24/7 playback automation of your content. Utilizing our
         <b>
-          {" "}
           <u>Timeline</u>{" "}
         </b>
         will allow the ability to drag and drop shows and ads into your program
@@ -35,8 +32,8 @@ const LiveBroadcast = () => (
       </Text>
     </Column>
     <img
-      src={livebroadcasting}
-      style={circle}
+      src={Live}
+      style={ImgStyle}
       alt="Subchannel Live Broadcasting Illustration"
     />
   </Wrapper>

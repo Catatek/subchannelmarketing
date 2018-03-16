@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Title1, Text } from "../../theme/theme";
-//import dragdropadvertising from "../../../assets/dragdropadvertising-img.png";
+import Drag from "../../../assets/dragDropAdvertising.svg";
 
 const Wrapper = styled.section`
   height: 85vh;
@@ -9,19 +9,20 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fcfbf5;
+  background: linear-gradient(#ffffff, #f7f7f7);
 `;
 
-const circle = {
-  margin: "25px 0 0 0",
+const ImgStyle = {
   width: "400px",
-  height: "350px",
-  backgroundColor: "#F6BB51"
+  height: "331px"
 };
-
 const DragDropAdvertising = () => (
   <Wrapper>
-    <div style={circle} />
+    <img
+      src={Drag}
+      style={ImgStyle}
+      alt="Subchannel Drag and Drop Advertising"
+    />
     <Column width="40%">
       <Title1>DRAG & DROP ADVERTISING</Title1>
       <Text lineheight="1.8em">
