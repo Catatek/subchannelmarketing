@@ -14,33 +14,57 @@ const PlanDiv = styled.div`
   align-items: center;
 `;
 
+const StyledButton = styled(Button)`
+  color: #fff;
+  background-color: inherit;
+  border: 1px solid #fff;
+`;
+
 const StarterPlan = () => (
-  <PlanContainer>
+  <PlanContainer backgroundcolor="#168787">
     <PlanDiv>
-      <Title2 primary margin=".5em 0 .2em 0">
+      <Title3 fontSize="1.6em" color="#fff" margin=".5em 0 .2em 0">
         <b>STARTER</b>
-      </Title2>
-      <SmallText margin="0 0 16px 0" width="100%">
+      </Title3>
+      <SmallText color="#fff" margin="0 0 16px 0" width="100%">
         Distribute like a boss
       </SmallText>
-      <Title3 margin=".7em 0 .2em 0">$499/m</Title3>
-      <SmallText margin="0 0 2.5em 0" plans>
-        Billed annually or $799/m
+      <Title3 color="#fff" margin=".7em 0 .2em 0">
+        $49/m
+      </Title3>
+      <SmallText color="#fff" margin="0 0 2.5em 0" plans>
+        + .99 per user
       </SmallText>
     </PlanDiv>
-    <Button>UPGRADE</Button>
+    <StyledButton>START</StyledButton>
     <PlanDiv>
-      <SmallText margin=".6em 0" primary>
+      <SmallText color="#fff" margin=".6em 0">
         + Studio Software
       </SmallText>
-      <SmallText margin=".5em 0">Customer Support</SmallText>
-      <SmallText margin=".5em 0">Meaningful Insights</SmallText>
-      <SmallText margin=".5em 0">Technical Ticketing</SmallText>
-      <SmallText margin=".5em 0">Advertising Management</SmallText>
-      <SmallText margin=".5em 0">Content Distribution Tools</SmallText>
-      <SmallText margin=".5em 0">File Management Tools</SmallText>
-      <SmallText margin=".5em 0">Monetization Options</SmallText>
-      <SmallText margin=".5em 0">Up to 1,000 subscribers</SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Customer Support
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Meaningful Insights
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Technical Ticketing
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Advertising Management
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Content Distribution Tools
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        File Management Tools
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Monetization Options
+      </SmallText>
+      <SmallText color="#fff" margin=".5em 0">
+        Up to 1,000 subscribers
+      </SmallText>
     </PlanDiv>
   </PlanContainer>
 );

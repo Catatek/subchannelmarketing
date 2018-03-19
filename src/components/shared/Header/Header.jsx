@@ -10,8 +10,8 @@ import { NavLink } from "react-router-dom";
 // };
 
 const Img = styled.img`
-  width: 200px;
-  height: 41px;
+  width: 250px;
+  height: 51px;
   margin: 0 1.5em;
 `;
 
@@ -23,6 +23,7 @@ const Wrapper = styled.section`
   align-items: center;
   justify-content: space-between;
   position: static;
+  background: linear-gradient(#ffffff, #fafafa);
 `;
 
 export default function Header({ children, ...props }) {

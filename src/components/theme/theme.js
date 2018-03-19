@@ -183,17 +183,18 @@ export const SmallText = Text.extend.attrs({
 
 //Special Containers
 
-export const PlanContainer = styled.div`
+export const PlanContainer = styled.div.attrs({
+  backgroundcolor: props => props.backgroundcolor
+})`
+  background-color: ${props => props.backgroundcolor};
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e3e3e3;
   border: 1px solid #eee;
   width: 275px;
-  height: 50%;
-  min-height: 300.62px;
+  height: 450px;
   padding: 1em 0;
   text-align: center;
-  border-radius: 3px;
-  box-shadow: 1px 1px 15px #eee;
+  border-radius: 8px;
+  margin: 0 1.5em;
 `;

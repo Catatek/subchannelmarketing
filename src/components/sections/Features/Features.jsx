@@ -31,7 +31,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
-  margin: 6em 0;
+  margin: 3em 0;
 `;
 
 const Features = () => (
