@@ -12,3 +12,13 @@ a {
   list-style: none;
   color: inherit;
 }
+
+.inactiveClass {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.activeClass {
+  color: red;
+  font-weight: 600;
+}

@@ -18,6 +18,12 @@ const StyledButton = styled(Button)`
   color: #fff;
   background-color: inherit;
   border: 1px solid #fff;
+  &:hover {
+    background-color: #fff;
+    color: #efc776;
+    border: none;
+    box-shadow: none;
+  }
 `;
 
 const ElitePlan = () => (
@@ -26,15 +32,17 @@ const ElitePlan = () => (
       <Title3 fontSize="1.6em" color="#fff" margin=".5em 0 .2em 0">
         <b>ELITE</b>
       </Title3>
-      <SmallText color="#fff" margin="0 0 4em 0" width="100%">
+      <SmallText color="#fff" margin="0 0 3.5em 0" width="100%">
         Flexible options for scaling enterprises
       </SmallText>
-      <StyledButton>CALL</StyledButton>
-      <Title3 color="#fff" margin="0 0 1.5em 0" plans>
+      <Title3 color="#fff" margin="0" plans>
+        Call for Pricing
+      </Title3>
+      <Title3 color="#fff" margin="0 0 .8em 0" plans>
         888-888-8888
       </Title3>
+      <StyledButton>CALL</StyledButton>
     </PlanDiv>
-
     <PlanDiv>
       <SmallText color="#fff" margin=".6em 0">
         + Studio Software

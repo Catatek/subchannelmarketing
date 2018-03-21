@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import {
   Title1,
@@ -32,50 +32,80 @@ const IconsImg = styled.img`
   margin-bottom: 0.2em;
 `;
 
-const About = () => (
-  <Wrapper>
-    <Title1 fontWeight="600" margin="1.5em 0">
-      The Ubiquitous Broadcasting Solution of the Future.
-    </Title1>
-    <Row justifycontent="space-evenly" width="100%" margin="5em 0">
-      <Column alignitems="center">
-        <IconsImg src={Upload} alt="Subchannel Upload" />
-        <Title3 margin=".8em 0" fontSize="1.6em">
-          UPLOAD
-        </Title3>
-        <Text width="60%" lineheight="1.6em">
-          Upload and organize content in minutes for 24/7 playback automation.
-        </Text>
-      </Column>
-      <Column alignitems="center">
-        <IconsImg src={Distribute} alt="Subchannel Upload" />
-        <Title3 margin=".8em 0" fontSize="1.6em">
-          DISTRIBUTE
-        </Title3>
-        <Text width="60%" lineheight="1.6em">
-          Upload and organize content in minutes for 24/7 playback automation.
-        </Text>
-      </Column>
-      <Column alignitems="center">
-        <IconsImg src={Monetize} alt="Subchannel Upload" />
-        <Title3 margin=".8em 0" fontSize="1.6em">
-          MONETIZE
-        </Title3>
-        <Text width="60%" lineheight="1.6em">
-          Manage your distribution with easy-to-use web-based applications.
-        </Text>
-      </Column>
-      <Column alignitems="center">
-        <IconsImg src={Analyze} alt="Subchannel Upload" />
-        <Title3 margin=".8em 0" fontSize="1.6em">
-          ANALYZE
-        </Title3>
-        <Text width="60%" lineheight="1.6em">
-          Earn and track revenue from Subscribers and Advertisers.
-        </Text>
-      </Column>
-    </Row>
-  </Wrapper>
-);
+class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeClass: "inactiveClass"
+    };
+  }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
+
+  componentWillUnmount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
+
+  listenScrollEvent = event => {
+    this.setState({
+      activeClass: "activeClass"
+    });
+  };
+
+  render() {
+    return (
+      <Wrapper id="test" onScroll={e => console.log("SCROLL", e)}>
+        <Title1 fontWeight="600" margin="1.5em 0">
+          The Ubiquitous Broadcasting Solution of the Future.
+        </Title1>
+        <Row justifycontent="space-evenly" width="100%" margin="5em 0">
+          <Column alignitems="center">
+            <IconsImg
+              className={this.state.activeClass}
+              src={Upload}
+              alt="Subchannel Upload"
+            />
+            <Title3 margin=".8em 0" fontSize="1.6em">
+              UPLOAD
+            </Title3>
+            <Text width="60%" lineheight="1.6em">
+              Upload and organize content in minutes for 24/7 playback
+              automation.
+            </Text>
+          </Column>
+          <Column alignitems="center">
+            <IconsImg src={Distribute} alt="Subchannel Upload" />
+            <Title3 margin=".8em 0" fontSize="1.6em">
+              DISTRIBUTE
+            </Title3>
+            <Text width="60%" lineheight="1.6em">
+              Upload and organize content in minutes for 24/7 playback
+              automation.
+            </Text>
+          </Column>
+          <Column alignitems="center">
+            <IconsImg src={Monetize} alt="Subchannel Upload" />
+            <Title3 margin=".8em 0" fontSize="1.6em">
+              MONETIZE
+            </Title3>
+            <Text width="60%" lineheight="1.6em">
+              Manage your distribution with easy-to-use web-based applications.
+            </Text>
+          </Column>
+          <Column alignitems="center">
+            <IconsImg src={Analyze} alt="Subchannel Upload" />
+            <Title3 margin=".8em 0" fontSize="1.6em">
+              ANALYZE
+            </Title3>
+            <Text width="60%" lineheight="1.6em">
+              Earn and track revenue from Subscribers and Advertisers.
+            </Text>
+          </Column>
+        </Row>
+      </Wrapper>
+    );
+  }
+}
 export default About;

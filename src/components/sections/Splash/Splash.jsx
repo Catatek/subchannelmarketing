@@ -9,12 +9,14 @@ import {
   SignupButton
 } from "../../theme/theme.js";
 import HeaderBg from "../../../assets/headerBg.svg";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.section`
   height: 95vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  background: linear-gradient(#f4fdfd, #fff);
 `;
 
 const Splash = ({ children }) => (
@@ -34,7 +36,9 @@ const Splash = ({ children }) => (
         We give you the tools to share your content, so you can earn revenue and
         keep creating
       </Title2>
-      <SignupButton primary>START YOUR TRIAL</SignupButton>
+      <SignupButton primary>
+        <Link to="/form">START YOUR TRIAL</Link>
+      </SignupButton>
       <img
         src={HeaderBg}
         style={{
@@ -42,7 +46,7 @@ const Splash = ({ children }) => (
 
           position: "absolute",
           top: "23em",
-          zIndex: "-1"
+          zIndex: "1"
         }}
         alt="Subchannel Splash"
       />

@@ -4,11 +4,6 @@ import Logo from "../../../assets/subchannelLogoDark.svg";
 import { Title3, Row } from "../../theme/theme.js";
 import { NavLink } from "react-router-dom";
 
-// const user = {
-//   name: "Will",
-//   avatar: ""
-// };
-
 const Img = styled.img`
   width: 250px;
   height: 51px;
@@ -23,26 +18,37 @@ const Wrapper = styled.section`
   align-items: center;
   justify-content: space-between;
   position: static;
-  background: linear-gradient(#ffffff, #fafafa);
+  background: linear-gradient(#fff, #f4fdfd);
+`;
+
+const StyledNav = styled.nav`
+  display: flex;
 `;
 
 export default function Header({ children, ...props }) {
   return (
     <Wrapper>
-      <nav>
+      <StyledNav>
         <Row alignitems="center">
           <Img src={Logo} alt="Subchannel Logo" />
           <NavLink to="/">
-            <Title3 fontSize=".9em" fontWeight="300">
+            <Title3 hover fontSize=".9em" fontWeight="300" margin="0 .5em 0 0">
               Industries
             </Title3>
           </NavLink>
+          <NavLink to="/">
+            <Title3 hover fontSize=".9em" fontWeight="300">
+              Media
+            </Title3>
+          </NavLink>
         </Row>
-      </nav>
+      </StyledNav>
       <div style={{ marginRight: "1.5em" }}>
-        <Title3 fontSize="1em" fontWeight="300">
-          SIGN IN
-        </Title3>
+        <NavLink to="/">
+          <Title3 hover fontSize="1em" fontWeight="300">
+            SIGN IN
+          </Title3>
+        </NavLink>
       </div>
     </Wrapper>
   );

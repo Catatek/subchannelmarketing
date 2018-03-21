@@ -18,6 +18,12 @@ const StyledButton = styled(Button)`
   color: #fff;
   background-color: inherit;
   border: 1px solid #fff;
+  &:hover {
+    background-color: #fff;
+    color: #168787;
+    border: none;
+    box-shadow: none;
+  }
 `;
 
 const StarterPlan = () => (

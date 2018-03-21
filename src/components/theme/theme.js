@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 // THEME
 
@@ -65,6 +65,7 @@ export const SignupButton = styled.button`
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
+  z-index: 5;
   color: ${props => (props.primary ? "#fff" : "#EFCC29")};
   background-color: ${props => (props.primary ? "#DD694A" : "inherit")};
   margin: 0.5em 0;
@@ -149,6 +150,13 @@ export const Title3 = styled.h3.attrs({
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
   font-family: "Montserrat", sans-serif;
+  ${props =>
+    props.hover &&
+    css`
+      &:hover {
+        color: #f4bc4a;
+      }
+    `};
 `;
 
 export const Text = styled.p.attrs({

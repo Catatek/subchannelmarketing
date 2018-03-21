@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Index from "../screens/Index/Index";
 import ComingSoon from "../screens/ComingSoon/ComingSoon";
-import ThankYou from "../screens/ThankYou/ThankYou";
+import BetaForm from "../screens/BetaForm";
+import Team from "../screens/Team";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HashRouter>
+        <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Index} />
-            <Route exact path="/thanks" component={ThankYou} />
+            <Route exact path="/form" component={BetaForm} />
+            <Route exact path="/team" component={Team} />
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
   }

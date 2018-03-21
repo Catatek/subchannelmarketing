@@ -18,6 +18,12 @@ const StyledButton = styled(Button)`
   color: #fff;
   background-color: inherit;
   border: 1px solid #fff;
+  &:hover {
+    background-color: #fff;
+    color: #dd694a;
+    border: none;
+    box-shadow: none;
+  }
 `;
 
 const ProPlan = () => (
