@@ -37,15 +37,30 @@ export default function How(props) {
       <Title1>WHAT WE PROVIDE</Title1>
       <Colored bordercolor="#DD694A">
         <Styledh3 fontSize="1.5em">SETUP</Styledh3>
+        <Text margin="0 2em">
+          We help you fill in the blanks to ensure your application is running
+          smoothly
+        </Text>
       </Colored>
       <Colored bordercolor="#168787">
         <Styledh3 fontSize="1.5em">TRAINING</Styledh3>
+        <Text margin="0 2em">
+          We train you on how Subchannel can be utilized in your day-to-day
+          business
+        </Text>
       </Colored>
       <Colored bordercolor="#F4BC4A">
         <Styledh3 fontSize="1.5em">GROWTH</Styledh3>
+        <Text margin="0 2em">
+          We guide you through the process of how to scale and grow your
+          business
+        </Text>
       </Colored>
       <Colored bordercolor="#AED1CF">
         <Styledh3 fontSize="1.5em">SUPPORT</Styledh3>
+        <Text margin="0 2em">
+          We provide technical support and answer any questions you might have
+        </Text>
       </Colored>
     </Wrapper>
   );

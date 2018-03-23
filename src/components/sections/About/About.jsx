@@ -70,7 +70,7 @@ class About extends Component {
             <Title3 margin=".8em 0" fontSize="1.6em">
               UPLOAD
             </Title3>
-            <Text width="60%" lineheight="1.6em">
+            <Text width="65%" lineheight="1.6em">
               Upload and organize content in minutes for 24/7 playback
               automation.
             </Text>
@@ -81,8 +81,7 @@ class About extends Component {
               DISTRIBUTE
             </Title3>
             <Text width="60%" lineheight="1.6em">
-              Upload and organize content in minutes for 24/7 playback
-              automation.
+              Manage your distribution with easy-to-use web-based applications.
             </Text>
           </Column>
           <Column alignitems="center">
@@ -91,7 +90,7 @@ class About extends Component {
               MONETIZE
             </Title3>
             <Text width="60%" lineheight="1.6em">
-              Manage your distribution with easy-to-use web-based applications.
+              Earn and track revenue from Subscribers and Advertisers.
             </Text>
           </Column>
           <Column alignitems="center">
@@ -100,7 +99,8 @@ class About extends Component {
               ANALYZE
             </Title3>
             <Text width="60%" lineheight="1.6em">
-              Earn and track revenue from Subscribers and Advertisers.
+              Advanced analytics that creates new engagement and gain actionable
+              insights.
             </Text>
           </Column>
         </Row>

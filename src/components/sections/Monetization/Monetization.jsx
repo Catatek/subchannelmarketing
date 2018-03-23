@@ -21,7 +21,7 @@ const Monetization = () => (
   <Wrapper>
     <Column width="40%">
       <Title1>MONETIZATION</Title1>
-      <Text lineheight="1.8em">
+      <Text lineheight="2.2em">
         A key component of our application is providing licensees the ability to
         earn money directly from your subscribers. We give you the option to set
         the price and the terms for your channel so that you can continue

@@ -25,7 +25,7 @@ const DragDropAdvertising = () => (
     />
     <Column width="40%">
       <Title1>DRAG & DROP ADVERTISING</Title1>
-      <Text lineheight="1.8em">
+      <Text lineheight="2.2em">
         Utilizing our{" "}
         <b>
           {" "}

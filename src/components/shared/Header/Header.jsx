@@ -31,12 +31,7 @@ export default function Header({ children, ...props }) {
       <StyledNav>
         <Row alignitems="center">
           <Img src={Logo} alt="Subchannel Logo" />
-          <NavLink to="/">
-            <Title3 hover fontSize=".9em" fontWeight="300" margin="0 .5em 0 0">
-              Industries
-            </Title3>
-          </NavLink>
-          <NavLink to="/">
+          <NavLink to="/media">
             <Title3 hover fontSize=".9em" fontWeight="300">
               Media
             </Title3>

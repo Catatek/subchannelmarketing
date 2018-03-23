@@ -24,9 +24,9 @@ const AdvancedAnalytics = () => (
       style={ImgStyle}
       alt="Subchannel Analytics Illustration"
     />
-    <Column width="40%" margin="50px 0 0 0">
+    <Column width="40%" margin="3em 0 0 0">
       <Title1>ADVANCED ANALYTICS</Title1>
-      <Text lineheight="1.8em">
+      <Text lineheight="2.2em">
         Discover and interpret vital viewing data from your subscribers. In a
         time where numbers speak volumes, our analytics will give you the tools
         to close deals with potential and existing advertising partners.

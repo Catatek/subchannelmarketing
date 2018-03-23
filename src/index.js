@@ -22,7 +22,7 @@ injectGlobal`
 
 const render = () => {
   ReactDOM.render(
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} onUpdate={() => window.scrollTo(0, 0)}>
       <App />
     </ThemeProvider>,
     document.getElementById("root")

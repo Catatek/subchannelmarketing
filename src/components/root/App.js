@@ -4,6 +4,7 @@ import Index from "../screens/Index/Index";
 import ComingSoon from "../screens/ComingSoon/ComingSoon";
 import BetaForm from "../screens/BetaForm";
 import Team from "../screens/Team";
+import Media from "../screens/Media";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <Route exact path="/" component={Index} />
             <Route exact path="/form" component={BetaForm} />
             <Route exact path="/team" component={Team} />
+            <Route exact path="/media" component={Media} />
           </Switch>
         </BrowserRouter>
       </div>

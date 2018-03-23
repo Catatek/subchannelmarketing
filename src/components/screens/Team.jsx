@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Column, Row, Title3, Text } from "../theme/theme";
-import TeamBg from "../../assets/mediaSplash.jpg";
+import TeamBg from "../../assets/teamSplash.jpg";
 import InternalHeader from "../shared/InternalHeader";
 import InternalBottomNav from "../shared/InternalBottomNav";
 import Footer from "../shared/Footer/Footer";

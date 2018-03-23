@@ -29,20 +29,22 @@ export default function InternalBottomNav(props) {
   return (
     <Wrapper>
       <Row alignitems="center" justifycontent="space-evenly" width="55%">
+        <a href="https://medium.com/teamsubchannel" target="_blank">
+          <Column>
+            <Box>
+              <img
+                src={MediaIcon}
+                style={teamIconStyle}
+                alt="Subchannel Team Icon"
+              />
+            </Box>
+            <Title3 margin=".4em 0">{props.titleone}</Title3>
+          </Column>
+        </a>
         <Column>
           <Box>
             <img
               src={MediaIcon}
-              style={teamIconStyle}
-              alt="Subchannel Team Icon"
-            />
-          </Box>
-          <Title3 margin=".4em 0">{props.titleone}</Title3>
-        </Column>
-        <Column>
-          <Box>
-            <img
-              src={BlogIcon}
               style={teamIconStyle}
               alt="Subchannel Team Icon"
             />
@@ -52,7 +54,7 @@ export default function InternalBottomNav(props) {
         <Column>
           <Box>
             <img
-              src={TeamIcon}
+              src={MediaIcon}
               style={teamIconStyle}
               alt="Subchannel Team Icon"
             />

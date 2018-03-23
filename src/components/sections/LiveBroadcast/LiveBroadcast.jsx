@@ -19,12 +19,13 @@ const ImgStyle = {
 
 const LiveBroadcast = () => (
   <Wrapper>
-    <Column width="35%">
-      <Title1>LIVE BROADCASTING</Title1>
-      <Text lineheight="1.8em">
+    <Column width="40%">
+      <Title1>BROADCAST AUTOMATION</Title1>
+      <Text lineheight="2.2em">
         Broadcast your content in real-time. We provide all the features you
         need for 24/7 playback automation of your content. Utilizing our
         <b>
+          {" "}
           <u>Timeline</u>{" "}
         </b>
         will allow the ability to drag and drop shows and ads into your program

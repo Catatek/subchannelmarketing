@@ -5,9 +5,9 @@ import { Title3, Row } from "../theme/theme.js";
 import { NavLink, Link } from "react-router-dom";
 
 const Img = styled.img`
-  width: 50px;
-  height: 50px;
-  margin: 0 1em;
+  width: 51px;
+  height: 51px;
+  margin: 0 1.7em;
   border-right: 1.5px solid #aaa;
   padding-right: 0.8em;
 `;
@@ -19,7 +19,7 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: static;
+  position: fixed;
 `;
 
 const StyledNav = styled.nav`
@@ -40,7 +40,7 @@ export default function InternalHeader({ children, ...props }) {
         </Row>
       </StyledNav>
       <Row margin="0 3em 0 0" alignitems="center">
-        <NavLink to="/">
+        <NavLink to="/media">
           <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
             Media
           </Title3>
