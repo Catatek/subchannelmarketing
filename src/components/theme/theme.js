@@ -31,10 +31,15 @@ export const Row = styled.div.attrs({
   justify-content: ${props => props.justifycontent};
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    margin: 2em 0;
+  }
 `;
 
 export const Column = styled.div.attrs({
   width: props => props.width,
+  marginmobile: props => props.marginmobile,
   margin: props => props.margin,
   justifycontent: props => props.justifycontent,
   height: props => props.height,
@@ -51,6 +56,12 @@ export const Column = styled.div.attrs({
   height: ${props => props.height};
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin: ${props => props.marginmobile};
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 // BUTTONS
@@ -98,7 +109,7 @@ export const Button = styled.button`
   }
 }
 @media (max-width: 500px) {
-  width: 280px;
+  width: 150px;
 }
 
 `;
@@ -163,10 +174,13 @@ export const Text = styled.p.attrs({
   margin: props => props.margin || "0em",
   padding: props => props.padding,
   width: props => props.width,
+  widthmobile: props => props.widthmobile,
   lineheight: props => props.lineheight,
+  lineheightmobile: props => props.lineheightmobile,
   color: props => props.color || "#474645",
   textalign: props => props.textalign,
-  fontsize: props => props.fontsize || "1.2em"
+  fontsize: props => props.fontsize || "1.2em",
+  fontsizemobile: props => props.fontsizemobile || "1.2em"
 })`
   font-size: ${props => props.fontsize};
   text-align: ${props => props.textalign};
@@ -177,6 +191,13 @@ export const Text = styled.p.attrs({
   line-height: ${props => props.lineheight};
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
+  @media screen and (max-width: 900px) {
+    margin: 1em 0;
+    text-align: center;
+    width: ${props => props.widthmobile};
+    line-height: ${props => props.lineheightmobile};
+    font-size: ${props => props.fontsizemobile};
+  }
 `;
 
 export const SmallText = Text.extend.attrs({
@@ -205,4 +226,8 @@ export const PlanContainer = styled.div.attrs({
   text-align: center;
   border-radius: 8px;
   margin: 0 1.5em;
+  @media screen and (max-width: 900px) {
+    height: 520px;
+    margin: 0 0 2em 0;
+  }
 `;

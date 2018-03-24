@@ -10,18 +10,24 @@ const Wrapper = styled.section`
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    height: 110vh;
+    justify-content: center;
+  }
 `;
 
-const ImgStyle = {
-  width: "400px",
-  height: "332px"
-};
+const ImgStyle = styled.img`
+  width: 400px;
+  height: 332px;
+  order: 1;
+`;
 
 const LiveBroadcast = () => (
   <Wrapper>
-    <Column width="40%">
+    <Column width="40%" marginmobile="1em 0">
       <Title1>BROADCAST AUTOMATION</Title1>
-      <Text lineheight="2.2em">
+      <Text lineheight="2.2em" lineheightmobile="2em" widthmobile="80%">
         Broadcast your content in real-time. We provide all the features you
         need for 24/7 playback automation of your content. Utilizing our
         <b>
@@ -32,11 +38,7 @@ const LiveBroadcast = () => (
         schedule.
       </Text>
     </Column>
-    <img
-      src={Live}
-      style={ImgStyle}
-      alt="Subchannel Live Broadcasting Illustration"
-    />
+    <ImgStyle src={Live} alt="Subchannel Live Broadcasting Illustration" />
   </Wrapper>
 );
 
