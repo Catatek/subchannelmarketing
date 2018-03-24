@@ -10,6 +10,11 @@ const Wrapper = styled.section`
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    height: 120vh;
+    justify-content: center;
+  }
 `;
 
 const ImgStyle = {
@@ -24,9 +29,9 @@ const AdvancedAnalytics = () => (
       style={ImgStyle}
       alt="Subchannel Analytics Illustration"
     />
-    <Column width="40%" margin="3em 0 0 0">
+    <Column width="40%" margin="3em 0 0 0" marginmobile="1em 0">
       <Title1>ADVANCED ANALYTICS</Title1>
-      <Text lineheight="2.2em">
+      <Text lineheight="2.2em" lineheightmobile="2em" widthmobile="80%">
         Discover and interpret vital viewing data from your subscribers. In a
         time where numbers speak volumes, our analytics will give you the tools
         to close deals with potential and existing advertising partners.

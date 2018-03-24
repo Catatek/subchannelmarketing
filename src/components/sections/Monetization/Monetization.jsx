@@ -10,6 +10,11 @@ const Wrapper = styled.section`
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    height: 110vh;
+    justify-content: center;
+  }
 `;
 
 const ImgStyle = {
@@ -19,9 +24,9 @@ const ImgStyle = {
 
 const Monetization = () => (
   <Wrapper>
-    <Column width="40%">
+    <Column width="40%" marginmobile="1em 0">
       <Title1>MONETIZATION</Title1>
-      <Text lineheight="2.2em">
+      <Text lineheight="2.2em" lineheightmobile="2em" widthmobile="80%">
         A key component of our application is providing licensees the ability to
         earn money directly from your subscribers. We give you the option to set
         the price and the terms for your channel so that you can continue

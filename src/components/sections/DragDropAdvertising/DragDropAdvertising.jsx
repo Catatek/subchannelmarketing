@@ -10,6 +10,11 @@ const Wrapper = styled.section`
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    height: 120vh;
+    justify-content: center;
+  }
 `;
 
 const ImgStyle = {
@@ -23,9 +28,9 @@ const DragDropAdvertising = () => (
       style={ImgStyle}
       alt="Subchannel Drag and Drop Advertising"
     />
-    <Column width="40%">
+    <Column width="40%" marginmobile="1em 0">
       <Title1>DRAG & DROP ADVERTISING</Title1>
-      <Text lineheight="2.2em">
+      <Text lineheight="2.2em" lineheightmobile="2em" widthmobile="80%">
         Utilizing our{" "}
         <b>
           {" "}
