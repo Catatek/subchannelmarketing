@@ -19,7 +19,7 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: static;
 `;
 
 const StyledNav = styled.nav`

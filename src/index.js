@@ -22,7 +22,7 @@ injectGlobal`
 
 const render = () => {
   ReactDOM.render(
-    <ThemeProvider theme={theme} onUpdate={() => window.scrollTo(0, 0)}>
+    <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>,
     document.getElementById("root")
@@ -30,6 +30,12 @@ const render = () => {
 };
 
 render();
+
+window.Intercom("boot", {
+  app_id: "xu9tvnc7"
+});
+
+window.Intercom("update");
 
 if (module.hot) {
   module.hot.accept("./components/root/App", render);

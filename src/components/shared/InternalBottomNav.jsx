@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Row, Column, Title3 } from "../theme/theme";
 import TeamIcon from "../../assets/teamIcon.svg";
 import MediaIcon from "../../assets/mediaIcon.svg";
-import BlogIcon from "../../assets/blog.svg";
+import BlogIcon from "../../assets/blog.jpg";
 
 const Box = styled.div`
   width: 175px;
@@ -21,8 +21,8 @@ const Wrapper = styled.section`
 `;
 
 const teamIconStyle = {
-  width: "140px",
-  height: "121px"
+  width: "175px",
+  height: "175px"
 };
 
 export default function InternalBottomNav(props) {
@@ -33,7 +33,7 @@ export default function InternalBottomNav(props) {
           <Column>
             <Box>
               <img
-                src={MediaIcon}
+                src={BlogIcon}
                 style={teamIconStyle}
                 alt="Subchannel Team Icon"
               />

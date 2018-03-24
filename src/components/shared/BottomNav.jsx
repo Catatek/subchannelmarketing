@@ -22,7 +22,7 @@ export default function BottomNav() {
   return (
     <Wrapper>
       <nav>
-        <StyledNav to="/">MEDIA</StyledNav>
+        <StyledNav to="/media">MEDIA</StyledNav>
         <StyledNav to="/team">TEAM</StyledNav>
         <StyledNav to="/">CONTACT</StyledNav>
       </nav>
