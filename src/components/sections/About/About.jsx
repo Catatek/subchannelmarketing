@@ -26,7 +26,7 @@ const Wrapper = styled.section`
   margin="2em 0"
 `;
 
-const IconsImg = styled.img`
+const IconsImg = styled.img.attrs({})`
   width: 215px;
   height: 215px;
   margin-bottom: 0.2em;
@@ -36,23 +36,20 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeClass: "inactiveClass"
+      activeClass: "activeClass"
     };
+    this.listenScrollEvent = this.listenScrollEvent.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.listenScrollEvent);
   }
 
-  componentWillUnmount() {
-    window.addEventListener("scroll", this.listenScrollEvent);
-  }
-
-  listenScrollEvent = event => {
+  listenScrollEvent() {
     this.setState({
-      activeClass: "activeClass"
+      activeClass: "inactiveClass"
     });
-  };
+  }
 
   render() {
     return (
@@ -62,11 +59,7 @@ class About extends Component {
         </Title1>
         <Row justifycontent="space-evenly" width="100%" margin="5em 0">
           <Column alignitems="center">
-            <IconsImg
-              className={this.state.activeClass}
-              src={Upload}
-              alt="Subchannel Upload"
-            />
+            <IconsImg src={Upload} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
               UPLOAD
             </Title3>

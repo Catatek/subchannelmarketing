@@ -24,7 +24,7 @@ export default function BottomNav() {
       <nav>
         <StyledNav to="/media">MEDIA</StyledNav>
         <StyledNav to="/team">TEAM</StyledNav>
-        <StyledNav to="/">CONTACT</StyledNav>
+        <StyledNav to="/support">SUPPORT</StyledNav>
       </nav>
     </Wrapper>
   );

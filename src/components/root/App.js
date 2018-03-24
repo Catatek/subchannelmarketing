@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Index from "../screens/Index/Index";
 import ComingSoon from "../screens/ComingSoon/ComingSoon";
 import BetaForm from "../screens/BetaForm";
 import Team from "../screens/Team";
 import Media from "../screens/Media";
+import Construction from "../screens/Construction";
 
 class App extends Component {
   render() {
@@ -32,6 +33,27 @@ class App extends Component {
               path="/media"
               render={() => {
                 return <Media onEnter={window.scrollTo(0, 0)} />;
+              }}
+            />
+            <Route
+              exact
+              path="/jobs"
+              render={() => {
+                return <Redirect to="/construction" />;
+              }}
+            />
+            <Route
+              exact
+              path="/support"
+              render={() => {
+                return <Redirect to="/construction" />;
+              }}
+            />
+            <Route
+              exact
+              path="/construction"
+              render={() => {
+                return <Construction onEnter={window.scrollTo(0, 0)} />;
               }}
             />
           </Switch>

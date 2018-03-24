@@ -50,7 +50,7 @@ export default function InternalHeader({ children, ...props }) {
             Team
           </Title3>
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/jobs">
           <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
             Jobs
           </Title3>

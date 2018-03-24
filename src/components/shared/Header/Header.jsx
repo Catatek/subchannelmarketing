@@ -39,7 +39,7 @@ export default function Header({ children, ...props }) {
         </Row>
       </StyledNav>
       <div style={{ marginRight: "1.5em" }}>
-        <NavLink to="/">
+        <NavLink to="/form">
           <Title3 hover fontSize="1em" fontWeight="300">
             SIGN IN
           </Title3>

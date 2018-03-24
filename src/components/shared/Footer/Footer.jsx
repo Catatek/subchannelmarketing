@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../../../assets/subchannelLogoDark.svg";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.section`
   height: 80px;
@@ -18,7 +19,9 @@ const imgStyle = {
 
 const Footer = () => (
   <Wrapper>
-    <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
+    <Link to="/">
+      <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
+    </Link>
     <p> 2018 &copy;</p>
   </Wrapper>
 );
