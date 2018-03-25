@@ -58,7 +58,7 @@ class About extends Component {
           The Ubiquitous Broadcasting Solution of the Future.
         </Title1>
         <Row justifycontent="space-evenly" width="100%" margin="5em 0">
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Upload} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
               UPLOAD
@@ -68,7 +68,7 @@ class About extends Component {
               automation.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Distribute} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
               DISTRIBUTE
@@ -77,7 +77,7 @@ class About extends Component {
               Manage your distribution with easy-to-use web-based applications.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Monetize} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
               MONETIZE
@@ -86,7 +86,7 @@ class About extends Component {
               Earn and track revenue from Subscribers and Advertisers.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Analyze} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
               ANALYZE

@@ -32,7 +32,8 @@ export const Row = styled.div.attrs({
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
   @media (max-width: 720px) {
-    flexdirection: ${props => props.flexdirection};
+    flex-direction: column;
+    margin: 2em 0;
   }
 `;
 
@@ -151,6 +152,7 @@ export const Title2 = styled.h2.attrs({
 
 export const Title3 = styled.h3.attrs({
   margin: props => props.margin || "0",
+  marginmobile: props => props.marginmobile || "0",
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.2em",
   fontWeight: props => props.fontWeight || "600"
@@ -167,8 +169,9 @@ export const Title3 = styled.h3.attrs({
         color: #f4bc4a;
       }
     `};
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
     font-size: 1em;
+    margin: ${props => props.marginmobile};
   }
 `;
 

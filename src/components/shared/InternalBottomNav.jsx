@@ -19,6 +19,9 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   height: 60vh;
+  @media screen and (max-width: 900px) {
+    height: 100vh;
+  }
 `;
 
 const teamIconStyle = {
@@ -31,7 +34,7 @@ export default function InternalBottomNav(props) {
     <Wrapper>
       <Row alignitems="center" justifycontent="space-evenly" width="55%">
         <a href="https://medium.com/teamsubchannel" target="_blank">
-          <Column>
+          <Column marginmobile="1em 0">
             <Box>
               <img
                 src={BlogIcon}
@@ -39,11 +42,11 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titleone}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">{props.titleone}</Title3>
           </Column>
         </a>
         <Link to="/media">
-          <Column>
+          <Column marginmobile="1em 0">
             <Box>
               <img
                 src={MediaIcon}
@@ -51,11 +54,11 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titletwo}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">{props.titletwo}</Title3>
           </Column>
         </Link>
         <Link to="/jobs">
-          <Column>
+          <Column marginmobile="1em 0">
             <Box>
               <img
                 src={JobsIcon}
@@ -63,7 +66,7 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titlethree}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">{props.titlethree}</Title3>
           </Column>
         </Link>
       </Row>

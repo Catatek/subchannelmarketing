@@ -16,6 +16,9 @@ const Wrapper = styled.div`
 const ConstructionImgStyle = styled.img`
   width: 400px;
   height: 389px;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -29,7 +32,7 @@ export default function Construction(props) {
       <InternalHeader pagetitle="subchannel Construction" />
       <Wrapper>
         <Row justifycontent="center">
-          <Column margin="1em 2.5em 0 0">
+          <Column margin="1em 2.5em 0 0" marginmobile="1em 2.5em 4em 0">
             <Title1 color="#019095">We're Sorry</Title1>
             <Title2>
               This page is currently under construction.<br /> Please come visit
@@ -40,7 +43,7 @@ export default function Construction(props) {
             <StyledLink to="/team">Team</StyledLink>
             <StyledLink to="/media">Media</StyledLink>
           </Column>
-          <Column margin="0 0 0 2.5em">
+          <Column margin="0 0 0 2.5em" marginmobile="2em 0 0 0">
             <ConstructionImgStyle src={ConstructionImg} alt="Subchannel 404" />
           </Column>
         </Row>
