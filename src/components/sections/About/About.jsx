@@ -60,7 +60,7 @@ class About extends Component {
         <Row justifycontent="space-evenly" width="100%" margin="5em 0">
           <Column alignitems="center" margin="1em 0">
             <IconsImg src={Upload} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               UPLOAD
             </Title3>
             <Text width="65%" lineheight="1.6em">
@@ -70,7 +70,7 @@ class About extends Component {
           </Column>
           <Column alignitems="center" margin="1em 0">
             <IconsImg src={Distribute} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               DISTRIBUTE
             </Title3>
             <Text width="60%" lineheight="1.6em">
@@ -79,7 +79,7 @@ class About extends Component {
           </Column>
           <Column alignitems="center" margin="1em 0">
             <IconsImg src={Monetize} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               MONETIZE
             </Title3>
             <Text width="60%" lineheight="1.6em">
@@ -88,7 +88,7 @@ class About extends Component {
           </Column>
           <Column alignitems="center" margin="1em 0">
             <IconsImg src={Analyze} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               ANALYZE
             </Title3>
             <Text width="60%" lineheight="1.6em">

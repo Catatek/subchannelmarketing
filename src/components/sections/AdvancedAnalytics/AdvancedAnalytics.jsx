@@ -17,16 +17,19 @@ const Wrapper = styled.section`
   }
 `;
 
-const ImgStyle = {
-  width: "400px",
-  height: "434px"
-};
+const ImgStyle = styled.img`
+  width: 400px;
+  height: 434px;
+  order: 1;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
+`;
 
 const AdvancedAnalytics = () => (
   <Wrapper>
-    <img
+    <ImgStyle
       src={Analytics}
-      style={ImgStyle}
       alt="Subchannel Analytics Illustration"
     />
     <Column width="40%" margin="3em 0 0 0" marginmobile="1em 0">

@@ -224,6 +224,7 @@ export const PlanContainer = styled.div.attrs({
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid #eee;
   width: 275px;
   height: 450px;

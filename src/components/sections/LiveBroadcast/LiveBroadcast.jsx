@@ -21,6 +21,9 @@ const ImgStyle = styled.img`
   width: 400px;
   height: 332px;
   order: 1;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
 `;
 
 const LiveBroadcast = () => (

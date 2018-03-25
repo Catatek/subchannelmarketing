@@ -17,15 +17,19 @@ const Wrapper = styled.section`
   }
 `;
 
-const ImgStyle = {
-  width: "400px",
-  height: "331px"
-};
+const ImgStyle = styled.img`
+  width: 400px;
+  height: 331px;
+  order: 1;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
+`;
+
 const DragDropAdvertising = () => (
   <Wrapper>
-    <img
+    <ImgStyle
       src={Drag}
-      style={ImgStyle}
       alt="Subchannel Drag and Drop Advertising"
     />
     <Column width="40%" marginmobile="1em 0">

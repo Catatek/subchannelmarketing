@@ -38,6 +38,10 @@ const RowInternal = styled.nav`
   align-items: center;
 `;
 
+const HeaderRow = styled.nav`
+  flex-direction: row;
+  `;
+
 export default function InternalHeader({ children, ...props }) {
   const mobile = window.matchMedia("(max-width: 720px)");
 
