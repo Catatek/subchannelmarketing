@@ -118,8 +118,10 @@ export const Button = styled.button`
 export const Title1 = styled.h1.attrs({
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "2.2em",
-  margin: props => props.margin || ".5em 0"
+  margin: props => props.margin || ".5em 0",
+  order: props => props.order
 })`
+  order: ${props => props.order};
   margin: ${props => props.margin};
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
@@ -145,7 +147,7 @@ export const Title2 = styled.h2.attrs({
   font-family: "Montserrat", sans-serif;
   line-height: ${props => props.lineheight};
   @media (max-width: 500px) {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 `;
 
@@ -168,7 +170,7 @@ export const Title3 = styled.h3.attrs({
       }
     `};
   @media (max-width: 500px) {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 `;
 
@@ -182,7 +184,7 @@ export const Text = styled.p.attrs({
   color: props => props.color || "#474645",
   textalign: props => props.textalign,
   fontsize: props => props.fontsize || "1.2em",
-  fontsizemobile: props => props.fontsizemobile || "1.2em"
+  fontsizemobile: props => props.fontsizemobile || "1em"
 })`
   font-size: ${props => props.fontsize};
   text-align: ${props => props.textalign};

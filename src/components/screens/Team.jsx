@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Column, Row, Title3, Text } from "../theme/theme";
+import { Column, Row, Title3, Title2, Text } from "../theme/theme";
 import TeamBg from "../../assets/teamSplash.jpg";
 import InternalHeader from "../shared/InternalHeader";
 import InternalBottomNav from "../shared/InternalBottomNav";
@@ -55,7 +55,7 @@ const titles = {
 
 function TeamCard(props) {
   return (
-    <Column alignitems="center">
+    <Column alignitems="center" margin="1.5em 0">
       <StyledImg src={props.img} alt="Subchannel Team Photo" />
       <Title3 margin=".8em 0">{props.name}</Title3>
       <Title3 fontWeight="300" margin="0">
@@ -73,7 +73,7 @@ class Team extends Component {
         <TeamSplash />
         <TeamAbout>
           <Column width="50%">
-            <Text lineheight="1.8em">
+            <Text lineheight="1.8em" fontsizemobile="1em">
               Founded in 2017, Subchannel provides solutions to content creators
               so that they can turn their content into their business. We
               believe that the creators’ voices should never be filtered, which

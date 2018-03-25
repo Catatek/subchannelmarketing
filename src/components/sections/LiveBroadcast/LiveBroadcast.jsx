@@ -21,6 +21,10 @@ const ImgStyle = styled.img`
   width: 400px;
   height: 332px;
   order: 1;
+  @media (max-width: 500px) {
+    width: 300px;
+    height: 249px;
+  }
 `;
 
 const LiveBroadcast = () => (

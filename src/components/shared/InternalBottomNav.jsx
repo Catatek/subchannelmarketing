@@ -13,29 +13,45 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 720px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media (max-width: 500px) {
+    width: 75px;
+    height: 75px;
+  }
 `;
 
 const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   height: 60vh;
+  @media (max-width: 500px) {
+    height: 100%;
+    margin: 3em 0;
+  }
 `;
 
-const teamIconStyle = {
-  width: "175px",
-  height: "175px"
+const StyledRow = styled(Row)`
+  flex-direction: row;
+`;
+
+const iconStyle = {
+  width: "100%",
+  height: "100%"
 };
 
 export default function InternalBottomNav(props) {
   return (
     <Wrapper>
-      <Row alignitems="center" justifycontent="space-evenly" width="55%">
+      <StyledRow alignitems="center" justifycontent="space-evenly" width="55%">
         <a href="https://medium.com/teamsubchannel" target="_blank">
-          <Column>
+          <Column margin="0 1em">
             <Box>
               <img
                 src={BlogIcon}
-                style={teamIconStyle}
+                style={iconStyle}
                 alt="Subchannel Team Icon"
               />
             </Box>
@@ -43,11 +59,11 @@ export default function InternalBottomNav(props) {
           </Column>
         </a>
         <Link to="/media">
-          <Column>
+          <Column margin="0 1em">
             <Box>
               <img
                 src={MediaIcon}
-                style={teamIconStyle}
+                style={iconStyle}
                 alt="Subchannel Team Icon"
               />
             </Box>
@@ -55,18 +71,18 @@ export default function InternalBottomNav(props) {
           </Column>
         </Link>
         <Link to="/jobs">
-          <Column>
+          <Column margin="0 1em">
             <Box>
               <img
                 src={JobsIcon}
-                style={teamIconStyle}
+                style={iconStyle}
                 alt="Subchannel Team Icon"
               />
             </Box>
             <Title3 margin=".4em 0">{props.titlethree}</Title3>
           </Column>
         </Link>
-      </Row>
+      </StyledRow>
     </Wrapper>
   );
 }

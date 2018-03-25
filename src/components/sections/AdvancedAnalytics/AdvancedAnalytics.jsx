@@ -11,24 +11,24 @@ const Wrapper = styled.section`
   align-items: center;
   background: linear-gradient(#ffffff, #f7f7f7);
   @media screen and (max-width: 900px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 120vh;
     justify-content: center;
   }
 `;
 
-const ImgStyle = {
-  width: "400px",
-  height: "434px"
-};
+const ImgStyle = styled.img`
+  width: 400px;
+  height: 434px;
+  @media (max-width: 500px) {
+    width: 300px;
+    height: 325px;
+  }
+`;
 
 const AdvancedAnalytics = () => (
   <Wrapper>
-    <img
-      src={Analytics}
-      style={ImgStyle}
-      alt="Subchannel Analytics Illustration"
-    />
+    <ImgStyle src={Analytics} alt="Subchannel Analytics Illustration" />
     <Column width="40%" margin="3em 0 0 0" marginmobile="1em 0">
       <Title1>ADVANCED ANALYTICS</Title1>
       <Text lineheight="2.2em" lineheightmobile="2em" widthmobile="80%">

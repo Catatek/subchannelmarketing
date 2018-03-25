@@ -14,7 +14,6 @@ import Monetize from "../../../assets/monetize.svg";
 import Analyze from "../../../assets/analytics.svg";
 
 const Wrapper = styled.section`
-  
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,13 +22,14 @@ const Wrapper = styled.section`
   text-align: center;
   background: linear-gradient(#ffffff, #f7f7f7);
   padding: 1em 0;
-  margin="2em 0"
+  margin: 2em 0;
 `;
 
-const IconsImg = styled.img.attrs({})`
+const IconsImg = styled.img`
   width: 215px;
   height: 215px;
-  margin-bottom: 0.2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
 `;
 
 class About extends Component {
@@ -57,7 +57,7 @@ class About extends Component {
         <Title1 fontWeight="600" margin="1.5em 0">
           The Ubiquitous Broadcasting Solution of the Future.
         </Title1>
-        <Row justifycontent="space-evenly" width="100%" margin="5em 0">
+        <Row justifycontent="space-evenly" width="100%" margin="4em 0">
           <Column alignitems="center">
             <IconsImg src={Upload} alt="Subchannel Upload" />
             <Title3 margin=".8em 0" fontSize="1.6em">
