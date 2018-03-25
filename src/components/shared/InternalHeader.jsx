@@ -59,8 +59,8 @@ export default function InternalHeader({ children, ...props }) {
         {mobile.matches ? (
           <Hamburger />
         ) : (
-          <Row justifycontent="space-between" alignitems="center">
-            <Row margin="0 3em 0 0" alignitems="center">
+          <HeaderRow justifycontent="space-between" alignitems="center">
+            <HeaderRow margin="0 3em 0 0" alignitems="center">
               <NavLink to="/media">
                 <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
                   Media
@@ -76,8 +76,8 @@ export default function InternalHeader({ children, ...props }) {
                   Jobs
                 </Title3>
               </NavLink>
-            </Row>
-          </Row>
+            </HeaderRow>
+          </HeaderRow>
         )}
       </StyledNav>
     </Wrapper>
