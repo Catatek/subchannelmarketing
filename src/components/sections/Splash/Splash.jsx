@@ -19,6 +19,16 @@ const Wrapper = styled.section`
   background: linear-gradient(#f4fdfd, #fff);
 `;
 
+const Img = styled.img`
+  width: 90%;
+  position: absolute;
+  bottom: 1em;
+  zindex: 1;
+  @media (max-width: 500px) {
+    bottom: 4em;
+  }
+`;
+
 const Splash = ({ children }) => (
   <Wrapper>
     <Column
@@ -39,17 +49,7 @@ const Splash = ({ children }) => (
       <SignupButton primary>
         <Link to="/form">START YOUR TRIAL</Link>
       </SignupButton>
-      <img
-        src={HeaderBg}
-        style={{
-          width: "90%",
-
-          position: "absolute",
-          top: "23em",
-          zIndex: "1"
-        }}
-        alt="Subchannel Splash"
-      />
+      <Img src={HeaderBg} alt="Subchannel Splash" />
     </Column>
   </Wrapper>
 );

@@ -22,18 +22,17 @@ export const Row = styled.div.attrs({
   justifycontent: props => props.justifycontent,
   alignitems: props => props.alignitems,
   height: props => props.height,
-  backgroundcolor: props => props.backgroundcolor
+  backgroundcolor: props => props.backgroundcolor,
+  flexdirection: props => props.flexdirection || "row"
 })`
   display: flex;
-  flex-direction: row;
   width: ${props => props.width};
   margin: ${props => props.margin};
   justify-content: ${props => props.justifycontent};
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
-    margin: 2em 0;
+  @media (max-width: 720px) {
+    flexdirection: ${props => props.flexdirection};
   }
 `;
 
@@ -168,6 +167,9 @@ export const Title3 = styled.h3.attrs({
         color: #f4bc4a;
       }
     `};
+  @media (max-width: 500px) {
+    font-size: 1em;
+  }
 `;
 
 export const Text = styled.p.attrs({

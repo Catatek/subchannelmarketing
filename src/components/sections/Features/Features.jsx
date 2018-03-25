@@ -60,7 +60,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="3em 0">
+        {/* <Row width="100%" margin="3em 0">
           <IconStyle src={Second} alt="Subchannel Second Screen Icon" />
           <Column width="60%">
             <Title3>Second Screen Engagement</Title3>
@@ -69,7 +69,7 @@ const Features = () => (
               content on TV.
             </Text>
           </Column>
-        </Row>
+        </Row> */}
         <Row width="100%" margin="3em 0">
           <IconStyle src={Branded} alt="Subchannel Branded Icon" />
           <Column width="55%">
@@ -160,7 +160,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="3em 0">
+        {/* <Row width="100%" margin="3em 0">
           <IconStyle src={Analytics} alt="Subchannel Analytics Icon" />
           <Column width="55%">
             <Title3>Daily Backups</Title3>
@@ -169,7 +169,7 @@ const Features = () => (
               usage is available.
             </Text>
           </Column>
-        </Row>
+        </Row> */}
       </Column>
     </Row>
   </Wrapper>

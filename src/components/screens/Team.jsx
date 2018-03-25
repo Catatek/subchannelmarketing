@@ -72,15 +72,15 @@ class Team extends Component {
         <InternalHeader pagetitle="subchannel Team" />
         <TeamSplash />
         <TeamAbout>
-          <Column width="45%">
+          <Column width="50%">
             <Text lineheight="1.8em">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Founded in 2017, Subchannel provides solutions to content creators
+              so that they can turn their content into their business. We
+              believe that the creators’ voices should never be filtered, which
+              is why we designed our entire company around our customers first.
+              Our team is a group of passionate, thrill-seeking adventurers
+              united and on a mission of continued personal growth and
+              self-development.
             </Text>
           </Column>
         </TeamAbout>

@@ -30,6 +30,12 @@ const MediaAbout = styled.div`
   margin: 6em 0;
 `;
 
+const MediaContent = styled.div`
+  display: flex;
+  width: 100%;
+  margin: 0.5em;
+`;
+
 const titles = {
   one: "Blog",
   two: "Media",
@@ -46,6 +52,7 @@ class Media extends Component {
           <Title3 margin="3em 0 1em 4em">Latest in the newsroom</Title3>
           <Row />
         </MediaWrapper>
+        <MediaContent />
         <InternalBottomNav
           titleone={titles.one}
           titletwo={titles.two}

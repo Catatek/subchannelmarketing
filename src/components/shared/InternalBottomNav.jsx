@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Column, Title3 } from "../theme/theme";
-import TeamIcon from "../../assets/teamIcon.svg";
-import MediaIcon from "../../assets/mediaIcon.svg";
+import JobsIcon from "../../assets/jobs.jpg";
+import MediaIcon from "../../assets/media.jpg";
 import BlogIcon from "../../assets/blog.jpg";
+import { Link } from "react-router-dom";
 
 const Box = styled.div`
   width: 175px;
@@ -41,26 +42,30 @@ export default function InternalBottomNav(props) {
             <Title3 margin=".4em 0">{props.titleone}</Title3>
           </Column>
         </a>
-        <Column>
-          <Box>
-            <img
-              src={MediaIcon}
-              style={teamIconStyle}
-              alt="Subchannel Team Icon"
-            />
-          </Box>
-          <Title3 margin=".4em 0">{props.titletwo}</Title3>
-        </Column>
-        <Column>
-          <Box>
-            <img
-              src={MediaIcon}
-              style={teamIconStyle}
-              alt="Subchannel Team Icon"
-            />
-          </Box>
-          <Title3 margin=".4em 0">{props.titlethree}</Title3>
-        </Column>
+        <Link to="/media">
+          <Column>
+            <Box>
+              <img
+                src={MediaIcon}
+                style={teamIconStyle}
+                alt="Subchannel Team Icon"
+              />
+            </Box>
+            <Title3 margin=".4em 0">{props.titletwo}</Title3>
+          </Column>
+        </Link>
+        <Link to="/jobs">
+          <Column>
+            <Box>
+              <img
+                src={JobsIcon}
+                style={teamIconStyle}
+                alt="Subchannel Team Icon"
+              />
+            </Box>
+            <Title3 margin=".4em 0">{props.titlethree}</Title3>
+          </Column>
+        </Link>
       </Row>
     </Wrapper>
   );

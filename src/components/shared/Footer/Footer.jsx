@@ -22,7 +22,7 @@ const Footer = () => (
     <Link to="/">
       <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
     </Link>
-    <p> 2018 &copy;</p>
+    <p> &copy; 2018 </p>
   </Wrapper>
 );
 

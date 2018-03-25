@@ -31,6 +31,8 @@ const render = () => {
 
 render();
 
+// Intercom
+
 window.Intercom("boot", {
   app_id: "xu9tvnc7"
 });
