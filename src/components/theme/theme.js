@@ -22,17 +22,17 @@ export const Row = styled.div.attrs({
   justifycontent: props => props.justifycontent,
   alignitems: props => props.alignitems,
   height: props => props.height,
-  backgroundcolor: props => props.backgroundcolor,
-  flexdirection: props => props.flexdirection || "row"
+  backgroundcolor: props => props.backgroundcolor
 })`
   display: flex;
+  flex-direction: row;
   width: ${props => props.width};
   margin: ${props => props.margin};
   justify-content: ${props => props.justifycontent};
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
   @media (max-width: 720px) {
-    flexdirection: ${props => props.flexdirection};
+    flex-direction: column;
   }
 `;
 
@@ -56,7 +56,7 @@ export const Column = styled.div.attrs({
   align-items: ${props => props.alignitems};
   background-color: ${props => props.backgroundcolor};
   @media screen and (max-width: 900px) {
-    width: 100%;
+    width: 98%;
     margin: ${props => props.marginmobile};
     justify-content: center;
     align-items: center;

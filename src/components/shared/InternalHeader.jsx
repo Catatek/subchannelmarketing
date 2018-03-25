@@ -31,6 +31,10 @@ const StyledNav = styled.nav`
   width: 100%;
 `;
 
+const HeaderRow = styled(Row)`
+  flex-direction: row;
+`;
+
 export default function InternalHeader({ children, ...props }) {
   const mobile = window.matchMedia("(max-width: 720px)");
 
@@ -41,19 +45,19 @@ export default function InternalHeader({ children, ...props }) {
   return (
     <Wrapper>
       <StyledNav>
-        <Row alignitems="center">
+        <HeaderRow alignitems="center">
           <Link to="/">
             <Img src={Icon} alt="Subchannel Logo" />
           </Link>
           <Title3 fontWeight="300" margin="0 .5em 0 0">
             {props.pagetitle}
           </Title3>
-        </Row>
+        </HeaderRow>
         {mobile.matches ? (
           <Hamburger />
         ) : (
-          <Row justifycontent="space-between" alignitems="center">
-            <Row margin="0 3em 0 0" alignitems="center">
+          <HeaderRow justifycontent="space-between" alignitems="center">
+            <HeaderRow margin="0 3em 0 0" alignitems="center">
               <NavLink to="/media">
                 <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
                   Media
@@ -69,8 +73,8 @@ export default function InternalHeader({ children, ...props }) {
                   Jobs
                 </Title3>
               </NavLink>
-            </Row>
-          </Row>
+            </HeaderRow>
+          </HeaderRow>
         )}
       </StyledNav>
     </Wrapper>

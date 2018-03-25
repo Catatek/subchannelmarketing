@@ -40,7 +40,7 @@ export default function Header({ children, ...props }) {
         {mobile.matches ? (
           <Hamburger />
         ) : (
-          <Row>
+          <Row justifycontent="space-between" width="100%">
             <NavLink to="/media">
               <Title3 hover fontSize=".9em" fontWeight="300">
                 Media
