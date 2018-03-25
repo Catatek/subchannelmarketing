@@ -57,10 +57,10 @@ class About extends Component {
         <Title1 fontWeight="600" margin="1.5em 0">
           The Ubiquitous Broadcasting Solution of the Future.
         </Title1>
-        <Row justifycontent="space-evenly" width="100%" margin="4em 0">
-          <Column alignitems="center">
+        <Row justifycontent="space-evenly" width="100%" margin="5em 0">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Upload} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               UPLOAD
             </Title3>
             <Text width="65%" lineheight="1.6em">
@@ -68,27 +68,27 @@ class About extends Component {
               automation.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Distribute} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               DISTRIBUTE
             </Title3>
             <Text width="60%" lineheight="1.6em">
               Manage your distribution with easy-to-use web-based applications.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Monetize} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               MONETIZE
             </Title3>
             <Text width="60%" lineheight="1.6em">
               Earn and track revenue from Subscribers and Advertisers.
             </Text>
           </Column>
-          <Column alignitems="center">
+          <Column alignitems="center" margin="1em 0">
             <IconsImg src={Analyze} alt="Subchannel Upload" />
-            <Title3 margin=".8em 0" fontSize="1.6em">
+            <Title3 margin=".8em 0" fontSize="1.6em" marginmobile="2em 0 0 0">
               ANALYZE
             </Title3>
             <Text width="60%" lineheight="1.6em">

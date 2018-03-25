@@ -1,6 +1,8 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
+import { Row } from "../theme/theme";
+import styled from "styled-components";
 
 function BurgerIcon({ open, ...props }) {
   return (
@@ -12,28 +14,40 @@ function BurgerIcon({ open, ...props }) {
   );
 }
 
+const Styled_ul = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const Styled_li = styled.li`
+  margin: 1.5em 0;
+  font-size: 1.5em;
+`;
+
 function BurgerMenu({ close }) {
   return (
     <div className="menu">
-      <ul>
+      <Styled_ul>
         <Link to="/media">
-          <li onClick={close}>Media</li>
+          <Styled_li onClick={close}>Media</Styled_li>
         </Link>
         <Link to="/team">
-          <li onClick={close}>Team</li>
+          <Styled_li onClick={close}>Team</Styled_li>
         </Link>
         <Link to="/jobs">
-          <li onClick={close}>Jobs</li>
+          <Styled_li onClick={close}>Jobs</Styled_li>
         </Link>
-      </ul>
+      </Styled_ul>
     </div>
   );
 }
 
 const contentStyle = {
   background: "rgba(255,255,255,0)",
-  width: "80%",
-  border: "none"
+  width: "100%",
+  border: "none",
 };
 
 export default function Hamburger() {

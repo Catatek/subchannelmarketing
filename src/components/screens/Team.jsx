@@ -57,7 +57,9 @@ function TeamCard(props) {
   return (
     <Column alignitems="center" margin="1.5em 0">
       <StyledImg src={props.img} alt="Subchannel Team Photo" />
-      <Title3 margin=".8em 0">{props.name}</Title3>
+      <Title3 margin=".8em 0" marginmobile="1em 0">
+        {props.name}
+      </Title3>
       <Title3 fontWeight="300" margin="0">
         {props.title}
       </Title3>
@@ -85,7 +87,9 @@ class Team extends Component {
           </Column>
         </TeamAbout>
         <TeamWrapper>
-          <Title3 margin="3em 0 1em 4em">Meet the team</Title3>
+          <Title3 margin="3em 0 1em 4em" marginmobile="2em 0 1em 0">
+            Meet the team
+          </Title3>
           <Row margin="3em 0" alignitems="center" justifycontent="space-evenly">
             <TeamCard
               img={Will}

@@ -55,7 +55,9 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titleone}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">
+              {props.titleone}
+            </Title3>
           </Column>
         </a>
         <Link to="/media">
@@ -67,7 +69,9 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titletwo}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">
+              {props.titletwo}
+            </Title3>
           </Column>
         </Link>
         <Link to="/jobs">
@@ -79,7 +83,9 @@ export default function InternalBottomNav(props) {
                 alt="Subchannel Team Icon"
               />
             </Box>
-            <Title3 margin=".4em 0">{props.titlethree}</Title3>
+            <Title3 margin=".4em 0" marginmobile="1em 0">
+              {props.titlethree}
+            </Title3>
           </Column>
         </Link>
       </StyledRow>
