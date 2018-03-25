@@ -33,6 +33,11 @@ const StyledNav = styled.nav`
 
 export default function InternalHeader({ children, ...props }) {
   const mobile = window.matchMedia("(max-width: 720px)");
+
+  let handleChange = () => {};
+
+  mobile.addListener(handleChange());
+
   return (
     <Wrapper>
       <StyledNav>
