@@ -28,19 +28,14 @@ const Wrapper = styled.section`
 const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 `;
 
-const RowInternal = styled.nav`
-  display: flex;
+const HeaderRow = styled(Row)`
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 `;
-
-const HeaderRow = styled.nav`
-  flex-direction: row;
-  `;
 
 export default function InternalHeader({ children, ...props }) {
   const mobile = window.matchMedia("(max-width: 720px)");
@@ -52,35 +47,33 @@ export default function InternalHeader({ children, ...props }) {
   return (
     <Wrapper>
       <StyledNav>
-        <RowInternal>
+        <HeaderRow>
           <Link to="/">
             <Img src={Icon} alt="Subchannel Logo" />
           </Link>
           <Title3 fontWeight="300" margin="0 .5em 0 0" marginmobile="0">
             {props.pagetitle}
           </Title3>
-        </RowInternal>
+        </HeaderRow>
         {mobile.matches ? (
           <Hamburger />
         ) : (
-          <HeaderRow justifycontent="space-between" alignitems="center">
-            <HeaderRow margin="0 3em 0 0" alignitems="center">
-              <NavLink to="/media">
-                <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
-                  Media
-                </Title3>
-              </NavLink>
-              <NavLink to="/team">
-                <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
-                  Team
-                </Title3>
-              </NavLink>
-              <NavLink to="/jobs">
-                <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
-                  Jobs
-                </Title3>
-              </NavLink>
-            </HeaderRow>
+          <HeaderRow margin="0 3em 0 0">
+            <NavLink to="/media">
+              <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
+                Media
+              </Title3>
+            </NavLink>
+            <NavLink to="/team">
+              <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
+                Team
+              </Title3>
+            </NavLink>
+            <NavLink to="/jobs">
+              <Title3 hover fontSize="1em" fontWeight="300" margin="0 .5em">
+                Jobs
+              </Title3>
+            </NavLink>
           </HeaderRow>
         )}
       </StyledNav>

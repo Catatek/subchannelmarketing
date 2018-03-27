@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   position: static;
-  background: linear-gradient(#fff, #f4fdfd);
+  // background: linear-gradient(#fff, #f4fdfd);
   @media (max-width: 500px) {
     justify-content: center;
   }

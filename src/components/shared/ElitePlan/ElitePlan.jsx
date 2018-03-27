@@ -1,6 +1,7 @@
 import React from "react";
 import {
   SmallText,
+  Title1,
   Title2,
   Title3,
   PlanContainer,
@@ -29,10 +30,15 @@ const StyledButton = styled(Button)`
 const ElitePlan = () => (
   <PlanContainer backgroundcolor="#EAB548">
     <PlanDiv>
-      <Title3 fontSize="1.6em" color="#fff" margin=".5em 0 .2em 0">
-        <b>ELITE</b>
-      </Title3>
-      <SmallText color="#fff" margin="0 0 3.5em 0" width="100%" fontsizemobile="0.7em">
+      <Title1 color="#fff" margin=".5em 0 .2em 0">
+        ELITE
+      </Title1>
+      <SmallText
+        color="#fff"
+        margin="0 0 3.5em 0"
+        width="100%"
+        fontsizemobile="0.7em"
+      >
         Flexible options for scaling enterprises
       </SmallText>
       <Title3 color="#fff" margin="0" plans>

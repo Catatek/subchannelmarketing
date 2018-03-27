@@ -4,7 +4,7 @@ import React from "react";
 import Live from "../../../assets/broadcastAutomation.svg";
 
 const Wrapper = styled.section`
-  height: 85vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

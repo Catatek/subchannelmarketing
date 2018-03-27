@@ -4,7 +4,7 @@ import { Column, Title1, Text } from "../../theme/theme";
 import Analytics from "../../../assets/advancedAnalytics.svg";
 
 const Wrapper = styled.section`
-  height: 85vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -18,11 +18,11 @@ const Wrapper = styled.section`
 `;
 
 const ImgStyle = styled.img`
-  width: 400px;
-  height: 434px;
+  width: 350px;
+  height: 379px;
   @media (max-width: 500px) {
-    width: 300px;
-    height: 325px;
+    width: 350px;
+    height: 350px;
   }
 `;
 

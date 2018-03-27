@@ -55,7 +55,7 @@ const titles = {
 
 function TeamCard(props) {
   return (
-    <Column alignitems="center" margin="1.5em 0">
+    <Column alignitems="center" marginmobile="1.5em 0">
       <StyledImg src={props.img} alt="Subchannel Team Photo" />
       <Title3 margin=".8em 0" marginmobile="1em 0">
         {props.name}
@@ -75,7 +75,7 @@ class Team extends Component {
         <TeamSplash />
         <TeamAbout>
           <Column width="50%">
-            <Text lineheight="1.8em" fontsizemobile="1em">
+            <Text lineheight="1.8em" widthmobile="80%">
               Founded in 2017, Subchannel provides solutions to content creators
               so that they can turn their content into their business. We
               believe that the creators’ voices should never be filtered, which
@@ -87,7 +87,7 @@ class Team extends Component {
           </Column>
         </TeamAbout>
         <TeamWrapper>
-          <Title3 margin="3em 0 1em 4em" marginmobile="2em 0 1em 0">
+          <Title3 margin="3em 0 1em 4em" marginmobile="2em auto">
             Meet the team
           </Title3>
           <Row margin="3em 0" alignitems="center" justifycontent="space-evenly">

@@ -12,11 +12,12 @@ import HeaderBg from "../../../assets/headerBg.svg";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.section`
-  height: 95vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(#f4fdfd, #fff);
+  background: linear-gradient(#ffffff, #f7f7f7);
+  margin: 1em 0;
 `;
 
 const Img = styled.img`
@@ -24,25 +25,28 @@ const Img = styled.img`
   position: absolute;
   bottom: 1em;
   zindex: 1;
-  @media (max-width: 500px) {
-    bottom: 4em;
+`;
+
+const StyledColumn = styled(Column)`
+  width: 40%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 60%;
+  margin: 0 0 3em 0;
+  @media screen and (max-width: 900px) {
+    width: 98%;
+    height: 58%;
   }
 `;
 
 const Splash = ({ children }) => (
   <Wrapper>
-    <Column
-      width="40%"
-      alignitems="center"
-      textalign="center"
-      justifycontent="space-around"
-      height="60%"
-      margin="0 0 3em 0"
-    >
+    <StyledColumn>
       <Title1 margin=".5em 0 0 0">
         Distribute subscription-based content to any platform.
       </Title1>
-      <Title2 lineheight="1.6em">
+      <Title2 lineheight="1.4em">
         We give you the tools to share your content, so you can earn revenue and
         keep creating
       </Title2>
@@ -50,7 +54,7 @@ const Splash = ({ children }) => (
         <Link to="/form">START YOUR TRIAL</Link>
       </SignupButton>
       <Img src={HeaderBg} alt="Subchannel Splash" />
-    </Column>
+    </StyledColumn>
   </Wrapper>
 );
 

@@ -47,7 +47,7 @@ export default function InternalBottomNav(props) {
     <Wrapper>
       <StyledRow alignitems="center" justifycontent="space-evenly" width="55%">
         <a href="https://medium.com/teamsubchannel" target="_blank">
-          <Column margin="0 1em">
+          <Column margin="0 em">
             <Box>
               <img
                 src={BlogIcon}
@@ -61,7 +61,7 @@ export default function InternalBottomNav(props) {
           </Column>
         </a>
         <Link to="/media">
-          <Column margin="0 1em">
+          <Column margin="0 .8em">
             <Box>
               <img
                 src={MediaIcon}
@@ -75,7 +75,7 @@ export default function InternalBottomNav(props) {
           </Column>
         </Link>
         <Link to="/jobs">
-          <Column margin="0 1em">
+          <Column margin="0 .8em">
             <Box>
               <img
                 src={JobsIcon}

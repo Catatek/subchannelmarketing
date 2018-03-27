@@ -4,7 +4,7 @@ import { Column, Title1, Text } from "../../theme/theme";
 import Monetize from "../../../assets/monetization.svg";
 
 const Wrapper = styled.section`
-  height: 85vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

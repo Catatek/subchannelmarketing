@@ -13,9 +13,9 @@ const MediaWrapper = styled.section`
   flex-direction: column;
   margin: 4em 0;
   @media screen and (max-width: 900px) {
-    align-items:center;
-    justify-content:center;
-    margin:0;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
 `;
 
@@ -40,8 +40,8 @@ const MediaContent = styled.div`
   width: 100%;
   margin: 0.5em;
   @media screen and (max-width: 900px) {
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -58,7 +58,9 @@ class Media extends Component {
         <InternalHeader pagetitle="subchannel Media" />
         <MediaSplash />
         <MediaWrapper>
-          <Title3 margin="3em 0 1em 4em" marginmobile="2em 0 0 0">Latest in the newsroom</Title3>
+          <Title3 margin="3em 0 1em 4em" marginmobile="4em 0 0 0">
+            Latest in the newsroom
+          </Title3>
           <Row />
         </MediaWrapper>
         <MediaContent />

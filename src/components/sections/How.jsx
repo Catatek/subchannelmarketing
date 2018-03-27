@@ -23,6 +23,7 @@ const Colored = styled.div.attrs({
   display: flex;
   align-items: center;
   margin: 1.5em 0;
+  max-width: 850px;
   @media screen and (max-width: 900px) {
     height: 130px;
   }

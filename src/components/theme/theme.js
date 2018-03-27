@@ -86,6 +86,10 @@ export const SignupButton = styled.button`
     border: ${props => (props.primary ? "none" : "1px solid #01b1b7")};
     box-shadow: 1px 1px 15px #eee;
   }
+  @media (max-width: 500px) {
+    height: 55px;
+    width: 225px;
+  }
 `;
 
 export const Button = styled.button`
@@ -118,7 +122,7 @@ export const Button = styled.button`
 
 export const Title1 = styled.h1.attrs({
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "2.2em",
+  fontSize: props => props.fontSize || "1.8em",
   margin: props => props.margin || ".5em 0",
   order: props => props.order
 })`
@@ -126,8 +130,8 @@ export const Title1 = styled.h1.attrs({
   margin: ${props => props.margin};
   color: ${props => props.color};
   font-size: ${props => props.fontSize};
-  font-family: "Raleway", sans-serif;
-  line-height: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2em;
   font-weight: 600;
   @media (max-width: 500px) {
     font-size: 1.6em;
@@ -136,8 +140,8 @@ export const Title1 = styled.h1.attrs({
 
 export const Title2 = styled.h2.attrs({
   color: props => props.color || "#4d4d4d",
-  fontSize: props => props.fontSize || "1.4em",
-  lineheight: props => props.lineheight || "1.4em",
+  fontSize: props => props.fontSize || "1.3em",
+  lineheight: props => props.lineheight || "1em",
   fontWeight: props => props.fontWeight || "300",
   margin: props => props.margin || ".5em 0"
 })`
@@ -186,7 +190,7 @@ export const Text = styled.p.attrs({
   lineheightmobile: props => props.lineheightmobile,
   color: props => props.color || "#474645",
   textalign: props => props.textalign,
-  fontsize: props => props.fontsize || "1.2em",
+  fontsize: props => props.fontsize || "1em",
   fontsizemobile: props => props.fontsizemobile || "1em"
 })`
   font-size: ${props => props.fontsize};
