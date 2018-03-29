@@ -27,8 +27,9 @@ const IconStyle = styled.img`
   height: 85px;
   margin-right: 2em;
   @media screen and (max-width: 900px) {
-    width: 100%;
-    margin: 0 0 1em 0;
+    width: 60px;
+    height: 60px;
+    margin: 1em 0;
   }
 `;
 
@@ -38,7 +39,7 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#ffffff, #f7f7f7);
+  background: linear-gradient(#ffffff, #f7f7f7 85%);
   margin: 3em 0;
   @media screen and (max-width: 900px) {
     flex-direction: column;
@@ -46,12 +47,16 @@ const Wrapper = styled.section`
   }
 `;
 
+const StyledRow = styled(Row)`
+  flex-direction: row;
+`;
+
 const Features = () => (
   <Wrapper>
     <Title1>FEATURES</Title1>
-    <Row justifycontent="space-evenly" width="100%" margin="2em auto">
+    <StyledRow justifycontent="space-evenly" width="100%" margin="2em auto">
       <Column width="40%">
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Cms} alt="Subchannel CMS Icon" />
           <Column width="55%">
             <Title3>Content Management System</Title3>
@@ -70,7 +75,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row> */}
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Branded} alt="Subchannel Branded Icon" />
           <Column width="55%">
             <Title3>Branded Applications</Title3>
@@ -79,7 +84,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Payout} alt="Subchannel Payout Icon" />
           <Column width="60%">
             <Title3>Flexible Payout Options</Title3>
@@ -89,7 +94,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Security} alt="Subchannel Security Icon" />
           <Column width="55%">
             <Title3>High Security & Monitoring</Title3>
@@ -99,7 +104,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Backup} alt="Subchannel Backups Icon" />
           <Column width="55%">
             <Title3>Daily Backups</Title3>
@@ -111,7 +116,7 @@ const Features = () => (
         </Row>
       </Column>
       <Column width="40%">
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Timeline} alt="Subchannel TimeLine Icon" />
           <Column width="55%">
             <Title3>Timeline Tool</Title3>
@@ -121,7 +126,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={OnDemand} alt="Subchannel OnDemand Icon" />
           <Column width="55%">
             <Title3>On Demand Viewing</Title3>
@@ -131,7 +136,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Training} alt="Subchannel Training Icon" />
           <Column width="55%">
             <Title3>On-site Training & Migration</Title3>
@@ -141,7 +146,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Bank} alt="Subchannel Bank Icon" />
           <Column width="55%">
             <Title3>Ad Bank Tool</Title3>
@@ -151,7 +156,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="2em 0">
+        <Row width="100%" margin="1.5em 0" alignitems="center">
           <IconStyle src={Manager} alt="Subchannel Manager Icon" />
           <Column width="55%">
             <Title3>24/7 Technical Account Manager</Title3>
@@ -171,7 +176,7 @@ const Features = () => (
           </Column>
         </Row> */}
       </Column>
-    </Row>
+    </StyledRow>
   </Wrapper>
 );
 

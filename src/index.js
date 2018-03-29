@@ -34,8 +34,20 @@ render();
 // Intercom
 
 window.Intercom("boot", {
-  app_id: "xu9tvnc7"
+  app_id: "xu9tvnc7",
+  hide_default_launcher: false
 });
+
+console.log(this);
+window.addEventListener("scroll", this.handleScroll);
+
+const handleScroll = e => {
+  if (window.pageYOffset === 200) {
+    window.Intercom({
+      hide_default_launcher: true
+    });
+  }
+};
 
 window.Intercom("update");
 

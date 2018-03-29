@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   align-items: center;
   margin: 2em 0;
   padding-bottom: 2em;
-  background: linear-gradient(#ffffff, #f7f7f7);
+  background: linear-gradient(#ffffff, #f7f7f7 85%);
 `;
 
 const Colored = styled.div.attrs({
@@ -46,27 +46,27 @@ export default function How(props) {
         <Styledh3 fontSize="1.5em">SETUP</Styledh3>
         <Text margin="0 2em" widthmobile="60%" fontsizemobile="1em">
           We help you fill in the blanks to ensure your application is running
-          smoothly
+          smoothly.
         </Text>
       </Colored>
       <Colored bordercolor="#168787">
         <Styledh3 fontSize="1.5em">TRAINING</Styledh3>
         <Text margin="0 2em" widthmobile="50%" fontsizemobile="1em">
           We train you on how Subchannel can be utilized in your day-to-day
-          business
+          business.
         </Text>
       </Colored>
       <Colored bordercolor="#F4BC4A">
         <Styledh3 fontSize="1.5em">GROWTH</Styledh3>
         <Text margin="0 2em" widthmobile="50%" fontsizemobile="1em">
           We guide you through the process of how to scale and grow your
-          business
+          business.
         </Text>
       </Colored>
       <Colored bordercolor="#AED1CF">
         <Styledh3 fontSize="1.5em">SUPPORT</Styledh3>
         <Text margin="0 2em" widthmobile="50%" fontsizemobile="1em">
-          We provide technical support and answer any questions you might have
+          We provide technical support and answer any questions you might have.
         </Text>
       </Colored>
     </Wrapper>

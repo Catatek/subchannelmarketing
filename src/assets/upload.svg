@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.63 199.63"><defs><style>.cls-1{fill:#e6f4f2;}.cls-2{fill:#168787;}.cls-3{fill:none;stroke:#7bc6c1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3.9px;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="99.81" cy="99.81" r="99.81"/><path class="cls-2" d="M154.71,96.78h-7.53a22.75,22.75,0,0,0-35-26.07,39.89,39.89,0,1,0-74.46,27.6A24.17,24.17,0,0,0,21.91,121h0a24.18,24.18,0,0,0,24.18,24.18H154.71A24.18,24.18,0,0,0,178.89,121h0A24.18,24.18,0,0,0,154.71,96.78Z"/><line class="cls-3" x1="72.96" y1="72.38" x2="72.96" y2="116.09"/><line class="cls-3" x1="79.98" y1="78.37" x2="72.96" y2="72.38"/><line class="cls-3" x1="65.93" y1="78.37" x2="72.96" y2="72.38"/><line class="cls-3" x1="57.74" y1="124.27" x2="88.03" y2="124.27"/><line class="cls-3" x1="88.03" y1="114.39" x2="88.03" y2="124.27"/><line class="cls-3" x1="57.74" y1="114.39" x2="57.74" y2="124.27"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>1_Upload</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MarketingSiteIllustrations" transform="translate(-529.000000, -1415.000000)">
+            <g id="1_Upload" transform="translate(529.000000, 1415.000000)">
+                <circle id="Oval" fill="#E6F4F2" fill-rule="nonzero" cx="99.81" cy="99.81" r="99.81"></circle>
+                <path d="M154.71,96.78 L147.18,96.78 C150.671305,87.3172526 147.515188,76.6853798 139.42625,70.6602763 C131.337312,64.6351728 120.246893,64.6554125 112.18,70.71 C108.299076,56.0449048 96.435823,44.8503804 81.5704553,41.8259084 C66.7050877,38.8014363 51.4107985,44.4705524 42.1081582,56.4533513 C32.8055179,68.4361502 31.1048121,84.6584113 37.72,98.31 C28.2162493,101.813428 21.905042,110.871068 21.91,121 C21.91,134.354245 32.7357547,145.18 46.09,145.18 L154.71,145.18 C168.064245,145.18 178.89,134.354245 178.89,121 C178.90062,114.580138 176.357781,108.419579 171.822,103.876294 C167.286218,99.3330097 161.129871,96.7799912 154.71,96.78 Z" id="Shape" fill-opacity="0.751415308" fill="#168787" fill-rule="nonzero"></path>
+                <path d="M72.96,72.38 L72.96,116.09" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+                <path d="M79.98,78.37 L72.96,72.38" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+                <path d="M65.93,78.37 L72.96,72.38" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+                <path d="M57.74,124.27 L88.03,124.27" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+                <path d="M88.03,114.39 L88.03,124.27" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+                <path d="M57.74,114.39 L57.74,124.27" id="Shape" stroke="#7BC6C1" stroke-width="3.9" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

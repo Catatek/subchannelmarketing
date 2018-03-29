@@ -10,7 +10,6 @@ import DragDropAdvertising from "../../sections/DragDropAdvertising/DragDropAdve
 import Features from "../../sections/Features/Features";
 import How from "../../sections/How";
 import Plans from "../../sections/Plans/Plans";
-import BottomNav from "../../shared/BottomNav";
 
 class Index extends Component {
   render() {
@@ -26,7 +25,6 @@ class Index extends Component {
         <Features />
         <How />
         <Plans />
-        <BottomNav />
         <Footer />
       </div>
     );

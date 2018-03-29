@@ -19,11 +19,12 @@ const Styled_ul = styled.ul`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0;
 `;
 
 const Styled_li = styled.li`
   margin: 1.5em 0;
-  font-size: 1.5em;
+  font-size: 1.4em;
 `;
 
 function BurgerMenu({ close }) {
@@ -39,6 +40,9 @@ function BurgerMenu({ close }) {
         <Link to="/jobs">
           <Styled_li onClick={close}>Jobs</Styled_li>
         </Link>
+        <Link to="/support">
+          <Styled_li onClick={close}>Support</Styled_li>
+        </Link>
       </Styled_ul>
     </div>
   );
@@ -47,7 +51,7 @@ function BurgerMenu({ close }) {
 const contentStyle = {
   background: "rgba(255,255,255,0)",
   width: "100%",
-  border: "none",
+  border: "none"
 };
 
 export default function Hamburger() {

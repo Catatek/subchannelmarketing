@@ -46,7 +46,11 @@ export default function InternalBottomNav(props) {
   return (
     <Wrapper>
       <StyledRow alignitems="center" justifycontent="space-evenly" width="55%">
-        <a href="https://medium.com/teamsubchannel" target="_blank">
+        <a
+          href="https://medium.com/teamsubchannel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Column margin="0 em">
             <Box>
               <img

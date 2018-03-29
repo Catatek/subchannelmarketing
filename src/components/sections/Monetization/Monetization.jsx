@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(#ffffff, #f7f7f7);
+  background: linear-gradient(#ffffff, #f7f7f7 85%);
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;
     height: 110vh;
@@ -18,8 +18,8 @@ const Wrapper = styled.section`
 `;
 
 const ImgStyle = styled.img`
-  width: 400px;
-  height: 331px;
+  width: 425px;
+  height: 351px;
   @media (max-width: 500px) {
     width: 300px;
     height: 249px;

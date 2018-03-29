@@ -18,7 +18,6 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   position: static;
-  // background: linear-gradient(#fff, #f4fdfd);
   @media (max-width: 500px) {
     justify-content: center;
   }
@@ -31,6 +30,14 @@ const StyledNav = styled.nav`
   width: 100%;
 `;
 
+const StyledNavLink = styled(NavLink)`
+  font-weight: 300;
+  margin: 0 0.8em;
+  &:hover {
+    color: #f4bc4a;
+  }
+`;
+
 export default function Header({ children, ...props }) {
   const mobile = window.matchMedia("(max-width: 720px)");
   return (
@@ -40,19 +47,12 @@ export default function Header({ children, ...props }) {
         {mobile.matches ? (
           <Hamburger />
         ) : (
-          <Row justifycontent="space-between" width="100%">
-            <NavLink to="/media">
-              <Title3 hover fontSize=".9em" fontWeight="300">
-                Media
-              </Title3>
-            </NavLink>
-
+          <Row justifycontent="flex-end" width="100%">
             <div style={{ marginRight: "1.5em" }}>
-              <NavLink to="/form">
-                <Title3 hover fontSize="1em" fontWeight="300">
-                  SIGN IN
-                </Title3>
-              </NavLink>
+              <StyledNavLink to="/media">Media</StyledNavLink>
+              <StyledNavLink to="/team">Team</StyledNavLink>
+              <StyledNavLink to="/jobs">Jobs</StyledNavLink>
+              <StyledNavLink to="/support">Support</StyledNavLink>
             </div>
           </Row>
         )}

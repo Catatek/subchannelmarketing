@@ -64,7 +64,7 @@ export default function Construction(props) {
         <StyledRow justifycontent="center">
           <StyledColumn>
             <Title1 color="#019095">We're Sorry</Title1>
-            <Title2>
+            <Title2 lineheight="1.4em">
               This page is currently under construction. Please come visit us
               again!
             </Title2>

@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(#ffffff, #f7f7f7);
+  background: linear-gradient(#ffffff, #f7f7f7 85%);
   @media screen and (max-width: 900px) {
     flex-direction: column;
     height: 120vh;

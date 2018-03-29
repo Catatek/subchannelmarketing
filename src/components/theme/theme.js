@@ -87,8 +87,8 @@ export const SignupButton = styled.button`
     box-shadow: 1px 1px 15px #eee;
   }
   @media (max-width: 500px) {
-    height: 55px;
-    width: 225px;
+    height: 50px;
+    width: 200px;
   }
 `;
 
@@ -134,7 +134,7 @@ export const Title1 = styled.h1.attrs({
   line-height: 1.2em;
   font-weight: 600;
   @media (max-width: 500px) {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 `;
 
@@ -152,7 +152,7 @@ export const Title2 = styled.h2.attrs({
   font-family: "Montserrat", sans-serif;
   line-height: ${props => props.lineheight};
   @media (max-width: 500px) {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 `;
 

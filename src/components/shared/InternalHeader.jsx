@@ -8,9 +8,9 @@ import Hamburger from "../shared/Burger";
 const Img = styled.img`
   width: 51px;
   height: 51px;
-  margin: 0 1.7em;
+  margin: 0 1.25em;
   border-right: 1.5px solid #aaa;
-  padding-right: 0.8em;
+  padding-right: 1.25em;
   @media (max-width: 500px) {
   }
 `;
@@ -51,7 +51,7 @@ export default function InternalHeader({ children, ...props }) {
           <Link to="/">
             <Img src={Icon} alt="Subchannel Logo" />
           </Link>
-          <Title3 fontWeight="300" margin="0 .5em 0 0" marginmobile="0">
+          <Title3 fontWeight="300" margin="0 .5em .2em 0" marginmobile="0">
             {props.pagetitle}
           </Title3>
         </HeaderRow>

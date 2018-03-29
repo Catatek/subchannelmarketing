@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(#ffffff, #f7f7f7);
+  background: linear-gradient(#ffffff, #f7f7f7 85%);
   @media screen and (max-width: 900px) {
     flex-direction: column;
     height: 120vh;
@@ -18,11 +18,11 @@ const Wrapper = styled.section`
 `;
 
 const ImgStyle = styled.img`
-  width: 350px;
-  height: 379px;
+  width: 325px;
+  height: 352px;
   @media (max-width: 500px) {
-    width: 350px;
-    height: 350px;
+    width: 275px;
+    height: 297px;
   }
 `;
 
