@@ -44,29 +44,30 @@ const StyledColumn = styled(Column)`
 `;
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeClass: "activeClass"
-    };
-    this.listenScrollEvent = this.listenScrollEvent.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     activeClass: "activeClass"
+  //   };
+  //   this.listenScrollEvent = this.listenScrollEvent.bind(this);
+  // }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.listenScrollEvent);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.listenScrollEvent);
+  // }
 
-  listenScrollEvent() {
-    this.setState({
-      activeClass: "inactiveClass"
-    });
-  }
+  // listenScrollEvent() {
+  //   this.setState({
+  //     activeClass: "inactiveClass"
+  //   });
+  // }
 
   render() {
     let settings = {
       dots: true,
       infinite: false,
-      arrows: false
+      arrows: false,
+      speed: 1000
     };
 
     const mobile = window.matchMedia("(max-width: 720px)");
@@ -76,7 +77,7 @@ class About extends Component {
         {mobile.matches ? (
           <div
             style={{
-              margin: "5em 0"
+              margin: "1.5em 0"
             }}
           >
             <Slider {...settings}>

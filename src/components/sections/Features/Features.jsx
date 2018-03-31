@@ -31,6 +31,11 @@ const IconStyle = styled.img`
     height: 60px;
     margin: 1em 0;
   }
+  @media screen and (max-width: 520px) {
+    width: 50px;
+    height: 50px;
+    margin: 0.8em 0;
+  }
 `;
 
 const Wrapper = styled.section`
@@ -49,14 +54,17 @@ const Wrapper = styled.section`
 
 const StyledRow = styled(Row)`
   flex-direction: row;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 `;
 
 const Features = () => (
-  <Wrapper>
+  <Wrapper margin="1em 0">
     <Title1>FEATURES</Title1>
-    <StyledRow justifycontent="space-evenly" width="100%" margin="2em auto">
-      <Column width="40%">
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+    <Column alignitems="space-evenly" width="85%">
+      <StyledRow justifycontent="center" margin="1.5em 0">
+        <Row width="48%" alignitems="center">
           <IconStyle src={Cms} alt="Subchannel CMS Icon" />
           <Column width="55%">
             <Title3>Content Management System</Title3>
@@ -65,58 +73,7 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        {/* <Row width="100%" margin="3em 0">
-          <IconStyle src={Second} alt="Subchannel Second Screen Icon" />
-          <Column width="60%">
-            <Title3>Second Screen Engagement</Title3>
-            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
-              Engage viewers on their mobile devices while they're watching your
-              content on TV.
-            </Text>
-          </Column>
-        </Row> */}
-        <Row width="100%" margin="1.5em 0" alignitems="center">
-          <IconStyle src={Branded} alt="Subchannel Branded Icon" />
-          <Column width="55%">
-            <Title3>Branded Applications</Title3>
-            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
-              Website and Mobile Applications with your logo and branding.
-            </Text>
-          </Column>
-        </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
-          <IconStyle src={Payout} alt="Subchannel Payout Icon" />
-          <Column width="60%">
-            <Title3>Flexible Payout Options</Title3>
-            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
-              You can get paid when you get paid and share the wealth with your
-              collaborators.
-            </Text>
-          </Column>
-        </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
-          <IconStyle src={Security} alt="Subchannel Security Icon" />
-          <Column width="55%">
-            <Title3>High Security & Monitoring</Title3>
-            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
-              Security of your personal information and analytic data is a top
-              priority.
-            </Text>
-          </Column>
-        </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
-          <IconStyle src={Backup} alt="Subchannel Backups Icon" />
-          <Column width="55%">
-            <Title3>Daily Backups</Title3>
-            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
-              We ensure that your content is backed up and that none of your
-              work will be lost.
-            </Text>
-          </Column>
-        </Row>
-      </Column>
-      <Column width="40%">
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+        <Row width="48%" alignitems="center">
           <IconStyle src={Timeline} alt="Subchannel TimeLine Icon" />
           <Column width="55%">
             <Title3>Timeline Tool</Title3>
@@ -126,7 +83,18 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+      </StyledRow>
+      <StyledRow justifycontent="center" margin="1.5em 0">
+        <Row width="48%" alignitems="center">
+          <IconStyle src={Branded} alt="Subchannel Branded Icon" />
+          <Column width="55%">
+            <Title3>Branded Applications</Title3>
+            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
+              Website and Mobile Applications with your logo and branding.
+            </Text>
+          </Column>
+        </Row>
+        <Row width="48%" alignitems="center">
           <IconStyle src={OnDemand} alt="Subchannel OnDemand Icon" />
           <Column width="55%">
             <Title3>On Demand Viewing</Title3>
@@ -136,7 +104,19 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+      </StyledRow>
+      <StyledRow justifycontent="center" margin="1.5em 0">
+        <Row width="48%" alignitems="center">
+          <IconStyle src={Payout} alt="Subchannel Payout Icon" />
+          <Column width="60%">
+            <Title3>Flexible Payout Options</Title3>
+            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
+              You can get paid when you get paid and share the wealth with your
+              collaborators.
+            </Text>
+          </Column>
+        </Row>
+        <Row width="48%" alignitems="center">
           <IconStyle src={Training} alt="Subchannel Training Icon" />
           <Column width="55%">
             <Title3>On-site Training & Migration</Title3>
@@ -146,7 +126,19 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+      </StyledRow>
+      <StyledRow justifycontent="center" margin="1.5em 0">
+        <Row width="48%" alignitems="center">
+          <IconStyle src={Security} alt="Subchannel Security Icon" />
+          <Column width="55%">
+            <Title3>High Security & Monitoring</Title3>
+            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
+              Security of your personal information and analytic data is a top
+              priority.
+            </Text>
+          </Column>
+        </Row>
+        <Row width="48%" alignitems="center">
           <IconStyle src={Bank} alt="Subchannel Bank Icon" />
           <Column width="55%">
             <Title3>Ad Bank Tool</Title3>
@@ -156,7 +148,19 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        <Row width="100%" margin="1.5em 0" alignitems="center">
+      </StyledRow>
+      <StyledRow justifycontent="center" margin="1.5em 0">
+        <Row width="48%" alignitems="center">
+          <IconStyle src={Backup} alt="Subchannel Backups Icon" />
+          <Column width="55%">
+            <Title3>Daily Backups</Title3>
+            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
+              We ensure that your content is backed up and that none of your
+              work will be lost.
+            </Text>
+          </Column>
+        </Row>
+        <Row width="48%" alignitems="center">
           <IconStyle src={Manager} alt="Subchannel Manager Icon" />
           <Column width="55%">
             <Title3>24/7 Technical Account Manager</Title3>
@@ -165,7 +169,19 @@ const Features = () => (
             </Text>
           </Column>
         </Row>
-        {/* <Row width="100%" margin="3em 0">
+      </StyledRow>
+    </Column>
+    {/* <Row width="100%" margin="3em 0">
+          <IconStyle src={Second} alt="Subchannel Second Screen Icon" />
+          <Column width="60%">
+            <Title3>Second Screen Engagement</Title3>
+            <Text margin=".8em 0 0 0" lineheight="1.6em" widthmobile="80%">
+              Engage viewers on their mobile devices while they're watching your
+              content on TV.
+            </Text>
+          </Column>
+        </Row> */}
+    {/* <Row width="100%" margin="3em 0">
           <IconStyle src={Analytics} alt="Subchannel Analytics Icon" />
           <Column width="55%">
             <Title3>Daily Backups</Title3>
@@ -175,8 +191,6 @@ const Features = () => (
             </Text>
           </Column>
         </Row> */}
-      </Column>
-    </StyledRow>
   </Wrapper>
 );
 

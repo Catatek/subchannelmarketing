@@ -27,58 +27,56 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const ElitePlan = () => (
-  <PlanContainer backgroundcolor="#EAB548">
-    <PlanDiv>
-      <Title1 color="#fff" margin=".5em 0 .2em 0">
-        ELITE
-      </Title1>
-      <SmallText
-        color="#fff"
-        margin="0 0 3.5em 0"
-        width="100%"
-        fontsizemobile="0.7em"
-      >
-        Flexible options for scaling enterprises
-      </SmallText>
-      <Title3 color="#fff" margin="0" plans>
-        Call for Pricing
-      </Title3>
-      <Title3 color="#fff" margin="0 0 .8em 0" plans>
-        888-888-8888
-      </Title3>
-      <StyledButton>CALL</StyledButton>
-    </PlanDiv>
-    <PlanDiv>
-      <SmallText color="#fff" margin=".6em 0" fontsizemobile="0.7em">
-        + Studio Software
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Customer Support
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Meaningful Insights
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Technical Ticketing
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Advertising Management
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Content Distribution Tools
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        File Management Tools
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Monetization Options
-      </SmallText>
-      <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-        Up to 1,000 subscribers
-      </SmallText>
-    </PlanDiv>
-  </PlanContainer>
-);
-
-export default ElitePlan;
+export default function ElitePlan({ click }) {
+  return (
+    <PlanContainer backgroundcolor="#EAB548">
+      <PlanDiv>
+        <Title1 color="#fff" margin=".5em 0 .2em 0">
+          ELITE
+        </Title1>
+        <SmallText
+          color="#fff"
+          margin="0 0 3.5em 0"
+          width="100%"
+          fontsizemobile="0.7em"
+        >
+          Flexible options for scaling enterprises
+        </SmallText>
+        <Title3 color="#fff" margin="0" plans>
+          Contact us for<br /> pricing
+        </Title3>
+        <Title3 color="#fff" margin="0 0 .8em 0" plans />
+        <StyledButton onClick={click}>CONTACT</StyledButton>
+      </PlanDiv>
+      <PlanDiv>
+        <SmallText color="#fff" margin=".6em 0" fontsizemobile="0.7em">
+          + Studio Software
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Customer Support
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Meaningful Insights
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Technical Ticketing
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Advertising Management
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Content Distribution Tools
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          File Management Tools
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Monetization Options
+        </SmallText>
+        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
+          Up to 1,000 subscribers
+        </SmallText>
+      </PlanDiv>
+    </PlanContainer>
+  );
+}

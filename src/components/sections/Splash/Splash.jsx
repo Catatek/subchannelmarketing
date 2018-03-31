@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import {
   Title1,
@@ -58,23 +58,25 @@ const StyledColumn = styled(Column)`
   }
 `;
 
-const Splash = ({ children }) => (
-  <Wrapper>
-    <StyledColumn>
-      <Title1 margin=".5em 0 0 0">
-        Distribute subscription-based content to any platform
-      </Title1>
-      <Title2 lineheight="1.4em">
-        We give you the tools to share your content, so you can earn revenue and
-        keep creating
-      </Title2>
-      <SignupButton primary>
-        <Link to="/form">JOIN US</Link>
-      </SignupButton>
-      <Img src={HeaderBg} alt="Subchannel Splash" />
-      <MobileImg src={MobileHeaderBg} alt="Subchannel Splash" />
-    </StyledColumn>
-  </Wrapper>
-);
-
-export default Splash;
+export default class Splash extends Component {
+  render() {
+    return (
+      <Wrapper>
+        <StyledColumn>
+          <Title1 margin=".5em 0 0 0">
+            Distribute subscription-based content to any platform
+          </Title1>
+          <Title2 lineheight="1.4em">
+            We give you the tools to share your content, so you can earn revenue
+            and keep creating
+          </Title2>
+          <SignupButton primary>
+            <Link to="/form">JOIN US</Link>
+          </SignupButton>
+          <Img src={HeaderBg} alt="Subchannel Splash" />
+          <MobileImg src={MobileHeaderBg} alt="Subchannel Splash" />
+        </StyledColumn>
+      </Wrapper>
+    );
+  }
+}

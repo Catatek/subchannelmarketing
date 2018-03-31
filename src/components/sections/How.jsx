@@ -41,7 +41,7 @@ const Styledh3 = styled(Title3)`
 export default function How(props) {
   return (
     <Wrapper>
-      <Title1>WHAT WE PROVIDE</Title1>
+      <Title1>WE PROVIDE</Title1>
       <Colored bordercolor="#DD694A">
         <Styledh3 fontSize="1.5em">SETUP</Styledh3>
         <Text margin="0 2em" widthmobile="60%" fontsizemobile="1em">

@@ -8,6 +8,18 @@ import Media from "../screens/Media";
 import Construction from "../screens/Construction";
 
 class App extends Component {
+  componentDidMount() {
+    setTimeout(
+      () =>
+        window.Intercom("boot", {
+          app_id: "xu9tvnc7",
+          hide_default_launcher: false
+        }),
+      5000
+    );
+    window.Intercom("update");
+  }
+
   render() {
     return (
       <div className="App">

@@ -33,7 +33,7 @@ export const Row = styled.div.attrs({
   background-color: ${props => props.backgroundcolor};
   @media (max-width: 720px) {
     flex-direction: column;
-    margin: 2em 0;
+    margin: ${props => props.margin};
   }
 `;
 
@@ -161,8 +161,10 @@ export const Title3 = styled.h3.attrs({
   marginmobile: props => props.marginmobile || "0",
   color: props => props.color || "#4d4d4d",
   fontSize: props => props.fontSize || "1.2em",
-  fontWeight: props => props.fontWeight || "600"
+  fontWeight: props => props.fontWeight || "600",
+  textalign: props => props.textalign
 })`
+  text-align: ${props => props.textalign};
   font-weight: ${props => props.fontWeight};
   margin: ${props => props.margin};
   color: ${props => props.color};
@@ -179,6 +181,9 @@ export const Title3 = styled.h3.attrs({
     font-size: 1em;
     margin: ${props => props.marginmobile};
   }
+  @media (max-width: 500px) {
+    font-size: 0.8em;
+  }
 `;
 
 export const Text = styled.p.attrs({
@@ -191,7 +196,7 @@ export const Text = styled.p.attrs({
   color: props => props.color || "#474645",
   textalign: props => props.textalign,
   fontsize: props => props.fontsize || "1em",
-  fontsizemobile: props => props.fontsizemobile || "1em"
+  fontsizemobile: props => props.fontsizemobile || ".9em"
 })`
   font-size: ${props => props.fontsize};
   text-align: ${props => props.textalign};
@@ -240,6 +245,6 @@ export const PlanContainer = styled.div.attrs({
   margin: 0 1.5em;
   @media screen and (max-width: 900px) {
     height: 520px;
-    margin: 0 0 2em 0;
+    margin: 0 auto;
   }
 `;
