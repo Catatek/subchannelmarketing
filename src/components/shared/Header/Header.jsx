@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../../../assets/subchannelLogoDark.svg";
+import Icon from "../../../assets/icon.svg";
 import { Title3, Row } from "../../theme/theme.js";
 import { NavLink } from "react-router-dom";
 import Hamburger from "../Burger";
@@ -9,6 +10,20 @@ const Img = styled.img`
   width: 250px;
   height: 51px;
   margin: 0 1.5em;
+  @media (max-width: 720px) {
+    display: none;
+  }
+`;
+
+const ImgIcon = styled.img`
+  width: 51px;
+  height: 51px;
+  margin: 0 1.25em;
+  // border-right: 1.5px solid #aaa;
+  padding-right: 1.25em;
+  @media (min-width: 720px) {
+    display: none;
+  }
 `;
 
 const Wrapper = styled.section`
@@ -44,6 +59,7 @@ export default function Header({ children, ...props }) {
     <Wrapper>
       <StyledNav>
         <Img src={Logo} alt="Subchannel Logo" />
+        <ImgIcon src={Icon} alt="Subchannel Logo" />
         {mobile.matches ? (
           <Hamburger />
         ) : (

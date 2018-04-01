@@ -31,6 +31,9 @@ function BurgerMenu({ close }) {
   return (
     <div className="menu">
       <Styled_ul>
+        <Link to="/">
+          <Styled_li onClick={close}>Home</Styled_li>
+        </Link>
         <Link to="/media">
           <Styled_li onClick={close}>Media</Styled_li>
         </Link>
