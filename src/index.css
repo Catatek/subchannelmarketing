@@ -15,6 +15,12 @@ a {
   color: inherit;
 }
 
+::-webkit-input-placeholder {
+  color: #cbcbcb;
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+}
+
 .inactiveClass {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

@@ -134,7 +134,7 @@ export const Title1 = styled.h1.attrs({
   line-height: 1.2em;
   font-weight: 600;
   @media (max-width: 500px) {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 `;
 

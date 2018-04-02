@@ -20,7 +20,7 @@ const Wrapper = styled.section`
 `;
 
 const Img = styled.img`
-  width: 90%;
+  width: 98%;
   position: absolute;
   bottom: 1em;
   zindex: 1;
@@ -50,12 +50,54 @@ const StyledColumn = styled(Column)`
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  height: 60%;
-  margin: 0 0 3em 0;
+  height: 45%;
+  margin: 4em 0 0 0;
+  min-width: 452px;
   @media screen and (max-width: 900px) {
     width: 96%;
+    min-width: 0;
     height: 50%;
   }
+`;
+
+const StyledRow = styled(Row)`
+  flex-direction: row;
+`;
+
+const Input = styled.input`
+  height: 42px;
+  width: 185px;
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-right: none;
+  z-index: 100000;
+  outline: none;
+  padding: 0 0.5em;
+  border-radius: 5px 0 0 5px;
+  color: #4d4d4d;
+  &:focus {
+    border-top: 1px solid #dd694a;
+    border-left: 1px solid #dd694a;
+    border-bottom: 1px solid #dd694a;
+  }
+`;
+
+const Button = styled.button`
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  outline: none;
+  z-index: 100000;
+  background-color: #dd694a;
+  color: #fff;
+  height: 42x;
+  width: 115px;
+  padding: 0 0.5em;
+  border: 1px solid transparent;
+  border: none;
+  border-radius: 0 5px 5px 0;
 `;
 
 export default class Splash extends Component {
@@ -70,9 +112,10 @@ export default class Splash extends Component {
             We give you the tools to share your content, so you can earn revenue
             and keep creating
           </Title2>
-          <SignupButton primary>
-            <Link to="/form">JOIN US</Link>
-          </SignupButton>
+          <StyledRow>
+            <Input placeholder="Enter your email" />
+            <Button>Get Started</Button>
+          </StyledRow>
           <Img src={HeaderBg} alt="Subchannel Splash" />
           <MobileImg src={MobileHeaderBg} alt="Subchannel Splash" />
         </StyledColumn>
