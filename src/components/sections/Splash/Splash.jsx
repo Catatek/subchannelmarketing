@@ -6,11 +6,13 @@ import {
   Title3,
   Column,
   Row,
+  Text,
   SignupButton
 } from "../../theme/theme.js";
 import HeaderBg from "../../../assets/headerBg1.svg";
 import MobileHeaderBg from "../../../assets/mobileHeader.svg";
 import { Link } from "react-router-dom";
+import { Formik } from "formik";
 
 const Wrapper = styled.section`
   height: 90vh;
@@ -23,7 +25,7 @@ const Img = styled.img`
   width: 98%;
   position: absolute;
   bottom: 1em;
-  zindex: 1;
+  z-index: 1;
   @media (min-width: 500px) {
     display: block;
   }
@@ -64,33 +66,37 @@ const StyledRow = styled(Row)`
   flex-direction: row;
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  inputerror: props => props.inputerror
+})`
   height: 42px;
   width: 185px;
   font-family: "Montserrat", sans-serif;
-  border-top: 1px solid #bbb;
-  border-left: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  border-right: none;
+  border: 1px solid #bbb;
   z-index: 100000;
+  border: ${props => props.inputerror};
+  border-right: 1px solid transparent;
   outline: none;
   padding: 0 0.5em;
   border-radius: 5px 0 0 5px;
   color: #4d4d4d;
   &:focus {
-    border-top: 1px solid #dd694a;
-    border-left: 1px solid #dd694a;
-    border-bottom: 1px solid #dd694a;
+    border: 1px solid #dd694a;
+    border-right: 1px solid transparent;
   }
 `;
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  submitcolor: props => props.submitcolor
+})`;
+  
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
   z-index: 100000;
   background-color: #dd694a;
+  background-color ${props => props.submitcolor};
   color: #fff;
   height: 42x;
   width: 115px;
@@ -98,9 +104,48 @@ const Button = styled.button`
   border: 1px solid transparent;
   border: none;
   border-radius: 0 5px 5px 0;
+  &:hover {
+    background-color: #168787;
+  }
 `;
 
+const handleValidation = (values, props) => {};
+
 export default class Splash extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: ""
+    };
+    this.handleSubmitForm = this.handleSubmitForm.bind(this);
+  }
+
+  componentDidUpdate() {
+    fetch("https://getsubchannel.com/api/memberList", {
+      method: "POST",
+      header: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email: this.state.email
+      })
+    })
+      .then(res => {
+        return res.json();
+      })
+      .catch(err => {
+        console.log("error", err);
+      });
+  }
+
+  handleSubmitForm(values) {
+    this.setState({
+      email: values.email
+    });
+    console.log(this.state.email);
+  }
+
   render() {
     return (
       <Wrapper>
@@ -112,10 +157,54 @@ export default class Splash extends Component {
             We give you the tools to share your content, so you can earn revenue
             and keep creating
           </Title2>
-          <StyledRow>
-            <Input placeholder="Enter your email" />
-            <Button>Get Started</Button>
-          </StyledRow>
+
+          <Formik
+            initialValues={{
+              email: ""
+            }}
+            onSubmit={values => {
+              this.handleSubmitForm({
+                email: values.email
+              });
+            }}
+            validate={(values, props) => {
+              let errors = {};
+              if (!values.email) {
+                errors.email = "Required";
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+              ) {
+                errors.email = "Invalid email address";
+              }
+              return errors;
+            }}
+            render={({
+              errors,
+              touched,
+              values,
+              handleSubmit,
+              handleBlur,
+              handleChange
+            }) => (
+              <form onSubmit={handleSubmit}>
+                <StyledRow>
+                  {/* {errors.email && <p>Required</p>} */}
+                  <Input
+                    placeholder="Enter your email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    name="email"
+                    value={values.email}
+                    inputerror={values.email && "1px solid #168787"}
+                  />
+
+                  <Button type="submit" submitcolor={values.email && "#168787"}>
+                    Get Started
+                  </Button>
+                </StyledRow>
+              </form>
+            )}
+          />
           <Img src={HeaderBg} alt="Subchannel Splash" />
           <MobileImg src={MobileHeaderBg} alt="Subchannel Splash" />
         </StyledColumn>

@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://getsubchannel.com",
   "dependencies": {
+    "express": "^4.16.3",
+    "formik": "^0.11.11",
     "install": "^0.10.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -20,5 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "mailchimp-api-v3": "^1.8.0"
   }
 }

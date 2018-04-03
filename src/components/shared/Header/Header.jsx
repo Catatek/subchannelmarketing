@@ -5,6 +5,7 @@ import Icon from "../../../assets/icon.svg";
 import { Title3, Row } from "../../theme/theme.js";
 import { NavLink } from "react-router-dom";
 import Hamburger from "../Burger";
+import { Formik } from "formik";
 
 const Img = styled.img`
   width: 250px;
@@ -33,8 +34,6 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   position: static;
-  background: linear-gradient(#ffffff, #f7f7f7 85%);
-  // box-shadow: 1px 1px 25px #ddd;
   @media (max-width: 500px) {
     justify-content: center;
   }
