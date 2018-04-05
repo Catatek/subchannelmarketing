@@ -73,7 +73,7 @@ const Input = styled.input.attrs({
   width: 185px;
   font-family: "Montserrat", sans-serif;
   border: 1px solid #bbb;
-  z-index: 100000;
+  z-index: 100;
   border: ${props => props.inputerror};
   border-right: 1px solid transparent;
   outline: none;
@@ -94,7 +94,7 @@ const Button = styled.button.attrs({
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
-  z-index: 100000;
+  z-index: 100;
   background-color: #dd694a;
   background-color ${props => props.submitcolor};
   color: #fff;
@@ -121,22 +121,22 @@ export default class Splash extends Component {
   }
 
   componentDidUpdate() {
-    fetch("https://getsubchannel.com/api/memberList", {
-      method: "POST",
-      header: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        email: this.state.email
-      })
-    })
-      .then(res => {
-        return res.json();
-      })
-      .catch(err => {
-        console.log("error", err);
-      });
+    // fetch("https://getsubchannel.com/api/memberList", {
+    //   method: "POST",
+    //   header: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify({
+    //     email: this.state.email
+    //   })
+    // })
+    //   .then(res => {
+    //     return res.json();
+    //   })
+    //   .catch(err => {
+    //     console.log("error", err);
+    //   });
   }
 
   handleSubmitForm(values) {
@@ -188,7 +188,6 @@ export default class Splash extends Component {
             }) => (
               <form onSubmit={handleSubmit}>
                 <StyledRow>
-                  {/* {errors.email && <p>Required</p>} */}
                   <Input
                     placeholder="Enter your email"
                     onChange={handleChange}
