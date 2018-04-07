@@ -5,6 +5,7 @@ import Logo from "../../../assets/subchannelLogoDark.svg";
 import LogoIcon from "../../../assets/subchannelIcon.svg";
 import SubscriberForm from "../../shared/SubscriberForm";
 import { Title1, Title2 } from "../../theme/theme.js";
+import { Link } from "react-router-dom";
 
 const imgStyle = {
   width: "265px",
@@ -69,10 +70,14 @@ const Header = styled.div`
   justify-content: flex-start;
   position: absolute;
   top: 0;
+  z-index: 100;
 `;
 
-const LogoI = styled.img`
-  @media (max-width: 700px) {
+const Img = styled.img`
+  width: 250px;
+  height: 51px;
+  margin: 1em 1.5em;
+  @media (max-width: 720px) {
     display: none;
   }
 `;
@@ -82,16 +87,19 @@ export default function ComingSoon() {
     <Wrapper>
       <Tint />
       <Header>
-        <img src={Logo} style={imgStyle} alt="Subchannel Logo" />
+        <Link to="/">
+          <Img src={Logo} alt="Subchannel Logo" />
+        </Link>
       </Header>
       <Information>
-        <LogoI src={LogoIcon} alt="Subchannel Icon" />
-        <Title1>Distribute subscription-based content to any platform.</Title1>
+        <img src={LogoIcon} alt="Subchannel Icon" />
+        <Title1>We're coming soon!</Title1>
         <Title2 lineheight="1.6em">
-          We're coming soon, signup below and we will let you know when we
-          launch!
+          Help us make a better product so that you can turn your content into
+          your business. Fill our the form below and we'll give you{" "}
+          <span style={{ fontWeight: "600" }}>3 months free</span> of our
+          Starter plan!
         </Title2>
-        <SubscriberForm />
       </Information>
     </Wrapper>
   );

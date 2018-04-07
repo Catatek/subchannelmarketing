@@ -11,8 +11,9 @@ import {
 } from "../../theme/theme.js";
 import HeaderBg from "../../../assets/headerBg1.svg";
 import MobileHeaderBg from "../../../assets/mobileHeader.svg";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { Formik } from "formik";
+import axios from "axios";
 
 const Wrapper = styled.section`
   height: 90vh;
@@ -109,9 +110,7 @@ const Button = styled.button.attrs({
   }
 `;
 
-const handleValidation = (values, props) => {};
-
-export default class Splash extends Component {
+class Splash extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -120,30 +119,14 @@ export default class Splash extends Component {
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
   }
 
-  componentDidUpdate() {
-    // fetch("https://getsubchannel.com/api/memberList", {
-    //   method: "POST",
-    //   header: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify({
-    //     email: this.state.email
-    //   })
-    // })
-    //   .then(res => {
-    //     return res.json();
-    //   })
-    //   .catch(err => {
-    //     console.log("error", err);
-    //   });
-  }
+  componentDidUpdate() {}
 
-  handleSubmitForm(values) {
+  handleSubmitForm(values, ...props) {
     this.setState({
       email: values.email
     });
     console.log(this.state.email);
+    this.props.history.push("/comingsoon");
   }
 
   render() {
@@ -211,3 +194,5 @@ export default class Splash extends Component {
     );
   }
 }
+
+export default withRouter(Splash);

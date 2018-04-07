@@ -68,6 +68,13 @@ class App extends Component {
                 return <Construction onEnter={window.scrollTo(0, 0)} />;
               }}
             />
+            <Route
+              exact
+              path="/comingsoon"
+              render={() => {
+                return <ComingSoon onEnter={window.scrollTo(0, 0)} />;
+              }}
+            />
           </Switch>
         </HashRouter>
       </div>
