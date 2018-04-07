@@ -126,7 +126,9 @@ class Splash extends Component {
       email: values.email
     });
     console.log(this.state.email);
-    this.props.history.push("/comingsoon");
+    setTimeout(() => {
+      this.props.history.push("/comingsoon");
+    }, 500);
   }
 
   render() {
