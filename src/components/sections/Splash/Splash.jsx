@@ -145,12 +145,10 @@ class Splash extends Component {
 
           <Formik
             initialValues={{
-              email: ""
-            }}
-            onSubmit={values => {
-              this.handleSubmitForm({
-                email: values.email
-              });
+              FNAME: "",
+              LNAME: "",
+              email_address: "",
+              status: "subscribed"
             }}
             validate={(values, props) => {
               let errors = {};
@@ -163,12 +161,27 @@ class Splash extends Component {
               }
               return errors;
             }}
+            onSubmit={(values, actions) => {
+              axios
+                .get(`/memberSave`, values)
+                .then(() => {
+                  actions.setSubmitting(false);
+                  actions.setStatus({
+                    message: "You have been successfully added."
+                  });
+                })
+                .catch((err, values) => {
+                  console.log(err);
+                });
+            }}
             render={({
               errors,
               touched,
               values,
               handleSubmit,
               handleBlur,
+              isSubmitting,
+              status,
               handleChange
             }) => (
               <form onSubmit={handleSubmit}>
