@@ -1,23 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  Column,
-  Row,
-  Text,
-  Title1,
-  Title2,
-  Title3
-} from "../../theme/theme.js";
+import { Column, Row, Text, Title1, Title3 } from "../../theme/theme.js";
 
 import Cms from "../../../assets/cms.svg";
 import Branded from "../../../assets/brandedApps.svg";
-import Second from "../../../assets/secondScreen.svg";
+// import Second from "../../../assets/secondScreen.svg";
 import Security from "../../../assets/security.svg";
 import Manager from "../../../assets/acctManager.svg";
 import Training from "../../../assets/training.svg";
 import Bank from "../../../assets/adBank.svg";
 import Timeline from "../../../assets/timeline.svg";
-import Analytics from "../../../assets/analytics.svg";
+// import Analytics from "../../../assets/analytics.svg";
 import Backup from "../../../assets/backups.svg";
 import Payout from "../../../assets/payout.svg";
 import OnDemand from "../../../assets/onDemand.svg";

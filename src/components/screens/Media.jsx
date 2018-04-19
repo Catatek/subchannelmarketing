@@ -4,7 +4,7 @@ import Footer from "../shared/Footer/Footer";
 import InternalHeader from "../shared/InternalHeader";
 import InternalBottomNav from "../shared/InternalBottomNav";
 import MediaBg from "../../assets/mediaSplash.jpg";
-import { Row, Column, Title3 } from "../theme/theme";
+import { Row, Column, Title3, Text } from "../theme/theme";
 
 const MediaWrapper = styled.section`
   height: 100%;
@@ -26,13 +26,6 @@ const MediaSplash = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-`;
-
-const MediaAbout = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 6em 0;
 `;
 
 const MediaContent = styled.div`
@@ -61,7 +54,46 @@ class Media extends Component {
           <Title3 margin="3em 0 1em 4em" marginmobile="4em 0 0 0">
             Latest in the newsroom
           </Title3>
-          <Row />
+          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
+            <Column>
+              <iframe
+                className="video"
+                src="https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
+                width="475"
+                height="267"
+                frameBorder="0"
+                webkitallowfullscreen="true"
+                allowFullScreen
+                title={"meet J"}
+              />
+              <Title3 margin=".5em 0">Meet the Founders: J</Title3>
+              <Row>
+                <Text>
+                  April 19, 2018 /{" "}
+                  <span style={{ color: "#019095" }}>Getro Jean-Claude</span>
+                </Text>
+              </Row>
+            </Column>
+            <Column>
+              <iframe
+                className="video"
+                src="https://player.vimeo.com/video/265448665"
+                width="475"
+                height="267"
+                frameBorder="0"
+                webkitallowfullscreen="true"
+                allowFullScreen
+                title={"meet will"}
+              />
+              <Title3 margin=".5em 0">Meet the Founders: Will</Title3>
+              <Row>
+                <Text>
+                  April 19, 2018 /{" "}
+                  <span style={{ color: "#019095" }}>Getro Jean-Claude</span>
+                </Text>
+              </Row>
+            </Column>
+          </Row>
         </MediaWrapper>
         <MediaContent />
         <InternalBottomNav

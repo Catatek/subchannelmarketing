@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import {
-  Title1,
-  Title2,
-  Title3,
-  Row,
-  Column,
-  Text
-} from "../../theme/theme.js";
+import { Title3, Row, Column, Text } from "../../theme/theme.js";
 import Upload from "../../../assets/upload.svg";
 import Distribute from "../../../assets/distribute.svg";
 import Monetize from "../../../assets/monetize.svg";

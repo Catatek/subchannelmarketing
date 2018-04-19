@@ -10,6 +10,7 @@ import DragDropAdvertising from "../../sections/DragDropAdvertising/DragDropAdve
 import Features from "../../sections/Features/Features";
 import How from "../../sections/How";
 import Plans from "../../sections/Plans/Plans";
+import { withRouter } from "react-router-dom";
 
 class Index extends Component {
   render() {
@@ -31,4 +32,4 @@ class Index extends Component {
   }
 }
 
-export default Index;
+export default withRouter(Index);

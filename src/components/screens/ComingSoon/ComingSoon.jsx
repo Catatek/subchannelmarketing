@@ -3,15 +3,8 @@ import styled from "styled-components";
 import Background from "../../../assets/background.svg";
 import Logo from "../../../assets/subchannelLogoDark.svg";
 import LogoIcon from "../../../assets/subchannelIcon.svg";
-import SubscriberForm from "../../shared/SubscriberForm";
 import { Title1, Title2 } from "../../theme/theme.js";
 import { Link } from "react-router-dom";
-
-const imgStyle = {
-  width: "265px",
-  height: "55px",
-  margin: ".8em"
-};
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -99,6 +92,17 @@ export default function ComingSoon() {
           your business. Fill our the form below and we'll give you{" "}
           <span style={{ fontWeight: "600" }}>3 months free</span> of our
           Starter plan!
+        </Title2>
+        <Title2 color="#168787">
+          <u>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdxa8POJo54upicFxbGIMHmKYm8bffuGQJw2cAs9tQ34H-Nug/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fill out the form!
+            </a>
+          </u>
         </Title2>
       </Information>
     </Wrapper>

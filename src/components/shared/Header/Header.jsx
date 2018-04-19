@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../../../assets/subchannelLogoDark.svg";
 import Icon from "../../../assets/icon.svg";
-import { Title3, Row } from "../../theme/theme.js";
+import { Row } from "../../theme/theme.js";
 import { NavLink } from "react-router-dom";
 import Hamburger from "../Burger";
-import { Formik } from "formik";
 
 const Img = styled.img`
   width: 250px;

@@ -1,17 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import {
-  Title1,
-  Title2,
-  Title3,
-  Column,
-  Row,
-  Text,
-  SignupButton
-} from "../../theme/theme.js";
+import { Title1, Title2, Column, Row } from "../../theme/theme.js";
 import HeaderBg from "../../../assets/headerBg1.svg";
 import MobileHeaderBg from "../../../assets/mobileHeader.svg";
-import { Link, withRouter } from "react-router-dom";
+
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const Wrapper = styled.section`
@@ -89,51 +81,36 @@ const Button = styled.button.attrs({
   }
 `;
 
-// function Form({onValidated}) {
-//   let email;
-//   submit = () => {
-//     email &&
-//     email.value.indexOf("@") > -1 &&
-//     onValidated({
-//       EMAIL: email.value
-//   });
-//   return(
-//     <form>
-//       <StyledRow>
-//         <input
-//           className="signupInput"
-//           name="email"
-//           placeholder="Enter your email"
-//           type="email"
-//           ref={node => (email = node)}
-//         />
-//         <Button onClick={() =>submit}>Get Started</Button>
-//       </StyledRow>
-//     </form>
-//   )
-// }
-
 const Form = props => {
-  console.log(props);
-
   let email;
-  const submit = () => {
+
+  const submit = e => {
+    e.preventDefault(e);
     email &&
       email.value.indexOf("@") > -1 &&
       props.onValidated({
         EMAIL: email.value
       });
-    props.history.push("/media");
+    setTimeout(() => {
+      props.history.push("/comingsoon");
+    }, 1000);
+    console.log(props.history);
   };
   return (
     <form>
       <StyledRow>
+        {/* {props.status === "success" && (
+          <div style={{ color: "green" }}>{props.message}</div>
+        )}
+        {props.status === "error" && <div>{props.message}</div>} */}
+
         <input
           className="signupInput"
           name="email"
           placeholder="Enter your email"
           type="email"
           ref={node => (email = node)}
+          autoComplete="off"
         />
         <Button onClick={submit}>Get Started</Button>
       </StyledRow>
@@ -157,10 +134,11 @@ class Splash extends Component {
           </Title2>
           <MailchimpSubscribe
             url={url}
-            render={({ subscribe, status }) => (
+            render={({ subscribe, status, message }) => (
               <Form
                 history={this.props.history}
                 status={status}
+                message={message}
                 onValidated={formData => subscribe(formData)}
               />
             )}
@@ -173,4 +151,4 @@ class Splash extends Component {
   }
 }
 
-export default withRouter(Splash);
+export default Splash;

@@ -2,7 +2,6 @@ import React from "react";
 import {
   SmallText,
   Title1,
-  Title2,
   Title3,
   PlanContainer,
   Button
