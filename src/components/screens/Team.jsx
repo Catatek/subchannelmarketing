@@ -9,6 +9,9 @@ import Will from "../../assets/will.png";
 import Raj from "../../assets/raj.png";
 import J from "../../assets/J.png";
 import Jet from "../../assets/jet.png";
+import Shenole from "../../assets/shenole02.png";
+import Rachel from "../../assets/rachel.png";
+import Surendra from "../../assets/surendra.png";
 
 const TeamWrapper = styled.section`
   height: 100%;
@@ -97,17 +100,19 @@ class Team extends Component {
             <TeamCard img={Raj} name="Raj Vanteddu" title="CTO | Co-Founder" />
             <TeamCard img={J} name="J Brian Miles" title="CINO | Co-Founder" />
           </Row>
-          {/* <Row margin="3em 0" alignitems="center" justifycontent="space-evenly">
-            <TeamCard name="Rachel Adams" title="Designer" />
-
-            <TeamCard name="Taylor Cox" title="Designer" />
+          <Row margin="3em 0" alignitems="center" justifycontent="space-evenly">
+            <TeamCard img={Shenole} name="Shenole Latimer" title="Developer" />
             <TeamCard
-              style={circle}
-              name="Adam Recvlohe"
-              title="Software Engineer"
+              img={Rachel}
+              name="Rachel Adams"
+              title="Designer | Illustrator"
             />
-            <TeamCard name="Surendra Vanteddu" title="Software Engineer" />
-          </Row> */}
+            <TeamCard
+              img={Surendra}
+              name="Surendra Vanteddu"
+              title="Developer"
+            />
+          </Row>
         </TeamWrapper>
         <InternalBottomNav
           titleone={titles.one}
