@@ -195,7 +195,7 @@ export const Text = styled.p.attrs({
   lineheightmobile: props => props.lineheightmobile,
   color: props => props.color || "#474645",
   textalign: props => props.textalign,
-  fontsize: props => props.fontsize || "1em",
+  thisfontsize: props => props.thisfontsize || "1em",
   fontsizemobile: props => props.fontsizemobile || ".9em"
 })`
   font-size: ${props => props.fontsize};

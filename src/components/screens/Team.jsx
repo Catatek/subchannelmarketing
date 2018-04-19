@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Column, Row, Title3, Title2, Text } from "../theme/theme";
+import { Column, Row, Title3, Text } from "../theme/theme";
 import TeamBg from "../../assets/teamSplash.jpg";
 import InternalHeader from "../shared/InternalHeader";
 import InternalBottomNav from "../shared/InternalBottomNav";
@@ -39,13 +39,6 @@ const StyledImg = styled.img`
   height: 200px;
   border-radius: 100%;
 `;
-
-const circle = {
-  width: "200px",
-  height: "200px",
-  borderRadius: "100%",
-  color: "#ccc"
-};
 
 const titles = {
   one: "Blog",

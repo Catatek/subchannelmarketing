@@ -12,8 +12,7 @@ import {
 import HeaderBg from "../../../assets/headerBg1.svg";
 import MobileHeaderBg from "../../../assets/mobileHeader.svg";
 import { Link, withRouter } from "react-router-dom";
-import { Formik } from "formik";
-import axios from "axios";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const Wrapper = styled.section`
   height: 90vh;
@@ -67,26 +66,6 @@ const StyledRow = styled(Row)`
   flex-direction: row;
 `;
 
-const Input = styled.input.attrs({
-  inputerror: props => props.inputerror
-})`
-  height: 42px;
-  width: 185px;
-  font-family: "Montserrat", sans-serif;
-  border: 1px solid #bbb;
-  z-index: 100;
-  border: ${props => props.inputerror};
-  border-right: 1px solid transparent;
-  outline: none;
-  padding: 0 0.5em;
-  border-radius: 5px 0 0 5px;
-  color: #4d4d4d;
-  &:focus {
-    border: 1px solid #dd694a;
-    border-right: 1px solid transparent;
-  }
-`;
-
 const Button = styled.button.attrs({
   submitcolor: props => props.submitcolor
 })`;
@@ -110,28 +89,62 @@ const Button = styled.button.attrs({
   }
 `;
 
+// function Form({onValidated}) {
+//   let email;
+//   submit = () => {
+//     email &&
+//     email.value.indexOf("@") > -1 &&
+//     onValidated({
+//       EMAIL: email.value
+//   });
+//   return(
+//     <form>
+//       <StyledRow>
+//         <input
+//           className="signupInput"
+//           name="email"
+//           placeholder="Enter your email"
+//           type="email"
+//           ref={node => (email = node)}
+//         />
+//         <Button onClick={() =>submit}>Get Started</Button>
+//       </StyledRow>
+//     </form>
+//   )
+// }
+
+const Form = props => {
+  console.log(props);
+
+  let email;
+  const submit = () => {
+    email &&
+      email.value.indexOf("@") > -1 &&
+      props.onValidated({
+        EMAIL: email.value
+      });
+    props.history.push("/media");
+  };
+  return (
+    <form>
+      <StyledRow>
+        <input
+          className="signupInput"
+          name="email"
+          placeholder="Enter your email"
+          type="email"
+          ref={node => (email = node)}
+        />
+        <Button onClick={submit}>Get Started</Button>
+      </StyledRow>
+    </form>
+  );
+};
+
 class Splash extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: ""
-    };
-    this.handleSubmitForm = this.handleSubmitForm.bind(this);
-  }
-
-  componentDidUpdate() {}
-
-  handleSubmitForm(values, ...props) {
-    this.setState({
-      email: values.email
-    });
-    console.log(this.state.email);
-    setTimeout(() => {
-      this.props.history.push("/comingsoon");
-    }, 500);
-  }
-
   render() {
+    const url =
+      "https://getsubchannel.us12.list-manage.com/subscribe/post?u=e51b5e6da42dfd8e7cb758c48&amp;id=1f50f3aeaf";
     return (
       <Wrapper>
         <StyledColumn>
@@ -142,64 +155,14 @@ class Splash extends Component {
             We give you the tools to share your content, so you can earn revenue
             and keep creating
           </Title2>
-
-          <Formik
-            initialValues={{
-              FNAME: "",
-              LNAME: "",
-              email_address: "",
-              status: "subscribed"
-            }}
-            validate={(values, props) => {
-              let errors = {};
-              if (!values.email) {
-                errors.email = "Required";
-              } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-              ) {
-                errors.email = "Invalid email address";
-              }
-              return errors;
-            }}
-            onSubmit={(values, actions) => {
-              axios
-                .get(`/memberSave`, values)
-                .then(() => {
-                  actions.setSubmitting(false);
-                  actions.setStatus({
-                    message: "You have been successfully added."
-                  });
-                })
-                .catch((err, values) => {
-                  console.log(err);
-                });
-            }}
-            render={({
-              errors,
-              touched,
-              values,
-              handleSubmit,
-              handleBlur,
-              isSubmitting,
-              status,
-              handleChange
-            }) => (
-              <form onSubmit={handleSubmit}>
-                <StyledRow>
-                  <Input
-                    placeholder="Enter your email"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    name="email"
-                    value={values.email}
-                    inputerror={values.email && "1px solid #168787"}
-                  />
-
-                  <Button type="submit" submitcolor={values.email && "#168787"}>
-                    Get Started
-                  </Button>
-                </StyledRow>
-              </form>
+          <MailchimpSubscribe
+            url={url}
+            render={({ subscribe, status }) => (
+              <Form
+                history={this.props.history}
+                status={status}
+                onValidated={formData => subscribe(formData)}
+              />
             )}
           />
           <Img src={HeaderBg} alt="Subchannel Splash" />

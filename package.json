@@ -10,8 +10,10 @@
     "formik": "^0.11.11",
     "install": "^0.10.4",
     "nprogress": "^0.2.0",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-mailchimp-subscribe": "^2.0.1",
     "react-npm": "^2.6.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
@@ -22,13 +24,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "concurrently \"node server/server.js\"  \"react-scripts build\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "dotenv": "^5.0.1",
     "mailchimp-api-v3": "^1.8.0"
-  },
-  "proxy": "http://localhost:9001/api"
+  }
 }

@@ -16,6 +16,7 @@ export default function BetaForm() {
         frameborder="0"
         marginheight="0"
         marginwidth="0"
+        title={"form1"}
       >
         Loading...
       </iframe>

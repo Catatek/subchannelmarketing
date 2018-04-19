@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ConstructionImg from "../../assets/construction.svg";
-import { Column, Title1, Title2, Text, Row, Title3 } from "../theme/theme";
+import { Column, Title1, Title2, Row, Title3 } from "../theme/theme";
 import { Link } from "react-router-dom";
 import InternalHeader from "../shared/InternalHeader";
 

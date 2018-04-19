@@ -16,7 +16,7 @@ class Index extends Component {
     return (
       <div>
         <Header />
-        <Splash />
+        <Splash history={this.props.history} />
         <About />
         <LiveBroadcast />
         <AdvancedAnalytics />

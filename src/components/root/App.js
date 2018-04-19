@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Index from "../screens/Index/Index";
 import ComingSoon from "../screens/ComingSoon/ComingSoon";
 import BetaForm from "../screens/BetaForm";
@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HashRouter>
+        <BrowserRouter>
           <Switch>
             <Route
               exact
@@ -76,7 +76,7 @@ class App extends Component {
               }}
             />
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
   }

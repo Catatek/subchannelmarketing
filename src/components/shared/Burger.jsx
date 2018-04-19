@@ -1,7 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
-import { Row } from "../theme/theme";
 import styled from "styled-components";
 
 function BurgerIcon({ open, ...props }) {
@@ -14,7 +13,7 @@ function BurgerIcon({ open, ...props }) {
   );
 }
 
-const Styled_ul = styled.ul`
+const StyledUl = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +21,7 @@ const Styled_ul = styled.ul`
   padding: 0;
 `;
 
-const Styled_li = styled.li`
+const StyledLi = styled.li`
   margin: 1.5em 0;
   font-size: 1.4em;
 `;
@@ -30,23 +29,23 @@ const Styled_li = styled.li`
 function BurgerMenu({ close }) {
   return (
     <div className="menu">
-      <Styled_ul>
+      <StyledUl>
         <Link to="/">
-          <Styled_li onClick={close}>Home</Styled_li>
+          <StyledLi onClick={close}>Home</StyledLi>
         </Link>
         <Link to="/media">
-          <Styled_li onClick={close}>Media</Styled_li>
+          <StyledLi onClick={close}>Media</StyledLi>
         </Link>
         <Link to="/team">
-          <Styled_li onClick={close}>Team</Styled_li>
+          <StyledLi onClick={close}>Team</StyledLi>
         </Link>
         <Link to="/jobs">
-          <Styled_li onClick={close}>Jobs</Styled_li>
+          <StyledLi onClick={close}>Jobs</StyledLi>
         </Link>
         <Link to="/support">
-          <Styled_li onClick={close}>Support</Styled_li>
+          <StyledLi onClick={close}>Support</StyledLi>
         </Link>
-      </Styled_ul>
+      </StyledUl>
     </div>
   );
 }
