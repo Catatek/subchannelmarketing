@@ -44,6 +44,34 @@ const titles = {
   three: "Jobs"
 };
 
+const StyledColumn = styled(Column)`
+  visibility: ${props => props.hidden && "hidden"};
+`;
+
+function Video({ videosrc, cssclass, title, date, author, hidden }) {
+  return (
+    <StyledColumn hidden={hidden}>
+      <iframe
+        className={cssclass}
+        src={videosrc}
+        width="475"
+        height="267"
+        frameBorder="0"
+        webkitallowfullscreen="true"
+        allowFullScreen
+        title={"Subchannel Video"}
+      />
+      <Title3 margin=".5em 0">{title}</Title3>
+      <Row>
+        <Text>
+          {date}
+          <span style={{ color: "#019095" }}>{author}</span>
+        </Text>
+      </Row>
+    </StyledColumn>
+  );
+}
+
 class Media extends Component {
   render() {
     return (
@@ -55,44 +83,43 @@ class Media extends Component {
             Latest in the newsroom
           </Title3>
           <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
-            <Column>
-              <iframe
-                className="video"
-                src="https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
-                width="475"
-                height="267"
-                frameBorder="0"
-                webkitallowfullscreen="true"
-                allowFullScreen
-                title={"meet J"}
-              />
-              <Title3 margin=".5em 0">Meet the Founders: J</Title3>
-              <Row>
-                <Text>
-                  April 19, 2018 /{" "}
-                  <span style={{ color: "#019095" }}>Getro Jean-Claude</span>
-                </Text>
-              </Row>
-            </Column>
-            <Column>
-              <iframe
-                className="video"
-                src="https://player.vimeo.com/video/265448665"
-                width="475"
-                height="267"
-                frameBorder="0"
-                webkitallowfullscreen="true"
-                allowFullScreen
-                title={"meet will"}
-              />
-              <Title3 margin=".5em 0">Meet the Founders: Will</Title3>
-              <Row>
-                <Text>
-                  April 19, 2018 /{" "}
-                  <span style={{ color: "#019095" }}>Getro Jean-Claude</span>
-                </Text>
-              </Row>
-            </Column>
+            <Video
+              videosrc={
+                "https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
+              }
+              title={"Meet the Founders: J"}
+              date={"April 19, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+            <Video
+              videosrc={"https://player.vimeo.com/video/265448665"}
+              title={"Meet the Founders: Will"}
+              date={"April 19, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+          </Row>
+          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
+            <Video
+              videosrc={
+                "https://player.vimeo.com/video/265677518?title=0&byline=0&portrait=0"
+              }
+              title={"NAB Show 2018 - Las Vegas"}
+              date={"April 20, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+            <Video
+              videosrc={
+                "https://player.vimeo.com/video/265677518?title=0&byline=0&portrait=0"
+              }
+              title={"NAB Show 2018 - Las Vegas"}
+              date={"April 20, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video hidden"}
+              hidden={true}
+            />
           </Row>
         </MediaWrapper>
         <MediaContent />

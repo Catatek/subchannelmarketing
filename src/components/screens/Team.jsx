@@ -49,15 +49,15 @@ const titles = {
   three: "Jobs"
 };
 
-function TeamCard(props) {
+function TeamCard({ margin, img, name, title }) {
   return (
-    <Column alignitems="center" marginmobile="1.5em 0">
-      <StyledImg src={props.img} alt="Subchannel Team Photo" />
+    <Column alignitems="center" marginmobile="1.5em 0" margin={margin}>
+      <StyledImg src={img} alt="Subchannel Team Photo" />
       <Title3 margin=".8em 0" marginmobile="1em 0">
-        {props.name}
+        {name}
       </Title3>
       <Title3 fontWeight="300" margin="0">
-        {props.title}
+        {title}
       </Title3>
     </Column>
   );
@@ -100,18 +100,24 @@ class Team extends Component {
             <TeamCard img={Raj} name="Raj Vanteddu" title="CTO | Co-Founder" />
             <TeamCard img={J} name="J Brian Miles" title="CINO | Co-Founder" />
           </Row>
-          <Row margin="3em 0" alignitems="center" justifycontent="space-evenly">
-            <TeamCard img={Shenole} name="Shenole Latimer" title="Developer" />
+          <Row margin="3em 0" alignitems="center">
             <TeamCard
+              img={Shenole}
+              name="Shenole Latimer"
+              title="Developer"
+              margin="0 0 0 6em"
+            />
+            <TeamCard
+              margin="0 0 0 6em"
               img={Rachel}
               name="Rachel Adams"
               title="Designer | Illustrator"
             />
-            <TeamCard
+            {/* <TeamCard
               img={Surendra}
               name="Surendra Vanteddu"
               title="Developer"
-            />
+            /> */}
           </Row>
         </TeamWrapper>
         <InternalBottomNav
