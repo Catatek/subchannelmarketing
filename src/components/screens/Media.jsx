@@ -82,13 +82,32 @@ class Media extends Component {
           <Title3 margin="3em 0 1em 4em" marginmobile="4em 0 0 0">
             Latest in the newsroom
           </Title3>
+
+          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
+            <Video
+              videosrc={
+                "https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
+              }
+              title={"Meet the Founders: J"}
+              date={"April 21, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+            <Video
+              videosrc={"https://player.vimeo.com/video/265448665"}
+              title={"Meet the Founders: Will"}
+              date={"April 21, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+          </Row>
           <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
             <Video
               videosrc={
                 "https://player.vimeo.com/video/265842951?color=168787&title=0&byline=0&portrait=0"
               }
               title={"Meet the Founders: Raj"}
-              date={"April 21, 2018 / "}
+              date={"April 18, 2018 / "}
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />
@@ -97,25 +116,7 @@ class Media extends Component {
                 "https://player.vimeo.com/video/265677518?title=0&byline=0&portrait=0"
               }
               title={"NAB Show 2018 - Las Vegas"}
-              date={"April 20, 2018 / "}
-              author={"Getro Jean-Claude"}
-              cssclass={"video"}
-            />
-          </Row>
-          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
-            <Video
-              videosrc={
-                "https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
-              }
-              title={"Meet the Founders: J"}
-              date={"April 19, 2018 / "}
-              author={"Getro Jean-Claude"}
-              cssclass={"video"}
-            />
-            <Video
-              videosrc={"https://player.vimeo.com/video/265448665"}
-              title={"Meet the Founders: Will"}
-              date={"April 19, 2018 / "}
+              date={"April 16, 2018 / "}
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />
