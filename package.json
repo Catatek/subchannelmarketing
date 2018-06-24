@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "buttercms": "^1.1.1",
     "express": "^4.16.3",
     "formik": "^0.11.11",
     "install": "^0.10.4",

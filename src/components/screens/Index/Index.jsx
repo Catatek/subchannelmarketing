@@ -9,7 +9,7 @@ import Monetization from "../../sections/Monetization/Monetization";
 import DragDropAdvertising from "../../sections/DragDropAdvertising/DragDropAdvertising";
 import Features from "../../sections/Features/Features";
 import How from "../../sections/How";
-import Plans from "../../sections/Plans/Plans";
+// import Plans from "../../sections/Plans/Plans";
 import { withRouter } from "react-router-dom";
 
 class Index extends Component {
@@ -25,7 +25,7 @@ class Index extends Component {
         <DragDropAdvertising />
         <Features />
         <How />
-        <Plans />
+
         <Footer />
       </div>
     );

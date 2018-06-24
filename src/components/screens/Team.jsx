@@ -11,7 +11,7 @@ import J from "../../assets/J.png";
 import Jet from "../../assets/jet.png";
 import Shenole from "../../assets/shenole02.png";
 import Rachel from "../../assets/rachel.png";
-import Surendra from "../../assets/surendra.png";
+// import Surendra from "../../assets/surendra.png";
 
 const TeamWrapper = styled.section`
   height: 100%;

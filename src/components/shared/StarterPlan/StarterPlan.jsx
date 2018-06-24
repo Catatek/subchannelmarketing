@@ -55,7 +55,12 @@ export default function StarterPlan({ click }) {
       </PlanDiv>
       <StyledButton onClick={click}>START</StyledButton>
       <PlanDiv>
-        <SmallText color="#fff" margin=".6em 0" fontsizemobile="0.7em">
+        <SmallText
+          fontweight="600"
+          color="#fff"
+          margin=".6em 0"
+          fontsizemobile="0.7em"
+        >
           + Studio Software
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
@@ -69,9 +74,6 @@ export default function StarterPlan({ click }) {
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
           Advertising Management
-        </SmallText>
-        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Content Distribution Tools
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
           File Management Tools

@@ -217,9 +217,11 @@ export const Text = styled.p.attrs({
 `;
 
 export const SmallText = Text.extend.attrs({
+  fontweight: props => props.fontweight,
   width: props => props.width,
   lineheight: props => props.lineheight
 })`
+  font-weight: ${props => props.fontweight};
   width: ${props => props.width};
   line-height: ${props => props.lineheight};
 	font-size: ${props => (props.primary ? ".8em" : ".6em")};

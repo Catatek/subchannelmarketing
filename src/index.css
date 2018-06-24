@@ -37,6 +37,13 @@ a {
   }
 }
 
+@media (max-width: 800px) {
+  .video {
+    width: 425px;
+    margin-bottom: 0.5em;
+  }
+}
+
 .signupInput {
   height: 42px;
   width: 185px;

@@ -54,15 +54,15 @@ function Video({ videosrc, cssclass, title, date, author, hidden }) {
       <iframe
         className={cssclass}
         src={videosrc}
-        width="475"
-        height="267"
+        width="590"
+        height="331"
         frameBorder="0"
         webkitallowfullscreen="true"
         allowFullScreen
         title={"Subchannel Video"}
       />
       <Title3 margin=".5em 0">{title}</Title3>
-      <Row>
+      <Row margin=".25em 0">
         <Text>
           {date}
           <span style={{ color: "#019095" }}>{author}</span>
@@ -73,6 +73,10 @@ function Video({ videosrc, cssclass, title, date, author, hidden }) {
 }
 
 class Media extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <div>
@@ -83,7 +87,15 @@ class Media extends Component {
             Latest in the newsroom
           </Title3>
 
-          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
+          <Row justifycontent="space-evenly" alignitems="center" margin="1em 0">
+            <Video
+              videosrc={"https://player.vimeo.com/video/267293835"}
+              title={"Atlanta Trip Recap"}
+              date={"April 30, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+
             <Video
               videosrc={
                 "https://player.vimeo.com/video/265258052?title=0&byline=0&portrait=0"
@@ -93,6 +105,8 @@ class Media extends Component {
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />
+          </Row>
+          <Row justifycontent="space-evenly" alignitems="center" margin="1em 0">
             <Video
               videosrc={"https://player.vimeo.com/video/265448665"}
               title={"Meet the Founders: Will"}
@@ -100,8 +114,6 @@ class Media extends Component {
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />
-          </Row>
-          <Row justifycontent="space-evenly" alignitems="center" margin="3em 0">
             <Video
               videosrc={
                 "https://player.vimeo.com/video/265842951?color=168787&title=0&byline=0&portrait=0"
@@ -111,12 +123,23 @@ class Media extends Component {
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />
+          </Row>
+          <Row justifycontent="space-evenly" alignitems="center" margin="1em 0">
             <Video
               videosrc={
                 "https://player.vimeo.com/video/265677518?title=0&byline=0&portrait=0"
               }
               title={"NAB Show 2018 - Las Vegas"}
               date={"April 16, 2018 / "}
+              author={"Getro Jean-Claude"}
+              cssclass={"video"}
+            />
+            <Video
+              videosrc={
+                "https://player.vimeo.com/video/266392453?color=168787&title=0&byline=0&portrait=0"
+              }
+              title={"Meet the Founders: Jet"}
+              date={"April 14, 2018 / "}
               author={"Getro Jean-Claude"}
               cssclass={"video"}
             />

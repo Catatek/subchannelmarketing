@@ -48,32 +48,33 @@ export default function ElitePlan({ click }) {
         <StyledButton onClick={click}>CONTACT</StyledButton>
       </PlanDiv>
       <PlanDiv>
-        <SmallText color="#fff" margin=".6em 0" fontsizemobile="0.7em">
-          + Studio Software
+        <SmallText
+          fontweight="600"
+          color="#fff"
+          margin=".6em 0"
+          fontsizemobile="0.7em"
+        >
+          + Pro Features
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Customer Support
+          Dedicated Technical Account Manager
         </SmallText>
+
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Meaningful Insights
-        </SmallText>
-        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Technical Ticketing
-        </SmallText>
-        <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Advertising Management
+          Complete Advertising Management
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
           Content Distribution Tools
         </SmallText>
+
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          File Management Tools
+          Complete Monetization Options
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Monetization Options
+          Integrations
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Up to 1,000 subscribers
+          Unlimited Subscribers
         </SmallText>
       </PlanDiv>
     </PlanContainer>

@@ -50,25 +50,30 @@ export default function ProPlan({ click }) {
           fontsizemobile="0.7em"
           plans
         >
-          + .99 per subscriber
+          + .89 per subscriber
         </SmallText>
       </PlanDiv>
       <StyledButton onClick={click}>START</StyledButton>
       <PlanDiv>
-        <SmallText color="#fff" margin=".6em 0" fontsizemobile="0.7em">
-          + Studio Software
+        <SmallText
+          fontweight="600"
+          color="#fff"
+          margin=".6em 0"
+          fontsizemobile="0.7em"
+        >
+          + Starter Features
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Customer Support
+          Advanced Customer Support
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Meaningful Insights
+          Advanced Insights
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Technical Ticketing
+          Priority Ticketing
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Advertising Management
+          Flexible Advertising Management
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
           Content Distribution Tools
@@ -77,10 +82,10 @@ export default function ProPlan({ click }) {
           File Management Tools
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Monetization Options
+          Flexible Monetization Options
         </SmallText>
         <SmallText color="#fff" margin=".5em 0" fontsizemobile="0.7em">
-          Up to 1,000 subscribers
+          Up to 3,000 subscribers
         </SmallText>
       </PlanDiv>
     </PlanContainer>
